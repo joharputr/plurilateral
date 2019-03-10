@@ -1,10 +1,10 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+ $route['home'] = 'welcome/index';
  $route['national'] = 'welcome/national';
  $route['workshop'] = 'welcome/workshop';
- $route['sterringcommittee'] = 'welcome/steeringcommitte';
+ $route['steeringcommittee'] = 'welcome/steeringCommittee';
   $route['paper'] = 'welcome/paper';
    $route['journal'] = 'welcome/journal';
    $route['videos'] = 'welcome/videos';

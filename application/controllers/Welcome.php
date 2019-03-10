@@ -26,6 +26,37 @@ class Welcome extends CI_Controller {
 		$this->load->view('./national_dialog/header');
 		$this->load->view('./national_dialog/footer');
 	}
+	public function paper()
+	{
+		$this->load->view('./paper/header');
+		$this->load->view('./paper/footer');
+	}
+	public function journal()
+	{
+		$this->load->view('./journal/header');
+		$this->load->view('./journal/footer');
+	}
+	public function workshop()
+	{
+		$this->load->view('./workshop/header');
+		$this->load->view('./workshop/footer');
+	}
+	public function steeringCommittee()
+	{
+		$this->load->view('./steeringCommittee/header');
+		$this->load->view('./steeringCommittee/footer');
+	}
+	public function videos()
+	{
+		$this->load->view('./videos/header');
+		$this->load->view('./videos/footer');
+	}
+
+
+
+
+
+
 
 	 public function sendEmail()
  {
@@ -50,32 +81,7 @@ $email_config = Array(
    		$this->email->from($this->input->post('email_id'),'email_id'); // change 
        $this->email->subject($this->input->post('subject'));
        $this->email->message($this->input->post('body'));
-      
-   //  $attched_file= $_SERVER["DOCUMENT_ROOT"]."/upload/".$file_name;
-     // $this->email->attach($attched_file);
-     /*   $file_name = $this->upload_file();
-        $this->email->attach($file_name);
-     
-        $this->email->send();*/
-        /*	$this->upload->initialize(array(
-            "upload_path"   => "./upload",
-			"allowed_types" => "*"
-			));
-			*/
-			//Perform upload.
-		/*	if($this->upload->do_multi_upload("lampiran"))
-				{
-				
-				$lamp = $this->upload->get_multi_upload_data();
-				foreach ($lamp as $key=>$value)
-				{
-					$this->email->attach($value['full_path']);
-				}
-			}else
-			{
-				echo $this->upload->display_errors();	
-			}
-			*/
+
 			if($this->email->send())
 			{
 				echo "berhasil mengirim email";

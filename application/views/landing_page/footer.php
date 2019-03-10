@@ -87,8 +87,11 @@
 							<div class="footer_extra_right ml-lg-auto text-lg-right">
 								<div class="footer_extra_links">
 									<ul>
-										<a style="color: white; font-size: 12px;" href="contact.html">Contact us</a>
-										<li><a href="#">home</a></li>
+										<a style="color: white; font-size: 12px;" href="#contact">Contact us</a>
+										<li>
+											<a href="#" class="btn btn-info">
+								          <span class="glyphicon glyphicon-chevron-up" style="height: 10px; width: 10px; color: white;">home</span> 
+								        </a></li>
 									
 									</ul>
 								</div>
@@ -96,6 +99,33 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 							</div>
+							<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
 						</div>
 					</div>
 				</div>

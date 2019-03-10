@@ -137,7 +137,7 @@
 </div>
 
 <!-- UPCOMING EVENT -->
-
+<!-- event dari kemenag -->
 	<div class="calendar">
 		<div class="container reset_container">
 			<div class="row">
@@ -164,7 +164,10 @@
 							</div>
 
 							
-							<!-- Calendar Item -->
+
+
+                            <!-- press room -->
+							<!-- berita berita dari jurnal yang ditulis -->
 							
 						</div>
 					</div>
@@ -174,7 +177,7 @@
 					<div class="calendar_container">
 						<div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start" style="background:#00cc66;">
 							<div><div class="calendar_icon"><img src="./assets/images/calendar.svg" alt=""></div></div>
-							<div class="calendar_title">LATEST NEWS</div>
+							<div class="calendar_title">PRESS ROOM</div>
 						</div>
 						<div class="calendar_items">
 							

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
 <title>The Conference</title>
 <meta charset="utf-8">
@@ -16,6 +16,8 @@
 <meta name="viewport" >
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="<?php echo base_url() ?>assets/image/event/Logo-Event.png" rel="shortcut icon" type="image/x-icon" />
+
 </head>
 <body>
 
@@ -25,7 +27,7 @@
 	
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home" id="home">
 	
 	
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -41,14 +43,15 @@
           <h2 class="display-4">Jakarta Plurilateral Dialogue: </h2>
           <h4>Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </h4>
           <p class="lead" style="color: white;">Jakarta, April 2019 (TBC)</p>
-          <a href="<?php echo base_url(); ?>pd_event/Event/index"><button type="button" class="btn btn-warning">Visit Page</button></a>
+         <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;" href="<?php echo base_url(); ?>event">VISIT PAGE</a></div>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./assets/images/event_2.jpg')">
         <div class="carousel-caption">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
+        <h2 class="display-4">National Dialogue</h2>
+        
+          <a href="<?php echo base_url(); ?>pd_event/Event/index"><button type="button" class="btn btn-info btn-lg">Visit Page</button></a>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -122,7 +125,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class=" navbar-nav">
                         <li class=" active">
-                            <a class="nav-link active" href="#" style="">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="<?php echo base_url(); ?>home" style="">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
 
@@ -133,7 +136,7 @@
                             <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Workshop</a>
+                            <a class="nav-link " href="<?php echo base_url(); ?>workshop">Workshop</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -141,13 +144,13 @@
                                 Resources
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-top: 6px;">
-                                <li><a class="dropdown-item" href="#">Paper</a></li>
-                                <li><a class="dropdown-item" href="#">Journal</a></li>
-                                 <li><a class="dropdown-item" href="#">Videos</a></li>
+                                <li><a href="<?php echo base_url(); ?>paper" class="dropdown-item" href="#">Paper</a></li>
+                                <li><a href="<?php echo base_url(); ?>journal" class="dropdown-item" href="#">Journal</a></li>
+                                 <li><a href="<?php echo base_url(); ?>videos" class="dropdown-item" href="#">Videos</a></li>
                             </ul>
                         </li>
                        <li class="nav-item">
-                            <a class="nav-link " href="#">Steering Committee</a>
+                            <a class="nav-link " href="<?php echo base_url(); ?>steeringcommitte">Steering Committee</a>
                         </li>
                     </ul>
                 </div>
