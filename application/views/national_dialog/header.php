@@ -6,16 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Conference project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../assets/styles/bootstrap4/bootstrap.min.css">
-<link href="../assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="../assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="../assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="../assets/plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="../assets/styles/main_styles2.css">
-<link rel="stylesheet" type="text/css" href="../assets/styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap4/bootstrap.min.css">
+<link href="./assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="./assets/styles/main_styles2.css">
+<link rel="stylesheet" type="text/css" href="./assets/styles/responsive.css">
 <meta name="viewport" >
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -48,7 +45,7 @@
                   <div>
                     <a href="#">
                       <div class="logo_container d-flex flex-row align-items-start justify-content-start">
-                        <div class="logo_image"><div><img src="../assets/images/logo_event.png" alt=""></div></div>
+                        <div class="logo_image"><div><img src="./assets/images/logo_event.png" alt=""></div></div>
                         <div class="logo_content">
                           <div id="logo_text" class="logo_text logo_text_not_ie" style="padding:5px; ">Plurilateral Dialogue</div>
                           <div class="logo_sub">April, 2019 - Jakarta, Indonesia</div>
@@ -73,10 +70,10 @@
                             <a class="nav-link active" href="#" style="">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>welcome/international" class="nav-link" href="#">International Dialogue</a>
+                            <a href="<?php echo base_url(); ?>event" class="nav-link" href="#">International Dialogue</a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>welcome/national" class="nav-link">National Dialogue</a>
+                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Workshop</a>
@@ -152,14 +149,47 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
     <br>
-    <h1 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif;"> PAPER</h1>
-    <
-    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;">
+    <h2 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633"> Judul</h2>
+
+
+    <!-- paper -->
+    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> PAPER</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <!-- journal -->
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> JOURNAL</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+  </div>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <br>
+    <h2 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; "> Judul</h2>
+
+
+    <!-- paper -->
+    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> PAPER</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px; ">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <!-- journal -->
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> JOURNAL</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 20px;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Coca Cola</li>
     </ul>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
  
 </div>

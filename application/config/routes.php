@@ -2,7 +2,12 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['home'] = 'home/index';
+ $route['national'] = 'welcome/national';
+ $route['workshop'] = 'welcome/workshop';
+ $route['sterringcommittee'] = 'welcome/steeringcommitte';
+  $route['paper'] = 'welcome/paper';
+   $route['journal'] = 'welcome/journal';
+   $route['videos'] = 'welcome/videos';
 // $route['event'] = 'pd_intern/index';
 
 $route['default_controller'] = 'welcome';

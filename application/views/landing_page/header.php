@@ -130,7 +130,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>welcome/national" class="nav-link">National Dialogue</a>
+                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Workshop</a>

@@ -47,7 +47,7 @@ $email_config = Array(
         $this->load->library('email', $email_config);
 
         $this->email->to('joharputraadek@gmail.com');
-   		$this->email->from($this->input->post('email_id')); // change 
+   		$this->email->from($this->input->post('email_id'),'email_id'); // change 
        $this->email->subject($this->input->post('subject'));
        $this->email->message($this->input->post('body'));
       
