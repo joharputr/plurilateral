@@ -127,76 +127,69 @@
     <!-- ==========================
         SERVICE SECTION 
         =========================== -->
-    <section class="features text-center section-padding" id="service">
-        <div class="container">
-            <!-- Headline -->
+    <section class="features text-center pt-5" id="service">
+        <div class="light-blue-bg pb-5">
+            <div class="container">
+                <!-- Headline -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="head-title-2 text-center">
+                            Invited Speakers
+                        </h1><!-- Headline -->
+                    </div>
+                </div>
+                <div class="row services">
+                    <!-- Service Box 1 -->
+                    <div class="col-lg-4 wp2 item">
+                        <a href="#">
+                            <div class="mx-auto">
+                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
+                                    class="img-thumbnail speakers blue-bg mb-2 p-2">
+                            </div>
+                            <span class="speaker-name">JOKO WIDOWO</span>
+                        </a><!-- Title -->
+                        <h4 class="speaker-desc font-weight-bold">THE PRESIDENT OF THE REPUBLIC OF INDONESIA</h4>
+                    </div>
+                    <!-- Service Box 2 -->
+                    <div class="col-lg-4 wp2 item delay-05s">
+                        <a href="#">
+                            <div class="mx-auto">
+                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/lukman.jpg"
+                                    class="img-thumbnail speakers blue-bg mb-2 p-2">
+                            </div>
+                            <span class="speaker-name">LUKMAN HAKIM SAIFUDDIN</span>
+                        </a><!-- Title -->
+                        <h4 class="speaker-desc font-weight-bold">INDONESIAN MINISTER FOR RELIGIOUS AFFAIRS</h4>
+                    </div>
+                    <!-- Service Box 3 -->
+                    <div class="col-lg-4 wp2 item delay-1s">
+                        <a href="#">
+                            <div class="mx-auto">
+                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/retno.jpg"
+                                    class="img-thumbnail speakers blue-bg mb-2 p-2">
+                            </div>
+                            <span class="speaker-name">RETNO LESTARI PRIANSARI MARSUDI</span>
+                        </a><!-- Title -->
+                        <h4 class="speaker-desc font-weight-bold">INDONESIAN MINISTER FOR FOREIGN AFFAIRS</h4>
+                    </div>
+
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h1 class="head-title" style="font-size: 25px;">
-                        <span style="font-size:50px; display: table-cell;"><i class="fas fa-user-circle"></i></span>
-                        <span class="pl-2 align-middle" style="display: table-cell;">Invited Speakers</span>
-                    </h1><!-- Headline -->
+                <div class="col-lg-12">
+                    <a href="speakers.php" class="button-white px-5 py-3">
+                        <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
+                                class="fas fa-arrow-circle-right"></i></span>
+                    </a>
                 </div>
-            </div>
-            <div class="row services">
-                <!-- Service Box 1 -->
-                <div class="col-lg-4 wp2 item">
-                    <a href="#">
-                        <div class="mx-auto">
-                            <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
-                                class="img-thumbnail speakers bg-dark mb-2 p-2">
-                        </div>
-                        <span class="speaker-name">JOKO WIDOWO</span>
-                    </a><!-- Title -->
-                    <h4 class="speaker-desc font-weight-bold">THE PRESIDENT OF THE REPUBLIC OF INDONESIA</h4>
-                </div>
-                <!-- Service Box 2 -->
-                <div class="col-lg-4 wp2 item delay-05s">
-                    <a href="#">
-                        <div class="mx-auto">
-                            <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/lukman.jpg"
-                                class="img-thumbnail speakers bg-dark mb-2 p-2">
-                        </div>
-                        <span class="speaker-name">LUKMAN HAKIM SAIFUDDIN</span>
-                    </a><!-- Title -->
-                    <h4 class="speaker-desc font-weight-bold">INDONESIAN MINISTER FOR RELIGIOUS AFFAIRS</h4>
-                </div>
-                <!-- Service Box 3 -->
-                <div class="col-lg-4 wp2 item delay-1s">
-                    <a href="#">
-                        <div class="mx-auto">
-                            <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/retno.jpg"
-                                class="img-thumbnail speakers bg-dark mb-2 p-2">
-                        </div>
-                        <span class="speaker-name">RETNO LESTARI PRIANSARI MARSUDI</span>
-                    </a><!-- Title -->
-                    <h4 class="speaker-desc font-weight-bold">INDONESIAN MINISTER FOR FOREIGN AFFAIRS</h4>
-                </div>
-
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <a href="speakers.php" class="button-white px-5 py-3">
-                    <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
-                            class="fas fa-arrow-circle-right"></i></span>
-                </a>
-            </div>
-        </div>
-
     </section>
-
-    <section class="features text-center section-padding" id="">
+    <div class="blue-bg py-5 text-center">
+        <h1 class="head-title text-white">Conference Schedule</h1>
+    </div>
+    <section class="features text-center py-5" id="">
         <div class="container">
-            <!-- Headline -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="head-title" style="font-size: 25px;">
-                        <span style="font-size:50px; display: table-cell;"><i class="fas fa-info-circle"></i></span>
-                        <span class="pl-2 align-middle" style="display: table-cell;">Conference Schedule</span>
-                    </h1><!-- Headline -->
-                </div>
-            </div>
             <table class="table table-sm table-hover table-bordered">
                 <thead class="schedule-head">
                     <tr>
@@ -238,57 +231,47 @@
             </a>
         </div>
     </section>
-
-    <!-- SERVICE SECTION 2  -->
-
-    <section class="features text-center section-padding" id="blog">
+    <section class="features light-blue-bg pb-2" id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h1 class="head-title" style="font-size: 25px;">
-                        <span style="font-size:50px; display: table-cell;"><i
-                                class="fab fa-stumbleupon-circle"></i></span>
-                        <span class="pl-2 align-middle" style="display: table-cell;">Partners</span>
-                    </h1><!-- Headline -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="owl-example" class="owl-carousel owl-theme">
-                        <div><img src="<?php echo base_url() ?>assets/image/event/partners/kementrian.png" alt=""
-                                style="width: 200px;"></div>
-                        <div><img src="<?php echo base_url() ?>assets/image/event/partners/nu.png" alt=""
-                                style="width: 200px"></div>
-                        <div><img src="<?php echo base_url() ?>assets/image/event/partners/uin.png" alt=""
-                                style="width: 200px"></div>
-                        <div><img src="<?php echo base_url() ?>assets/image/event/partners/ford.png" alt=""
-                                style="width: 200px"></div>
+                    <div class="col-md-12">
+                        <h1 class="head-title-2">
+                            Partners
+                        </h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <div id="owl-example" class="owl-carousel owl-theme">
+                            <div><img src="<?php echo base_url() ?>assets/image/event/partners/kementrian.png" alt=""
+                                    style="width: 200px;"></div>
+                            <div><img src="<?php echo base_url() ?>assets/image/event/partners/nu.png" alt=""
+                                    style="width: 200px"></div>
+                            <div><img src="<?php echo base_url() ?>assets/image/event/partners/uin.png" alt=""
+                                    style="width: 200px"></div>
+                            <div><img src="<?php echo base_url() ?>assets/image/event/partners/ford.png" alt=""
+                                    style="width: 200px"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-    <!-- MAPS -->
+    <div class="bg-white py-5 text-center">
+        <!-- <h1 class="head-title text-white">Location</h1> -->
+    </div>
     <section class="text-center" id="blog">
         <!-- <div class="container"> -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row" id="location" style="margin">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.226152818535!2d106.79818189063141!3d-6.223251438825378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1495c27f11b%3A0x63e8f2ff2aa408d2!2sHotel+Fairmont+Jakarta!5e0!3m2!1sid!2sid!4v1550660138091"
-                            width="1380" height="400" frameborder="0"></iframe>
-                    </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row" id="location" style="margin">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.226152818535!2d106.79818189063141!3d-6.223251438825378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1495c27f11b%3A0x63e8f2ff2aa408d2!2sHotel+Fairmont+Jakarta!5e0!3m2!1sid!2sid!4v1550660138091"
+                        width="100%" height="500" frameborder="0"></iframe>
                 </div>
+            </div>
             <!-- </div> -->
         </div>
     </section>
     <!-- To Top Button -->
-    <div class="blue-bg py-5 text-center">
-        <h1 class="head-title text-white">Don't be shy to contact us</h1>
-    </div>
     <section class="text-center contact-wrap" id="contact">
         <div class="bg-dark">
             <div class="container">
@@ -297,7 +280,7 @@
                         <h1 class="head-title" style="font-size: 25px;">
                             <!-- <span style="font-size:50px; display: table-cell;"><i class="fas fa-question-circle"></i></span> -->
                             <span class="pl-2 align-middle text-white" style="display: table-cell;">Contact Us</span>
-                        </h1><!-- Headline -->
+                        </h1>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -336,15 +319,6 @@
             <!-- Social Buttons - use font-awesome, past in what you want -->
         </div>
     </section>
-    <!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-
-
-
-    <!-- ==========================
-        FOOTER SECTION
-        =========================== -->
     <footer>
         <div class="container">
             <div class="row">

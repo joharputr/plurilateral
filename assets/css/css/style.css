@@ -398,6 +398,10 @@ table {
 	background:#6699FF;
 }
 
+.light-blue-bg{
+	background:rgb(237, 244, 255);
+}
+
 .light-bg {
 	background-color:#fff;
 }
@@ -722,6 +726,12 @@ table {
 h1.head-title{
 	font-size: 26px;
 	color: #6699FF;	
+	font-weight: bold;
+}
+
+h1.head-title-2{
+	font-size: 36px;
+	color: rgb(48, 48, 48);	
 	font-weight: bold;
 }
 
@@ -1121,7 +1131,7 @@ ul.social-buttons li:last-child {
 }
 
 .schedule-head{
-	background-color: rgb(5, 72, 139);
+	background-color:  rgb(54, 54, 54);
 	color: white;
 }
 /* ==========================================================================Contact========================================================================== */
@@ -1308,9 +1318,11 @@ a.button-blue{
 }
 
 a.button-white{
-	color: rgb(4, 99, 194);
+	color: #6699FF;
 	border-radius: 20px;
-	border: 1px solid rgb(4, 99, 194);
+	border-radius: 20px;
+	border: 1px solid #6699FF;
+	border-radius: 20px;
 	background-color: white;
   padding: 30px 35px;
   text-align: center;
@@ -1340,7 +1352,8 @@ a.button-blue:hover{
 }
 
 a.button-white:hover{
-	background-color: rgb(5, 72, 139);
+	background-color: #6699FF;
+	border-radius: 20px;
 	color: white;
 }
 
