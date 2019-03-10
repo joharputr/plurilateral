@@ -576,13 +576,13 @@ table {
 
 .navbar-default .navbar-nav .nav-item a{
 	font-weight: bold;
-	color: white;
+	color: #6699FF;
 	margin: 0 5px;
 	padding: 6px 12px;
 }
 
 .active-nav .navbar-nav .nav-item a{
-	color: rgb(4, 87, 170);
+	color: #fff;
 }
 
 .active-nav{
