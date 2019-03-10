@@ -137,7 +137,7 @@ a:hover,a:focus,a:active {
 	outline:none!important;
 }
 p {
-	color:#8c9398;
+	color:#383838;
 	word-spacing:1px;
 	line-height:25px;
 	font-size:14px;
@@ -199,7 +199,7 @@ html,button,input,select,textarea {
 }
 body {
 	margin:0;
-	font-family: 'Open Sans',sans-serif;
+	/* font-family: 'Open Sans',sans-serif; */
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -379,12 +379,25 @@ table {
 	border-spacing: 0;
 }
 /* ==========================================================================Section Styles========================================================================== */
+.container{
+	max-width: 90%;
+}
+
 .section-padding {
 	padding:90px 0 50px
 }
 .dark-bg {
 	background:#f3f5f8;
 }
+
+.green-bg{
+	background:#00664F;
+}
+
+.blue-bg{
+	background:#6699FF;
+}
+
 .light-bg {
 	background-color:#fff;
 }
@@ -575,19 +588,20 @@ table {
 }
 
 .navbar-default .navbar-nav .nav-item a{
-	font-weight: bold;
-	color: #6699FF;
-	margin: 0 5px;
-	padding: 6px 12px;
+	font-weight: 600;
+	color: white;
+	margin: 6px 8px;
+	padding: 12px 12px;
+	text-transform: uppercase;
 }
 
-.active-nav .navbar-nav .nav-item a{
-	color: #fff;
+.navbar-default .navbar-nav .nav-item a:hover{
+	color: yellow;	
 }
 
-.active-nav{
-	box-shadow: 0px 1px 15px rgba(0, 131, 192, 0.6);
-}
+/* .active-nav .navbar-nav .nav-item a{
+	color: rgb(4, 87, 170);
+} */
 
 .hero h1 {
 	font-size: 100px;
@@ -692,11 +706,22 @@ table {
 	margin:50px 0 0;
 }
 
-h1.head-title{
+.figure-img{
+	height: 350px ;
+	width: 350px;
+}
+
+.figure-caption{
 	font-size: 16px;
 	text-transform:uppercase;
-	color:rgb(4, 99, 194);
+	color: #6699FF;	
 	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+h1.head-title{
+	font-size: 26px;
+	color: #6699FF;	
 	font-weight: bold;
 }
 
@@ -1190,7 +1215,7 @@ footer a {
 	color:#fff;
 }
 footer {
-	background-color:rgb(5, 72, 139);
+	background-color: rgb(39, 39, 39);
 	padding:40px 0 30px;
 }
 footer p {
@@ -1273,7 +1298,7 @@ ul.slides li {
 }
 
 a.button-blue{
-	background-color: rgb(4, 99, 194);
+	background-color: #6699FF;
 	border-radius: 20px;
 	color: white;
   padding: 30px 35px;
@@ -1294,7 +1319,7 @@ a.button-white{
 }
 
 button.button-blue{
-	background-color: rgb(4, 99, 194);
+	background-color: #6699FF; 
 	border-radius: 15px;
 	color: white;
 	border: none;
@@ -1498,5 +1523,9 @@ a.button-white:hover{
 
 	.subscribe {
 	    padding-bottom: 40px;
+	}
+
+	h1.head-title{
+		font-size: 16px;
 	}
 }
