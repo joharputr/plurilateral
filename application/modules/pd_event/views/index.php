@@ -92,7 +92,6 @@
                             <figure class="figure">
                                 <img src="<?php echo base_url()?>assets/image/event/icon/about.jpg"
                                 class="figure-img img-fluid rounded"
-                                href="#"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
                                 <figcaption class="figure-caption">ABOUT EVENT</figcaption>
                             </figure>
