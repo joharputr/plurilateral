@@ -225,8 +225,35 @@
                         </td>
                     </tr>
                 </tbody>
+                 <tbody>
+                    <tr>
+                        <td>Days - 2</td>
+                        <td>09.00 - 11.00</td>
+                        <td class="text-left">Expert Panel 4</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Days One</td>
+                        <td>07.30 - 09.30</td>
+                        <td class="text-left">
+                            OTW ISTANA JAKARTA/BOGOR
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>09.00 - 11.00</td>
+                        <td class="text-left">
+                            <ul>
+                                <li>Opening Session</li>
+                                <li>Opening Remarks by Minister for Foreign Affairs</li>
+                                <li>Remarks by Secretary General of OIC (tbc)</li>
+                                <li>Keynote Address by the President of the Republic of Indonesia followed by the
+                                    Official Opening</li>
+                                <li>(Photo Session)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-            <a href="index.html#about" class="button-white px-5 py-3">
+            <a href="<?php echo base_url() ?>assets/jadwal_plurilateral_dialogue.pdf" class="button-white px-5 py-3">
                 <span style="font-weight: 700;">DOWNLOAD SCHEDULE <i class="fas fa-cloud-download-alt"></i></span>
             </a>
         </div>

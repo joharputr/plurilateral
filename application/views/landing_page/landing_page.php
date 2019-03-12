@@ -26,7 +26,7 @@
                         </div>
                         <h3 style="text-align: center; color: #1E90FF">International Event</h3>
                         <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                        <a  href="<?php echo base_url(); ?>pd_event/Event/index"><div style="text-align: center;">
+                        <a  href="<?php echo base_url(); ?>event"><div style="text-align: center;">
                        <button  type="button"  class="btn btn-info ">more info</button></div></a>
                     </div>
                     <style type="text/css">
@@ -63,7 +63,7 @@
                         </div>
                         <h3 style="text-align: center; color: #1E90FF">National Event</h3>
                         <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                         <a  href="<?php echo base_url(); ?>welcome/international"><div style="text-align: center;">
+                         <a  href="<?php echo base_url(); ?>national"><div style="text-align: center;">
                        <button  type="button"  class="btn btn-info ">more info</button></div></a>
                     </div>
                     <br><br>
@@ -75,7 +75,7 @@
                         </div>
                         <h3 style="text-align: center; color: #1E90FF">Workshop</h3>
                         <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                           <a  href="<?php echo base_url(); ?>welcome/international"><div style="text-align: center;">
+                           <a  href="<?php echo base_url(); ?>workshopl"><div style="text-align: center;">
                        <button  type="button"  class="btn btn-info ">more info</button></div></a>
                     </div>
                     <br><br>
@@ -107,7 +107,7 @@
                         <h3 style="text-align: center; color: #1E90FF;">Paper</h3>
                         <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </p>
                         
-                         <a  href="<?php echo base_url(); ?>welcome/international"><div style="text-align: center;">
+                         <a  href="<?php echo base_url(); ?>paper"><div style="text-align: center;">
                        <button  type="button"  class="btn btn-info ">more info</button></div></a>
                     </div>
                     <br><br>
@@ -120,7 +120,7 @@
                         <h3 style="text-align: center; color: #1E90FF;">Journal</h3>
                         <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </p>
 
-                         <a  href="<?php echo base_url(); ?>welcome/international"><div style="text-align: center;">
+                         <a  href="<?php echo base_url(); ?>journal"><div style="text-align: center;">
                        <button  type="button"  class="btn btn-info ">more info</button></div></a>
                     </div>
                     <br><br>

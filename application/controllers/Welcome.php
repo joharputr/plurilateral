@@ -52,12 +52,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('./videos/footer');
 	}
 
-
-
-
-
-
-
 	 public function sendEmail()
  {
 	$this->load->helper(array('form', 'url'));

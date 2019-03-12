@@ -8,13 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap4/bootstrap.min.css">
 <link href="./assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="./assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="./assets/plugins/OwlCarousel2-2.2.1/animate.css">
+
 <link rel="stylesheet" type="text/css" href="./assets/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="./assets/styles/responsive.css">
 <meta name="viewport" >
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="<?php echo base_url() ?>assets/image/event/Logo-Event.png" rel="shortcut icon" type="image/x-icon" />
 
@@ -123,7 +121,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class=" navbar-nav">
+                    <ul class=" navbar-nav ">
                         <li class=" active">
                             <a class="nav-link active" href="<?php echo base_url(); ?>home" style="">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -165,6 +163,7 @@
                 .dropdown-item{
                 	margin-left: 0%;
                 }
+    
                 </style>
             </nav>	
 

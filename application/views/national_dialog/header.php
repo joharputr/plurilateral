@@ -136,26 +136,21 @@
       </div>
     </div> -->
   </div>
+  <br>
+  <br>
   <h2 style="text-align: center; margin-bottom: 20px; ">National Dialogue</h2>
-<ul class="nav nav-tabs" id="myTab" role="tablist " style=" font-size: 24px;" >
-
-  <li class="nav-item" style="margin-left: 38%; " >
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">2018</a>
+<ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist" style="left: 50%;">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: 25px;">2018</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">2019</a>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"  style="font-size: 25px;">2019</a>
   </li>
 
 </ul>
-<style type="text/css">
-  @media only screen and (max-width: 500px) {
-  li.nav-item{
-    margin-left: -40px;
-  }
-</style>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <br>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     <br>
     <h2 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633"> Judul</h2>
 
 
@@ -174,17 +169,15 @@
       <li>Tea</li>
       <li>Coca Cola</li>
     </ul>
-
   </div>
-
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <br>
-    <h2 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; "> Judul</h2>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+     <br>
+    <h2 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633"> Judul dd</h2>
 
 
     <!-- paper -->
     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> PAPER</h3>
-    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px; ">
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Coca Cola</li>
@@ -192,11 +185,17 @@
 
     <!-- journal -->
      <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> JOURNAL</h3>
-    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 20px;">
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Coca Cola</li>
     </ul>
   </div>
- 
+
 </div>
+
+<style type="text/css">
+  @media only screen and (max-width: 500px) {
+
+
+</style>
