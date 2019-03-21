@@ -7,20 +7,20 @@
   <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mt-2 py-auto pb-3">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="<?php echo base_url()?>event">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="<?php echo base_url()?>event/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Goals</a>
+                <a class="nav-link" href="<?php echo base_url()?>event/goal">Goals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Administrative Arrangements</a>
+                <a class="nav-link" href="<?php echo base_url()?>event/administrative-arrangement">Administrative Arrangements</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="<?php echo base_url()?>event/contact-us">Contact Us</a>
             </li>
-        </ul>
+           </ul>
     </div>
 </nav>

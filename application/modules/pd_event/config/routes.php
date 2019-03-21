@@ -1,10 +1,11 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-	$route['event'] = 'pd_event/event/index';
- $route['event/about'] = 'pd_event/event/about';
- $route['event/goal'] = 'pd_event/event/goal';
-$route['event/readm'] = 'pd_event/event/readm';
+	
+ $route['event/about'] = 'pd_event/event/index/about';
+ $route['event/goal'] = 'pd_event/event/index/goal';
+$route['event/administrative-arrangement'] = 'pd_event/event/index/readm';
+$route['event/contact-us'] = 'pd_event/event/index/contus';
 
 $route['event'] = 'pd_event/event/index';
 // $route['event/about'] = 'pd_event/event/index/about';

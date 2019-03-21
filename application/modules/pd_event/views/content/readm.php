@@ -26,11 +26,13 @@
     <!-- Custom Favicon -->
     <link href="<?php echo base_url() ?>assets/image/event/Logo-Event.png" rel="shortcut icon" type="image/x-icon" />
 
-    
-    <style type="text/css">
-
-    </style>
 </head>
+
+<style type="text/css">
+          .navbar-default .navbar-nav .nav-item a{
+            color: #6699FF;
+          }
+    </style>
 
 <body id="top">
     <div id="preloader"></div>
@@ -266,12 +268,14 @@ $(document).ready(function() {
             $(document).scroll(function() {
                 scroll_start = $(this).scrollTop();
                 if (scroll_start > offset.top) {
-                    $(".navbar-default").css('background-color', '#6699FF');
-                    $(".navbar-default").addClass('active-nav');
-                } else {
-                    $('.navbar-default').css('background-color', 'transparent');
-                    $(".navbar-default").removeClass('active-nav');
-                }
+                        $(".navbar-default").css('background-color', '#6699FF');
+                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
+                        $(".navbar-default").addClass('active-nav');
+                    } else {
+                        $('.navbar-default').css('background-color', 'transparent');
+                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
+                        $(".navbar-default").removeClass('active-nav');
+                    }
             });
         }
     }
