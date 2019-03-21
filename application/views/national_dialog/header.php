@@ -80,7 +80,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
+                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Inititive</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="<?php echo base_url(); ?>workshop">Workshop</a>
@@ -91,6 +91,7 @@
                                 Resources
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-top: 6px;">
+                               <li><a href="<?php echo base_url(); ?>resolution" class="dropdown-item" href="#">Resolution 16/18</a></li>
                                 <li><a href="<?php echo base_url(); ?>paper" class="dropdown-item" href="#">Paper</a></li>
                                 <li><a href="<?php echo base_url(); ?>journal" class="dropdown-item" href="#">Journal</a></li>
                                  <li><a href="<?php echo base_url(); ?>videos" class="dropdown-item" href="#">Videos</a></li>
@@ -138,7 +139,7 @@
   </div>
   <br>
   <br>
-  <h2 style="text-align: center; margin-bottom: 20px; ">National Dialogue</h2>
+  <h2 style="text-align: center; margin-bottom: 20px; ">National Initiative</h2>
 <ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist" style="left: 50%;">
   <li class="nav-item">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: 25px;">2018</a>
@@ -155,7 +156,7 @@
 
 
     <!-- paper -->
-    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> PAPER</h3>
+    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Statement</h3>
     <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px;">
       <li>Coffee</li>
       <li>Tea</li>
@@ -163,11 +164,19 @@
     </ul>
 
     <!-- journal -->
-     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> JOURNAL</h3>
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Pressroom</h3>
     <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Coca Cola</li>
+    </ul>
+
+    <!-- Gallery -->
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Gallery</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
+      <li>Photo</li>
+      <li>Videos</li>
+    
     </ul>
   </div>
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -176,7 +185,7 @@
 
 
     <!-- paper -->
-    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> PAPER</h3>
+    <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Statement</h3>
     <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange; margin-bottom: 10px;">
       <li>Coffee</li>
       <li>Tea</li>
@@ -184,11 +193,20 @@
     </ul>
 
     <!-- journal -->
-     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> JOURNAL</h3>
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Pressroom</h3>
     <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Coca Cola</li>
+    </ul>
+
+
+<!-- Gallery -->
+     <h3 style=" margin-left: 100px; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px;"> Gallery</h3>
+    <ul class="b" style="list-style-type: square; margin-left: 120px; color: orange;  margin-bottom: 20px;">
+      <li>Photo</li>
+      <li>Videos</li>
+    
     </ul>
   </div>
 

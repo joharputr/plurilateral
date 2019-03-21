@@ -80,7 +80,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
+                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Initiative</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="<?php echo base_url(); ?>workshop">Workshop</a>

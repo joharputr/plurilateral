@@ -138,9 +138,9 @@
   </div>
 
   <h2 style="text-align: center; margin-bottom: 20px; ">Paper</h2>
-<ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist" style="left: 50%;">
+<ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: 25px;">International</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: 25px; ">International</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"  style="font-size: 25px;">National</a>
@@ -195,6 +195,12 @@
 
 <style type="text/css">
   @media only screen and (max-width: 500px) {
+   ul.nav.nav-pills.mb-3.justify-content-center{
+    margin-left: -40px;
 
+   }
+   a#pills-home-tab.nav-link{
+    font-size: 302px;
+   }
 
 </style>

@@ -47,7 +47,7 @@
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./assets/images/event_2.jpg')">
         <div class="carousel-caption">
-        <h2 class="display-4">National Dialogue</h2>
+        <h2 class="display-4">National Initiative</h2>
         
           <a href="<?php echo base_url(); ?>pd_event/Event/index"><button type="button" class="btn btn-info btn-lg">Visit Page</button></a>
         </div>
@@ -131,7 +131,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
+                            <a href="<?php echo base_url(); ?>national" class="nav-link">National Initiative</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="<?php echo base_url(); ?>workshop">Workshop</a>
