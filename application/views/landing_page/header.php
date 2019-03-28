@@ -19,24 +19,16 @@
 </head>
 <body>
 
-<div class="super_container">
-
-
-	
-	<!-- Home -->
-
-	<div class="home" id="home">
-	
-	
+	<div class="" id="">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       
     </ol>
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" style="">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('./assets/images/contact.jpg')">
+      <div class="carousel-item active" style="background-image: url('./assets/images/jakarta.jpg')" >
         <div class="carousel-caption">
           <h2 class="display-4">Jakarta Plurilateral Dialogue: </h2>
           <h4>Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18 </h4>
@@ -45,7 +37,7 @@
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('./assets/images/event_2.jpg')">
+      <div class="carousel-item" style="background-image: url('./assets/images/nu.png')">
         <div class="carousel-caption">
         <h2 class="display-4">National Initiative</h2>
         
