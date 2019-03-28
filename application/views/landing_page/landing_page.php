@@ -3,7 +3,7 @@
 
 <!-- NEXT LAYOUT -->
 
-<div class="container" style="margin-top: 130px; ">
+<div class="container mt-5">
 	<div class="row">
 		<div class="col-md-12">
 			

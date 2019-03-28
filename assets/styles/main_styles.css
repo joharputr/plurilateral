@@ -544,29 +544,13 @@ section
 4.1 Header
 *********************************/
 
-.header
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #FFFFFF;
-	z-index: 100;
+.sticky-top {
+    transition: all 0.25s ease-in;
 }
-.header.scrolled
-{
-	position: fixed;
-	top: -127px;
-	left: 0;
-}
-.header_top
-{
-	width: 100%;
-	z-index: 2;
-}
+
+/* style for when sitcky is applied */
 .header_top_content
 {
-	height: 127px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;

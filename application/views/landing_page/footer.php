@@ -165,5 +165,3 @@ $(document).ready(function(){
 <script src="./assets/plugins/easing/easing.js"></script>
 <script src="./assets/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="./assets/js/custom.js"></script>
-</body>
-</html>

@@ -10,16 +10,11 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('/landing_page/header');
-		$this->load->view('/landing_page/landing_page');
-		$this->load->view('/landing_page/footer');
 	}
 	public function international()
 	{
-
 		$this->load->view('event');
-
 		$this->load->view('plurilateral_dialog');
-
 	}
 	public function national()
 	{
