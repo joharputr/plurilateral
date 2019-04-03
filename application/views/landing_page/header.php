@@ -135,19 +135,19 @@
         <div class="carousel-inner" role="listbox" style="">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active"
-                style="background-position: top right; background-image: url('./assets/images/jakarta.jpg')">
+                style="background-position: top right; background-image: url('./assets/images/toleranso.jpg')">
                 <div class="carousel-caption">
-                    <h2 class="display-4">Jakarta Plurilateral Dialogue: </h2>
-                    <h4>Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through
+                    <h2 class="display-4" style="color: black; font-weight: bold;">Jakarta Plurilateral Dialogue: </h2>
+                    <h4 style="color: black; font-weight: bold;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through
                         revitalizing the Resolution 16/18 </h4>
-                    <p class="lead" style="color: white;">Jakarta, April 2019 (TBC)</p>
+                    <p class="lead" style="color: black; font-weight: bold;">Jakarta, April 2019 (TBC)</p>
                     <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
                             href="<?php echo base_url(); ?>event">VISIT PAGE</a></div>
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item"
-                style="background-position: top right; background-image: url('./assets/images/nu.png')">
+                style="background-position: top right; background-image: url('./assets/images/loknas.jpg')">
                 <div class="carousel-caption">
                     <h2 class="display-4">National Initiative</h2>
 
@@ -158,13 +158,11 @@
             <!-- Slide Three - Set the background image for this slide in the line below -->
 
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
-            style="margin-top: 200px;">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
-            style="margin-top: 200px;">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
