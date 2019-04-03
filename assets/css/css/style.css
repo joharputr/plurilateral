@@ -578,7 +578,7 @@ table {
 }
 
 .background-blur {
-	/* background-image: radial-gradient( rgba(0, 131, 192, 0), rgba(1, 114, 52, 0.6));  */
+	background-image: radial-gradient( rgba(37, 170, 231, 0), rgba(55, 158, 243, 0.6)); 
 	height: 100%;
 }
 

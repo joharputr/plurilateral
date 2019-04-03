@@ -29,16 +29,16 @@
 </head>
 
 <style type="text/css">
-          .navbar-default .navbar-nav .nav-item a{
-            color: #6699FF;
-          }
-    </style>
+.navbar-default .navbar-nav .nav-item a {
+    color: #6699FF;
+}
+</style>
 
 <body id="top">
     <div id="preloader"></div>
     <?php $this->load->view("header.php")?>
 
-    
+
     <!-- ==========================
         ABOUT SECTION  
         =========================== -->
@@ -52,37 +52,63 @@
                         <span style="font-size:50px; display: table-cell;"><i class="fas fa-info-circle"></i></span>
                         <span class="pl-2 align-middle" style="display: table-cell;">Administrative Arrangements</span>
                     </h1><!-- Headline -->
-                    <img src="<?php echo base_url() ?>assets/image/event/about/sem.jpg" alt="" style="width: 100%;"></div>
-                    <article class="text-justify" style="padding: 15px;">
-                   <span style="color: black; word-spacing:1px; line-height:25px; font-size:15px;">
-                    <b><u>Objectives and Output:</u></b></h3>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of Indonesia is hosting a  two and a half days multi-stakeholders high-level meeting/seminar on mainstreaming tolerance and promoting healthy practices of freedom of expression. 
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This event will take stock of and elaborate the recent development as well as current challenges in addressing intolerance, negative stereotyping, stigmatization and discrimination on the basis of religion and/or belief, and be guided, among others, by the actions mandated in the 16/18 resolution, including on exchanging best practices, adopting appropriate measures, and creating collaborative networks to build mutual understanding, promoting dialogue and inspiring constructive action in various the fields.
-                    <br><br>
-                    <b><u>Outline of the Event</u></b>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The delegations will have the opportunity to participate in a two and a half days multi-stakeholders high level international meeting/seminar that focuses on building culture of tolerance and healthy practices of freedom of expression.
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The international high level meeting/seminar will pay more attention on the need for collaboration among states, civil societies and media, as a means to promote active tolerance in combating extremism, and make tolerance mainstream again as well as increase efforts to promote healthy practices of freedom of expression.
-                    <br>
-                    Several questions will be further elaborated and discussed, such as: 
-                    <ol class="text-justify" type="a" style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
-                        <li>
-                    How to create collaborative networks to build mutual understanding and promoting dialogue to promote tolerance; 
-                    </li><li>
-                    Exchanges on lesson learnt/best practices to create mechanism within governments to identify and address potential areas of tension between members of different religious communities, and assist with conflict prevention and mediation;
-                    </li><li>
-                    The importance of combating negative religious stereotyping and incitement to religious hatred, through education and awareness-building;
-                    </li><li>
-                    Efforts/best practices and strategy to promote healthy practices of freedom of expression; 
-                    </li><li>
-                    Best scenarios and approaches to invest in tolerant future generation.</span>
-                    </li>
-                    </article>
+                    <img src="<?php echo base_url() ?>assets/image/event/about/sem.jpg" alt="" style="width: 100%;">
                 </div>
+                <article class="text-justify" style="padding: 15px;">
+                    <span style="color: black; word-spacing:1px; line-height:25px; font-size:15px;">
+                        <b><u>Objectives and Output:</u></b></h3>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of Indonesia is
+                        hosting a two and a half days multi-stakeholders high-level meeting/seminar on mainstreaming
+                        tolerance and promoting healthy practices of freedom of expression.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This event will take stock of and
+                        elaborate the recent development as well as current challenges in addressing intolerance,
+                        negative stereotyping, stigmatization and discrimination on the basis of religion and/or belief,
+                        and be guided, among others, by the actions mandated in the 16/18 resolution, including on
+                        exchanging best practices, adopting appropriate measures, and creating collaborative networks to
+                        build mutual understanding, promoting dialogue and inspiring constructive action in various the
+                        fields.
+                        <br><br>
+                        <b><u>Outline of the Event</u></b>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The delegations will have the
+                        opportunity to participate in a two and a half days multi-stakeholders high level international
+                        meeting/seminar that focuses on building culture of tolerance and healthy practices of freedom
+                        of expression.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The international high level
+                        meeting/seminar will pay more attention on the need for collaboration among states, civil
+                        societies and media, as a means to promote active tolerance in combating extremism, and make
+                        tolerance mainstream again as well as increase efforts to promote healthy practices of freedom
+                        of expression.
+                        <br>
+                        Several questions will be further elaborated and discussed, such as:
+                        <ol class="text-justify" type="a"
+                            style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
+                            <li>
+                                How to create collaborative networks to build mutual understanding and promoting
+                                dialogue to promote tolerance;
+                            </li>
+                            <li>
+                                Exchanges on lesson learnt/best practices to create mechanism within governments to
+                                identify and address potential areas of tension between members of different religious
+                                communities, and assist with conflict prevention and mediation;
+                            </li>
+                            <li>
+                                The importance of combating negative religious stereotyping and incitement to religious
+                                hatred, through education and awareness-building;
+                            </li>
+                            <li>
+                                Efforts/best practices and strategy to promote healthy practices of freedom of
+                                expression;
+                            </li>
+                            <li>
+                                Best scenarios and approaches to invest in tolerant future generation.</span>
+                    </li>
+                </article>
             </div>
+        </div>
         </div>
     </section>
 
@@ -259,6 +285,8 @@ function isMobile() {
 }
 
 $(document).ready(function() {
+    $(".navbar-brand").addClass('text-dark');
+    $(".navbar-brand").removeClass('text-white');
     if (isMobile() == false) {
         $(".navbar-default").addClass('fixed-top');
         var scroll_start = 0;
@@ -268,14 +296,18 @@ $(document).ready(function() {
             $(document).scroll(function() {
                 scroll_start = $(this).scrollTop();
                 if (scroll_start > offset.top) {
-                        $(".navbar-default").css('background-color', '#6699FF');
-                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
-                        $(".navbar-default").addClass('active-nav');
-                    } else {
-                        $('.navbar-default').css('background-color', 'transparent');
-                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
-                        $(".navbar-default").removeClass('active-nav');
-                    }
+                    $(".navbar-default").css('background-color', '#6699FF');
+                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
+                    $(".navbar-brand").removeClass('text-dark');
+                    $(".navbar-brand").addClass('text-white');
+                    $(".navbar-default").addClass('active-nav');
+                } else {
+                    $('.navbar-default').css('background-color', 'transparent');
+                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
+                    $(".navbar-brand").addClass('text-dark');
+                    $(".navbar-brand").removeClass('text-white');
+                    $(".navbar-default").removeClass('active-nav');
+                }
             });
         }
     }

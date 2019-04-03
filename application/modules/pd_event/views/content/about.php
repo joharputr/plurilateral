@@ -29,16 +29,16 @@
 </head>
 
 <style type="text/css">
-          .navbar-default .navbar-nav .nav-item a{
-            color: #6699FF;
-          }
-    </style>
+.navbar-default .navbar-nav .nav-item a {
+    color: #6699FF;
+}
+</style>
 
 <body id="top">
     <div id="preloader"></div>
     <?php $this->load->view("header.php")?>
 
-    
+
     <!-- ==========================
         ABOUT SECTION  
         =========================== -->
@@ -52,49 +52,126 @@
                         <span style="font-size:50px; display: table-cell;"><i class="fas fa-info-circle"></i></span>
                         <span class="pl-2 align-middle" style="display: table-cell;">About Event</span>
                     </h1><!-- Headline -->
-                    <img src="<?php echo base_url() ?>assets/image/event/about/sem.jpg" alt="" style="width: 100%;"></div>
-                    <article class="text-justify" style="padding: 15px;">
-                        <br>
-                      <span style="color: black; word-spacing:1px; line-height:25px; font-size:15px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recent trends have brought back the growing threat of intolerance. The rise of populism and the use of political identity as means for personal gain are becoming common. The United Nations High Commissioner for Human Rights asserted in many occasions that hate is becoming mainstreamed globally.  This situation has led to the widespread and increasing number of ethnicity, political and religious based violence.
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The increasing openness of information flow through online and offline media also provides a new challenge. While the societies are able to gain access of information and knowledge easily and relatively effortless, these medias and platforms are also being utilized as tools for promoting hatred, propaganda and misinformation.
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a pluralistic nation, Indonesia is not immune to such challenges. Efforts have been taken in order to ensure that the unity of the nation as well as interreligious harmony amongst the diverse mosaic of Indonesian societies. At national level, Indonesia has been implementing policies and mechanisms to promote dialogues among various stakeholders to promote and manage tolerance as well as harmony among different religions and ethnic groups. Such programs are carried out in the forms of dialogues, policy formulations as well as implementation of various programs, including:
-                      <ol class="text-justify" type="a" style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
-                      <li>  The establishment of Forum of Inter-Religious Harmony (Forum Kerukunan Umat Beragama – FKUB), where the community, inter-religious leaders, as well as local government officials are actively involved. This forum is established in all 34 provinces in Indonesia.</li>
-                      <li>  Policy formulation of religious harmony, which is no longer top-down. Civil societies and religious leaders are involved in the process, including, for example, in the current formulation of the Bill on the Protection of Religious Groups.</li></ol>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moreover, at regional as well as international level, Indonesia has been actively initiating and participating in various dialogues and fora focusing on the issues of interfaith and interreligious harmony as well as fostering tolerance and mutual co-existence.
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other countries and related stakeholders have also been taking concrete actions and innovative policies to combat intolerance. Some examples on this are the implementation of sanctions with a focus on positive and non-coercive measures to create a climate for open dialogue and dissent, including on sensitive issues, and awareness raising campaign on the culture of tolerance to youth at the earliest stage. These positive realities should be amplified in order to mainstream the culture of tolerance again. 
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the international level, particularly within the United Nations platform, efforts have been taken to ensure that the issue of combating intolerance, negative stereotyping, stigmatization, incitement to hatred and violence, and similar horrendous acts received well-deserve attention. In 2011, the Organization of the Islamic Cooperation/OIC proposed a draft resolution at the United Nations Human Rights Council titled “Combating intolerance, negative stereotyping and stigmatization of, and discrimination, incitement to violence, and violence against persons based on religion or belief”. The resolution was adopted by consensus and became a landmark international agreement to combat intolerance on the basis of religion and/or belief.The resolution number 16/18 calls on States to take the following actions to foster a conducive domestic environment of religious tolerance, peace and respect, by: 
-                      <br> <ol class="text-justify" type="i" style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
-                      <li>Creating collaborative networks to build mutual understanding, promoting dialogue and inspiring constructive action towards harmonious societies in various fields;
-                      </li><li>
-                      Creating an appropriate mechanism within Governments to identify and address potential areas of tension between members of different religious communities, and assisting with conflict prevention and mediation;
-                      </li><li>
-                      Training of government officials in effective outreach strategies; 
-                      </li><li>
-                      Encouraging the efforts of leaders to discuss within their communities the causes of discrimination, and evolving strategies to counter these causes;
-                      </li><li>
-                      Speaking out against intolerance, including advocacy of religious hatred that constitutes incitement to discrimination, hostility or violence;
-                      </li><li>
-                      Adopting measures to criminalize incitement to imminent violence based on religion or belief;
-                      </li><li>
-                      Strategizing and harmonizing actions at the local, national, regional and international levels, by through, inter alia, education and awareness-building, to combat denigration and negative religious stereotyping of persons, as well as incitement to religious hatred;
-                      </li><li>
-                      Recognizing that the open, constructive and respectful debate of ideas, as well as interfaith and intercultural dialogue at the local, national and international levels, can play a positive role in combating religious hatred, incitement and violence; 
-                      </li></ol>
-                      This resolution and its follow up resolutions are adopted by consensus, which ends the divisive relation at the international efforts to promote tolerance and religious freedom. The UN Member States, including countries of the global north, embark and support the follow up mechanisms of this resolution, particularly in the Istanbul Process meeting. 
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, it is noted that the other mechanism, sponsored by the office of the UN High Commissioner for Human Rights, namely the Rabat Plan of Action, attracted more support from the civil societies as well as academia.
-                      Therefore, the concerted and unifying efforts of the UN Member States and other stakeholders to combat religious intolerance through the promotion of the interrelated and mutually reinforcing rights to freedom of expression, freedom of religion or belief, and non-discrimination, should be continuously strengthened.
-                      <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this juncture, Indonesia is of the view that there is an urgent need to advance collaborative and multi-stakeholders approaches to promote mutual understanding within and between groups, and empower influential people to speak out against intolerance and discrimination. Particular attention should be given to the empowerment of young people and future generation in mainstreaming tolerance and promoting healthy practices of freedom of expression. 
-                    </span>
-                    </article>
+                    <img src="<?php echo base_url() ?>assets/image/event/about/sem.jpg" alt="" style="width: 100%;">
                 </div>
+                <article class="text-justify" style="padding: 15px;">
+                    <br>
+                    <span style="color: black; word-spacing:1px; line-height:25px; font-size:15px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recent trends have brought back
+                        the growing threat of intolerance. The rise of populism and the use of political identity as
+                        means for personal gain are becoming common. The United Nations High Commissioner for Human
+                        Rights asserted in many occasions that hate is becoming mainstreamed globally. This situation
+                        has led to the widespread and increasing number of ethnicity, political and religious based
+                        violence.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The increasing openness of
+                        information flow through online and offline media also provides a new challenge. While the
+                        societies are able to gain access of information and knowledge easily and relatively effortless,
+                        these medias and platforms are also being utilized as tools for promoting hatred, propaganda and
+                        misinformation.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a pluralistic nation, Indonesia
+                        is not immune to such challenges. Efforts have been taken in order to ensure that the unity of
+                        the nation as well as interreligious harmony amongst the diverse mosaic of Indonesian societies.
+                        At national level, Indonesia has been implementing policies and mechanisms to promote dialogues
+                        among various stakeholders to promote and manage tolerance as well as harmony among different
+                        religions and ethnic groups. Such programs are carried out in the forms of dialogues, policy
+                        formulations as well as implementation of various programs, including:
+                        <ol class="text-justify" type="a"
+                            style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
+                            <li> The establishment of Forum of Inter-Religious Harmony (Forum Kerukunan Umat Beragama –
+                                FKUB), where the community, inter-religious leaders, as well as local government
+                                officials are actively involved. This forum is established in all 34 provinces in
+                                Indonesia.</li>
+                            <li> Policy formulation of religious harmony, which is no longer top-down. Civil societies
+                                and religious leaders are involved in the process, including, for example, in the
+                                current formulation of the Bill on the Protection of Religious Groups.</li>
+                        </ol>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moreover, at regional as well as
+                        international level, Indonesia has been actively initiating and participating in various
+                        dialogues and fora focusing on the issues of interfaith and interreligious harmony as well as
+                        fostering tolerance and mutual co-existence.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other countries and related
+                        stakeholders have also been taking concrete actions and innovative policies to combat
+                        intolerance. Some examples on this are the implementation of sanctions with a focus on positive
+                        and non-coercive measures to create a climate for open dialogue and dissent, including on
+                        sensitive issues, and awareness raising campaign on the culture of tolerance to youth at the
+                        earliest stage. These positive realities should be amplified in order to mainstream the culture
+                        of tolerance again.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the international level,
+                        particularly within the United Nations platform, efforts have been taken to ensure that the
+                        issue of combating intolerance, negative stereotyping, stigmatization, incitement to hatred and
+                        violence, and similar horrendous acts received well-deserve attention. In 2011, the Organization
+                        of the Islamic Cooperation/OIC proposed a draft resolution at the United Nations Human Rights
+                        Council titled “Combating intolerance, negative stereotyping and stigmatization of, and
+                        discrimination, incitement to violence, and violence against persons based on religion or
+                        belief”. The resolution was adopted by consensus and became a landmark international agreement
+                        to combat intolerance on the basis of religion and/or belief.The resolution number 16/18 calls
+                        on States to take the following actions to foster a conducive domestic environment of religious
+                        tolerance, peace and respect, by:
+                        <br>
+                        <ol class="text-justify" type="i"
+                            style="color: black; word-spacing:1px;line-height:25px; font-size:15px;">
+                            <li>Creating collaborative networks to build mutual understanding, promoting dialogue and
+                                inspiring constructive action towards harmonious societies in various fields;
+                            </li>
+                            <li>
+                                Creating an appropriate mechanism within Governments to identify and address potential
+                                areas of tension between members of different religious communities, and assisting with
+                                conflict prevention and mediation;
+                            </li>
+                            <li>
+                                Training of government officials in effective outreach strategies;
+                            </li>
+                            <li>
+                                Encouraging the efforts of leaders to discuss within their communities the causes of
+                                discrimination, and evolving strategies to counter these causes;
+                            </li>
+                            <li>
+                                Speaking out against intolerance, including advocacy of religious hatred that
+                                constitutes incitement to discrimination, hostility or violence;
+                            </li>
+                            <li>
+                                Adopting measures to criminalize incitement to imminent violence based on religion or
+                                belief;
+                            </li>
+                            <li>
+                                Strategizing and harmonizing actions at the local, national, regional and international
+                                levels, by through, inter alia, education and awareness-building, to combat denigration
+                                and negative religious stereotyping of persons, as well as incitement to religious
+                                hatred;
+                            </li>
+                            <li>
+                                Recognizing that the open, constructive and respectful debate of ideas, as well as
+                                interfaith and intercultural dialogue at the local, national and international levels,
+                                can play a positive role in combating religious hatred, incitement and violence;
+                            </li>
+                        </ol>
+                        This resolution and its follow up resolutions are adopted by consensus, which ends the divisive
+                        relation at the international efforts to promote tolerance and religious freedom. The UN Member
+                        States, including countries of the global north, embark and support the follow up mechanisms of
+                        this resolution, particularly in the Istanbul Process meeting.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, it is noted that the other
+                        mechanism, sponsored by the office of the UN High Commissioner for Human Rights, namely the
+                        Rabat Plan of Action, attracted more support from the civil societies as well as academia.
+                        Therefore, the concerted and unifying efforts of the UN Member States and other stakeholders to
+                        combat religious intolerance through the promotion of the interrelated and mutually reinforcing
+                        rights to freedom of expression, freedom of religion or belief, and non-discrimination, should
+                        be continuously strengthened.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this juncture, Indonesia is of
+                        the view that there is an urgent need to advance collaborative and multi-stakeholders approaches
+                        to promote mutual understanding within and between groups, and empower influential people to
+                        speak out against intolerance and discrimination. Particular attention should be given to the
+                        empowerment of young people and future generation in mainstreaming tolerance and promoting
+                        healthy practices of freedom of expression.
+                    </span>
+                </article>
             </div>
+        </div>
         </div>
     </section>
 
@@ -271,6 +348,8 @@ function isMobile() {
 }
 
 $(document).ready(function() {
+    $(".navbar-brand").addClass('text-dark');
+    $(".navbar-brand").removeClass('text-white');
     if (isMobile() == false) {
         $(".navbar-default").addClass('fixed-top');
         var scroll_start = 0;
@@ -280,14 +359,18 @@ $(document).ready(function() {
             $(document).scroll(function() {
                 scroll_start = $(this).scrollTop();
                 if (scroll_start > offset.top) {
-                        $(".navbar-default").css('background-color', '#6699FF');
-                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
-                        $(".navbar-default").addClass('active-nav');
-                    } else {
-                        $('.navbar-default').css('background-color', 'transparent');
-                        $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
-                        $(".navbar-default").removeClass('active-nav');
-                    }
+                    $(".navbar-default").css('background-color', '#6699FF');
+                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
+                    $(".navbar-brand").removeClass('text-dark');
+                    $(".navbar-brand").addClass('text-white');
+                    $(".navbar-default").addClass('active-nav');
+                } else {
+                    $('.navbar-default').css('background-color', 'transparent');
+                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
+                    $(".navbar-brand").addClass('text-dark');
+                    $(".navbar-brand").removeClass('text-white');
+                    $(".navbar-default").removeClass('active-nav');
+                }
             });
         }
     }
