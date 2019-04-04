@@ -33,7 +33,8 @@
     <header id="home">
         <section class="hero" id="hero"
             style="background: url('<?php echo base_url()?>assets/images/istiqlal.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-            <div class="container-fluid m-0 py-5 background-blur">
+         <!--    <div class="container-fluid m-0 py-5 background-blur"> -->
+                   <div class="container-fluid m-0 py-5">
                 <!-- Slider Button (don't edit!)-->
                 <div class="row">
                     <div class="col-md-12 text-right navicon">
@@ -41,11 +42,12 @@
                     </div>
                 </div>
                 <!-- HEADER HEADLINE -->
-                <div class="row startchange">
-                    <div class="col-lg-12 mx-auto inner">
-                        <h1 class="tulisan text-center mx-auto"><a href="" class="typewrite" data-period="2000"
+                <div class="row startchange ">
+                    <div class="col-lg-12 mx-auto inner" style="margin-top: 100px;">
+                       <!--  <h1 class="tulisan text-center mx-auto"><a href="" class="typewrite" data-period="2000"
                                 data-type='[ "Plurilateral dialogue", "Plurilateral dialogue", "Plurilateral dialogue", "Plurilateral dialogue" ]'>
-                                <span class="wrap"></span></a></h1>
+                                <span class="wrap"></span></a></h1> -->
+                                <h1 class="text-center" style="color: white;">Plurilateral  Dialogue</h1>
                         <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
                         <h2 class="text-center mx-auto" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
                             Tolerance and

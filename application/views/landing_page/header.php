@@ -134,8 +134,9 @@
         </ol>
         <div class="carousel-inner" role="listbox" style="">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active"
-                style="background-position: top right; background-image: url('./assets/images/istiqlal.jpg')">
+            <div class="carousel-item active" 
+             >
+                <img src="./assets/images/istiqlal.jpg" class="img1">
                 <div class="carousel-caption">
                     <h2 class="display-4" style="color: black; font-weight: bold;">Jakarta Plurilateral Dialogue: </h2>
                     <h4 style="color: black; font-weight: bold;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through
@@ -155,8 +156,58 @@
                             class="btn btn-info btn-lg">Visit Page</button></a>
                 </div>
             </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <style>
+  .carousel-inner { 
+     height: 100vh;
+     <! --  custom hight -->
+  }
 
+  .carousel-item  { 
+     height: 100%;
+  }
+
+  .img1 {
+
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed !important;
+     background-size: cover !important;   
+     background-position: center !important;
+    }
+
+     @media only screen and (max-width: 500px) {
+    .carousel-inner { 
+        width: 100%
+        height:100%;
+     <! --  custom hight -->
+  }
+
+  .carousel-item  { 
+     width: 100%;
+     height: 100%
+  }
+
+  .img1 {
+
+     height: 100%
+     width: 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed !important;
+     background-size: cover !important;   
+     background-position: center !important;
+    }
+                }
+</style>
+
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+    <style type="text/css">
+               @media only screen and (max-width: 500px) {
+                div.carousel-item {
+                    max-width: 100%
+                }
+                }
+        </style>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
