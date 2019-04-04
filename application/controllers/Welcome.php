@@ -9,7 +9,8 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('/landing_page/header');
+		$data['title'] = "Plurilateral Dialogue";
+		$this->load->view('landing_page', $data);
 	}
 	public function international()
 	{
@@ -18,8 +19,8 @@ class Welcome extends CI_Controller {
 	}
 	public function national()
 	{
-		$this->load->view('./national_dialog/header');
-		$this->load->view('./national_dialog/footer');
+		$this->load->view('national_init');
+		// $this->load->view('./national_dialog/footer');
 	}
 	public function paper()
 	{
