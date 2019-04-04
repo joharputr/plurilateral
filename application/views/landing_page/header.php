@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
                         <div>
                             <a href="#">
                                 <div class="logo_container d-flex flex-row align-items-start justify-content-start">
@@ -135,7 +135,7 @@
         <div class="carousel-inner" role="listbox" style="">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active"
-                style="background-position: top right; background-image: url('./assets/images/toleranso.jpg')">
+                style="background-position: top right; background-image: url('./assets/images/istiqlal.jpg')">
                 <div class="carousel-caption">
                     <h2 class="display-4" style="color: black; font-weight: bold;">Jakarta Plurilateral Dialogue: </h2>
                     <h4 style="color: black; font-weight: bold;">Mainstreaming Culture of Tolerance and Healthy Practices of Freedom of Expression through

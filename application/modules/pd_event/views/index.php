@@ -32,7 +32,7 @@
     <?php $this->load->view("header.php")?>
     <header id="home">
         <section class="hero" id="hero"
-            style="background: url('<?php echo base_url()?>assets/image/event/conference.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            style="background: url('<?php echo base_url()?>assets/images/istiqlal.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
             <div class="container-fluid m-0 py-5 background-blur">
                 <!-- Slider Button (don't edit!)-->
                 <div class="row">
