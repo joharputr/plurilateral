@@ -18,8 +18,12 @@
 									</div>
 								</a>	
 							</div>
-							<div class="footer_about_text">
-								<p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div class="footer_about_text" style="margin-top: 20px;">
+								<p>Ministry of Foreign Affairs, Republic of Indonesia <br>Jl. Pejambon No. 6<br> Jakarta Pusat, 10110 <br>Indonesia </p>
+
+								<p>Ministry of Religious Affairs, Republic of Indonesia<br> Jl. Lapangan Banteng Barat No. 3-4, Jakarta, 10710<br> Indonesia</p>
+
+								<p>Email Us : Plurilateral@plurilateral.org</p>
 							</div>
 						</div>
 					</div>
