@@ -1,6 +1,7 @@
 <nav class="navbar navbar-default navbar-expand-lg navbar-light" role="navigation">
     <a class="navbar-brand text-white" href="#"><img class="mr-2" src="<?php echo base_url()?>assets/image/event/Logo-Event.png"
-            alt="Logo"/>Plurilateral Dialogue</a>
+            alt="Logo"/><span style="
+               font-size: 26px; "><b>Plurilateral Dialogue</b></span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

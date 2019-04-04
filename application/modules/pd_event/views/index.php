@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-md-12 wp1 mt-4">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/about.jpg"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/b.jpg"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
                             <a href="<?php echo base_url()?>event/about">
@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-12 wp1 mt-4">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/goal2.png"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/a.jpg"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
                             <a href="<?php echo base_url()?>event/goal">
