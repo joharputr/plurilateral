@@ -117,7 +117,7 @@
                 <div class="row px-0">
                     <div class="col-md-12 wp1 mt-4">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/adm.png"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/c.jpg"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
                             <a href="<?php echo base_url()?>event/readm">
