@@ -29,9 +29,27 @@
 </style>
 
 <body>
-    <?php
+    <div class="home" id="home">
+        <style type="text/css">
+        @media only screen and (max-width: 500px) {
+            .home {
+                height: 20vh;
+                width: 100%;
+            }
+
+            ul.nav.nav-tabs {
+                margin-left: -130px;
+            }
+
+            div.tab-pane.fade.show {
+                margin-left: -50px;
+            }
+        }
+        </style>
+        <?php
 $this->load->view('/header_footer/header');
 ?>
+    </div>
     <div class="container">
         <h2 style="text-align: center; margin-bottom: 20px; ">National Initiative</h2>
         <ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist" style="left: 50%;">
@@ -55,7 +73,7 @@ $this->load->view('/header_footer/header');
                                     style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
                                     Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
                                     2018</h3>
-                                
+
                                 <hr class="my-0">
                                 <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
                                     STATEMENT</h5>
@@ -66,7 +84,7 @@ $this->load->view('/header_footer/header');
                                     <li class="list-group-item">New Zealand</li>
                                 </ul>
 
-                                
+
                                 <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
                                     PRESS RELEASE</h5>
                                 <ul class="list-group list-group-flush text-primary">
@@ -97,7 +115,7 @@ $this->load->view('/header_footer/header');
                                     style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
                                     Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
                                     2018</h3>
-                                
+
                                 <hr class="my-0">
                                 <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
                                     STATEMENT</h5>
@@ -108,7 +126,7 @@ $this->load->view('/header_footer/header');
                                     <li class="list-group-item">New Zealand</li>
                                 </ul>
 
-                                
+
                                 <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
                                     PRESS RELEASE</h5>
                                 <ul class="list-group list-group-flush text-primary">
@@ -139,7 +157,7 @@ $this->load->view('/header_footer/header');
                                     style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
                                     Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
                                     2018</h3>
-                                
+
                                 <hr class="my-0">
                                 <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
                                     STATEMENT</h5>
@@ -150,7 +168,7 @@ $this->load->view('/header_footer/header');
                                     <li class="list-group-item">New Zealand</li>
                                 </ul>
 
-                                
+
                                 <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
                                     PRESS RELEASE</h5>
                                 <ul class="list-group list-group-flush text-primary">
@@ -182,3 +200,4 @@ $this->load->view('/header_footer/header');
 $this->load->view('/header_footer/footer');
 ?>
 </body>
+</html>

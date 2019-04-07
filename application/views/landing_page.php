@@ -13,67 +13,67 @@
 
     <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main_styles2.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport">
-
-    <style type="text/css">
-    @media only screen and (max-width: 500px) {
-        h2.display-4 {
-            font-size: 30px;
-        }
-
-        h4 {
-            font-size: 15px;
-        }
-
-        div.carousel-caption {
-            margin-bottom: 60px;
-        }
-    }
-
-    .carousel-item {
-        height: 100vh;
-        width: 100%;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    </style>
-    <style type="text/css">
-    .card-img-wrap {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .card-img-wrap:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.3);
-        opacity: 0;
-        transition: opacity .5s;
-    }
-
-    .card-img-wrap img {
-        transition: transform .5s;
-        width: 100%;
-    }
-
-    .card-img-wrap:hover img {
-        transform: scale(1.1);
-    }
-
-    .card-img-wrap:hover:after {
-        opacity: 1;
-    }
-    </style>
 </head>
+<style type="text/css">
+@media only screen and (max-width: 500px) {
+    h2.display-4 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    div.carousel-caption {
+        margin-bottom: 60px;
+    }
+}
+
+.carousel-item {
+    height: 100vh;
+    width: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+</style>
+<style type="text/css">
+.card-img-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card-img-wrap img {
+    transition: transform .5s;
+    width: 100%;
+}
+
+.card-img-wrap:hover img {
+    transform: scale(1.1);
+}
+
+.card-img-wrap:hover:after {
+    opacity: 1;
+}
+</style>
 
 <body>
     <?php

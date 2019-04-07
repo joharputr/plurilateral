@@ -437,8 +437,9 @@ table {
 .nopadding {
 	padding:0;
 }
+
 .inner {
-	padding-top: 138px;
+	padding-top: 200px;
 }
 /* ==========================================================================Navigation========================================================================== */
 .menu-wrap a {
@@ -725,6 +726,23 @@ table {
 	color: rgb(14, 58, 145);	
 	letter-spacing: 4px;
 	font-weight: bold;
+}
+
+.border-font{
+	color: white; 
+	text-shadow:
+   -1px -1px 0 #bbb,  
+    1px -1px 0 #bbb,
+    -1px 1px 0 #bbb,
+     1px 1px 0 #bbb;
+}
+
+.border-font-orange{ 
+	text-shadow:
+   -1px -1px 0 rgb(253, 143, 0),  
+    1px -1px 0 rgb(253, 143, 0),
+    -1px 1px 0 rgb(253, 143, 0),
+     1px 1px 0 rgb(253, 143, 0);
 }
 
 h1.head-title{

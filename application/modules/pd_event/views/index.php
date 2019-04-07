@@ -34,47 +34,18 @@
         <section class="hero" id="hero"
             style="background: url('<?php echo base_url()?>assets/images/istiqlal.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
             <div class="container-fluid m-0 py-5 background-blur">
-                <div class="container-fluid m-0 py-5">
-                    <!-- Slider Button (don't edit!)-->
-                    <div class="row">
-                        <div class="col-md-12 text-right navicon">
-                            <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-                        </div>
-                    </div>
-                    <!-- HEADER HEADLINE -->
-                    <div class="row startchange ">
-                        <div class="col-lg-12 mx-auto inner py-auto mt-2">
-                            <h1 class="text-center" id="title-nav" style="color: white; text-shadow:
-   -1px -1px 0 #ccc,  
-    1px -1px 0 #ccc,
-    -1px 1px 0 #ccc,
-     1px 1px 0 #ccc;">Plurilateral Dialogue</h1>
-                            <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
-                            <h2 class="text-center mx-auto" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
-                                Tolerance and
-                                Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18
-                            </h2>
-                            <h2 class="text-center mx-auto" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
-                            <!-- <h3 class="animated fadeInUp delay-05s text-center"><span class="rotate">Event National,Event International,Resources</span></h3>Text Rotator -->
-                        </div>
-                    </div>
-                    <!-- <div class="row"> -->
-
+                <div class="w-100 startchange inner mx-auto">
+                    <h1 class="text-center border-font" id="title-nav">Plurilateral Dialogue</h1>
+                    <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
+                    <h2 class="text-center mx-auto border-font-orange" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
+                        Tolerance and
+                        Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18
+                    </h2>
+                    <h2 class="text-center mx-auto border-font" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
                 </div>
             </div>
         </section>
-        <!-- Header Image End -->
     </header>
-    <!-- ==========================
-        HEADER SECTION END  
-        =========================== -->
-
-
-
-
-    <!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
     <section class="intro text-center" id="about">
         <div class="blue-bg py-5">
             <h1 class="head-title text-white">About Jakarta Plurilateral Dialogue</h1>
@@ -170,10 +141,10 @@
                 </div>
             </div>
             <div class="w-100 mx-auto">
-                    <a href="speakers.php" class="button-white px-5 py-3">
-                        <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
-                                class="fas fa-arrow-circle-right"></i></span>
-                    </a>
+                <a href="speakers.php" class="button-white px-5 py-3">
+                    <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
+                            class="fas fa-arrow-circle-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -579,6 +550,7 @@ function isMobile() {
 $(document).ready(function() {
     if (isMobile() == false) {
         $(".navbar-default").addClass('fixed-top');
+
         var scroll_start = 0;
         var startchange = $('.startchange');
         var offset = startchange.offset();

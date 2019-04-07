@@ -36,7 +36,7 @@
     <!-- ==========================
         ABOUT SECTION  
         =========================== -->
-    <section class="intro text-center" id="about">
+    <section class="intro text-center section-padding" id="about">
         <div class="container pb-3">
             <!-- WELCOME TEXT -->
             <div class="row startchange">
