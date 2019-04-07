@@ -28,12 +28,6 @@
 
 </head>
 
-<style type="text/css">
-.navbar-default .navbar-nav .nav-item a {
-    color: #6699FF;
-}
-</style>
-
 <body id="top">
     <div id="preloader"></div>
     <?php $this->load->view("header.php")?>
@@ -43,7 +37,7 @@
             <!-- WELCOME TEXT -->
             <div class="row startchange">
                 <div class="col-md-12">
-                    <h1 class="head-title" style="font-size: 25px;">
+                    <h1 class="head-title mt-2" style="font-size: 25px;">
                         <span style="font-size:50px; display: table-cell;"><i class="fas fa-question-circle"></i></span>
                         <span class="pl-2 align-middle" style="display: table-cell;">Contact Us</span>
                     </h1><!-- Headline -->
@@ -144,8 +138,6 @@
 <script src="<?php echo base_url() ?>assets/js/classie.js"></script>
 <!-- Modernizr -->
 <script src="<?php echo base_url() ?>assets/js/modernizr.js"></script>
-<script src="<?php echo base_url() ?>assets/js/script.js"></script>
-
 
 <script src="<?php echo base_url() ?>assets/js/owl.carousel.min.js"></script>
 
@@ -153,45 +145,7 @@
 <!-- GOOGLE MAPS DATA -->
 
 <script src="<?php echo base_url() ?>assets/js/preloader.js"></script>
-<!-- TEXT ROTATOR SETTINGS -->
 <script type="text/javascript">
-$(".rotate").textrotator({
-    animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-    speed: 2000 // How many milliseconds until the next word show.
-});
-</script>
-
-
-<script>
-$('.owl-carousel').owlCarousel({
-    items: 4,
-    loop: true,
-    margin: 15,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    nav: true,
-    navText: ["<i class='fas fa-caret-left'></i>", "<i class='fas fa-caret-right'></i>"],
-    responsive: {
-        0: {
-            items: 1
-        },
-        479: {
-            items: 1
-        },
-        768: {
-            items: 2
-        },
-        979: {
-            items: 3
-        },
-        1200: {
-            items: 4
-        }
-    }
-});
-
 function isMobile() {
     // set the bool to be false initially
     var isMobile = false;
@@ -204,94 +158,9 @@ function isMobile() {
 }
 
 $(document).ready(function() {
-    $(".navbar-brand").addClass('text-dark');
-    $(".navbar-brand").removeClass('text-white');
+    $(".navbar-default").css('background-color', '#6699FF');
     if (isMobile() == false) {
         $(".navbar-default").addClass('fixed-top');
-        var scroll_start = 0;
-        var startchange = $('.startchange');
-        var offset = startchange.offset();
-        if (startchange.length) {
-            $(document).scroll(function() {
-                scroll_start = $(this).scrollTop();
-                if (scroll_start > offset.top) {
-                    $(".navbar-default").css('background-color', '#6699FF');
-                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#FFF');
-                    $(".navbar-brand").removeClass('text-dark');
-                    $(".navbar-brand").addClass('text-white');
-                    $(".navbar-default").addClass('active-nav');
-                } else {
-                    $('.navbar-default').css('background-color', 'transparent');
-                    $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
-                    $(".navbar-brand").addClass('text-dark');
-                    $(".navbar-brand").removeClass('text-white');
-                    $(".navbar-default").removeClass('active-nav');
-                }
-            });
-        }
     }
 });
-</script>
-
-<!-- Header animation -->
-<script>
-//made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) {
-        delta /= 2;
-    }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function() {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
 </script>

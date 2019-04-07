@@ -33,37 +33,32 @@
     <header id="home">
         <section class="hero" id="hero"
             style="background: url('<?php echo base_url()?>assets/images/istiqlal.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-               <div class="container-fluid m-0 py-5 background-blur">
-            <div class="container-fluid m-0 py-5">
-                <!-- Slider Button (don't edit!)-->
-                <div class="row">
-                    <div class="col-md-12 text-right navicon">
-                        <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+            <div class="container-fluid m-0 py-5 background-blur">
+                <div class="container-fluid m-0 py-5">
+                    <!-- Slider Button (don't edit!)-->
+                    <div class="row">
+                        <div class="col-md-12 text-right navicon">
+                            <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                        </div>
                     </div>
-                </div>
-                <!-- HEADER HEADLINE -->
-                <div class="row startchange ">
-                    <div class="col-lg-12 mx-auto inner" style="margin-top: 100px;">
-                        <h1 class="text-center" style="color: white; text-shadow:
+                    <!-- HEADER HEADLINE -->
+                    <div class="row startchange ">
+                        <div class="col-lg-12 mx-auto inner py-auto mt-2">
+                            <h1 class="text-center" id="title-nav" style="color: white; text-shadow:
    -1px -1px 0 #ccc,  
     1px -1px 0 #ccc,
     -1px 1px 0 #ccc,
      1px 1px 0 #ccc;">Plurilateral Dialogue</h1>
-                        <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
-                        <h2 class="text-center mx-auto" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
-                            Tolerance and
-                            Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18</h2>
-                        <h2 class="text-center mx-auto" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
-                        <!-- <h3 class="animated fadeInUp delay-05s text-center"><span class="rotate">Event National,Event International,Resources</span></h3>Text Rotator -->
+                            <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
+                            <h2 class="text-center mx-auto" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
+                                Tolerance and
+                                Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18
+                            </h2>
+                            <h2 class="text-center mx-auto" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
+                            <!-- <h3 class="animated fadeInUp delay-05s text-center"><span class="rotate">Event National,Event International,Resources</span></h3>Text Rotator -->
+                        </div>
                     </div>
-
-                    <!-- <a href="index.html#about" style="border-radius: 25px; margin: 50px 0 100px 0;"
-                        class="mx-auto text-center bg-white px-5 py-2">
-                        <span style="font-weight: 700;">REGISTER NOW </span>
-                    </a> -->
-
-                </div>
-                <!-- <div class="row"> -->
+                    <!-- <div class="row"> -->
 
                 </div>
             </div>
@@ -84,55 +79,49 @@
         <div class="blue-bg py-5">
             <h1 class="head-title text-white">About Jakarta Plurilateral Dialogue</h1>
         </div>
-        <div class="row">
-            <div class="col-md-4 pb-3 px-5">
-                <div class="row">
-                    <div class="col-md-12 wp1 mt-4">
+        <div class="row mx-0 ocean-blue-bg pb-2">
+            <div class="col-md-4 pb-3 px-5 mt-4">
+                <a href="<?php echo base_url()?>event/about">
+                    <div class="mx-auto">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/b.jpg"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/about.png"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
-                            <a href="<?php echo base_url()?>event/about">
-                                <figcaption class="figure-caption">ABOUT EVENT</figcaption>
-                            </a>
+                            <figcaption class="figure-caption">About Event</figcaption>
                         </figure>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md-4 pb-3 px-5">
-                <div class="row">
-                    <div class="col-md-12 wp1 mt-4">
+            <div class="col-md-4 pb-3 px-5 mt-4">
+                <a href="<?php echo base_url()?>event/goal">
+                    <div class="mx-auto">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/a.jpg"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/goal.png"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
-                            <a href="<?php echo base_url()?>event/goal">
-                                <figcaption class="figure-caption">GOALS</figcaption>
-                            </a>
+                            <figcaption class="figure-caption">GOALS</figcaption>
                         </figure>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md-4 pb-3 px-5">
-                <div class="row px-0">
-                    <div class="col-md-12 wp1 mt-4">
+            <div class="col-md-4 pb-3 px-5 mt-4">
+                <a href="<?php echo base_url()?>event/administrative-arrangement">
+                    <div class="mx-auto">
                         <figure class="figure">
-                            <img src="<?php echo base_url()?>assets/image/event/icon/c.jpg"
+                            <img src="<?php echo base_url()?>assets/image/event/icon/admin.png"
                                 class="figure-img img-fluid rounded"
                                 alt="A generic square placeholder image with rounded corners in a figure.">
-                            <a href="<?php echo base_url()?>event/readm">
-                                <figcaption class="figure-caption">ADMINSTRATIVE ARRANGEMENT</figcaption>
-                            </a>
+                            <figcaption class="figure-caption text-black">ADMINSTRATIVE ARRANGEMENT</figcaption>
                         </figure>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
     <!-- ==========================
         SERVICE SECTION 
         =========================== -->
-    <section class="features text-center pt-5" id="service">
+    <section class="features text-center" id="service">
         <div class="light-blue-bg pb-5">
             <div class="container">
                 <!-- Headline -->
@@ -180,13 +169,11 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="w-100 mx-auto">
                     <a href="speakers.php" class="button-white px-5 py-3">
                         <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
                                 class="fas fa-arrow-circle-right"></i></span>
                     </a>
-                </div>
             </div>
         </div>
     </section>
@@ -442,20 +429,11 @@
         </div>
         </div>
     </section>
-    <div class="bg-white py-5 text-center">
-        <!-- <h1 class="head-title text-white">Location</h1> -->
-    </div>
     <section class="text-center" id="blog">
-        <!-- <div class="container"> -->
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="row" id="location" style="margin">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.226152818535!2d106.79818189063141!3d-6.223251438825378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1495c27f11b%3A0x63e8f2ff2aa408d2!2sHotel+Fairmont+Jakarta!5e0!3m2!1sid!2sid!4v1550660138091"
-                        width="100%" height="500" frameborder="0"></iframe>
-                </div>
-            </div>
-            <!-- </div> -->
+        <div class="w-100" id="location" style="margin">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.226152818535!2d106.79818189063141!3d-6.223251438825378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1495c27f11b%3A0x63e8f2ff2aa408d2!2sHotel+Fairmont+Jakarta!5e0!3m2!1sid!2sid!4v1550660138091"
+                width="100%" height="500" frameborder="0"></iframe>
         </div>
     </section>
     <!-- To Top Button -->
@@ -601,7 +579,6 @@ function isMobile() {
 $(document).ready(function() {
     if (isMobile() == false) {
         $(".navbar-default").addClass('fixed-top');
-        $("#title-nav").css('font-size', '21px');
         var scroll_start = 0;
         var startchange = $('.startchange');
         var offset = startchange.offset();
@@ -621,72 +598,7 @@ $(document).ready(function() {
         }
     } else {
         $("#title-nav").css('font-size', '16px');
-        $(".navbar-brand").addClass('text-dark');
-        $(".navbar-brand").removeClass('text-white');
-        $(".navbar-default .navbar-nav .nav-item a").css('color', '#6699FF');
+        $(".navbar-default").css('background-color', '#6699FF');
     }
 });
-</script>
-
-<!-- Header animation -->
-<script>
-//made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap text-white">' + this.txt + '</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) {
-        delta /= 2;
-    }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function() {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
 </script>

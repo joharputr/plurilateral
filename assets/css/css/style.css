@@ -10,7 +10,8 @@ a {
   text-decoration: none;
   -ms-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
 }
 
 .popup {
@@ -383,6 +384,7 @@ table {
 .section-padding {
 	padding:90px 0 50px
 }
+
 .dark-bg {
 	background:#f3f5f8;
 }
@@ -397,6 +399,10 @@ table {
 
 .light-blue-bg{
 	background:rgb(237, 244, 255);
+}
+
+.ocean-blue-bg{
+	background-color: #8BD7F8;
 }
 
 .light-bg {
@@ -703,6 +709,7 @@ table {
 	/* Opera */
 }
 /* ==========================================================================Intro========================================================================== */
+
 .intro p {
 	margin:50px 0 0;
 }
@@ -715,7 +722,7 @@ table {
 .figure-caption{
 	font-size: 16px;
 	text-transform:uppercase;
-	color: #6699FF;	
+	color: rgb(14, 58, 145);	
 	letter-spacing: 4px;
 	font-weight: bold;
 }
@@ -1402,7 +1409,7 @@ a.button-white:hover{
 	}
 
 	.hero h1 {
-		font-size: 50px;
+		font-size: 40px;
 		line-height: 60px;
 		margin-top: 65px;
 	}
@@ -1517,11 +1524,11 @@ a.button-white:hover{
 	}
 
 	.navbar {
-		background-color: white;
+		background-color: #6699FF;
 	}
 
 	.navbar .navbar-nav .nav-item a{
-		color: rgb(4, 87, 170);
+		color: #FFF;
 	}
 }
 
