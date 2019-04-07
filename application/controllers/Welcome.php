@@ -20,12 +20,10 @@ class Welcome extends CI_Controller {
 	public function national()
 	{
 		$this->load->view('national_init');
-		// $this->load->view('./national_dialog/footer');
 	}
 	public function paper()
 	{
-		$this->load->view('./paper/header');
-		$this->load->view('./paper/footer');
+		$this->load->view('./paper');
 	}
 	public function journal()
 	{
@@ -33,13 +31,11 @@ class Welcome extends CI_Controller {
 	}
 	public function workshop()
 	{
-		$this->load->view('./workshop/header');
-		$this->load->view('./workshop/footer');
+		$this->load->view('./workshop');
 	}
 	public function steeringCommittee()
 	{
-		$this->load->view('./steeringCommittee/header');
-		$this->load->view('./steeringCommittee/footer');
+		$this->load->view('./steeringCom');
 	}
 	public function videos()
 	{
