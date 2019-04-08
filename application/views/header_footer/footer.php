@@ -1,5 +1,5 @@
 	<!-- FOOTER -->
-	<footer class="footer">
+	<footer class="footer" style="margin-top: 100px;">
 	    <div class="footer_content">
 	        <div class="container">
 	            <div class="row">
@@ -22,16 +22,17 @@
 	                            </a>
 	                        </div>
 	                        <div class="footer_about_text">
-	                            <p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id,
-	                                finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-	                                inceptos himenaeos.</p>
+	                          <p>Ministry of Foreign Affairs, Republic of Indonesia<br>Jl. Pejambon No. 6<br>Jakarta Pusat, 10110
+							<br>Indonesia</p>
+	                          <p>Ministry of Religious Affairs, Republic of Indonesia<br>Jl. Lapangan Banteng Barat No. 3-4, Jakarta, 10710<br>Indonesia</p>
+	                          <p>Email Us: plurilateral@plurilateral.org</p>
 	                        </div>
 	                    </div>
 	                </div>
 
 	                <!-- Footer Column -->
 	                <div class="col-sm-8 footer_col">
-	                    <h1 id="contact">Contact Us</h1>
+	                    <h1 id="contact" style="color: white;">Contact Us</h1>
 	                    <div class="footer_links">
 
 	                        <form role="form" action="<?php echo base_url()?>welcome/sendEmail" method="POST"

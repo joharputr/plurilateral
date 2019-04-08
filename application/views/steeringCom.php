@@ -45,136 +45,96 @@ $this->load->view('/header_footer/header');
 ?>
         </div>
 
-        <h2 style="text-align: center; margin-bottom: 20px; ">Paper</h2>
-        <ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true" style="font-size: 25px; ">International</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false" style="font-size: 25px;">National</a>
-            </li>
+        <h2 style="text-align: center; color: #a5a5a5" class="mt-4">Steering Commiittee</h2>
+        <div class="container">
+            <div class="row">
+                <!-- first advisor -->
+                <div class="col-md-12 text-center mt-4">
+                    <h3 class="text-center" style="color: black; ">First Advisor</h3>
+                    <img class="images mt-3" src="./assets/images/sc/retno.jpg">
+                    <h5 class="text mt-3">MENTERI LUAR NEGERI</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: large;">Retno L.P Marsudi</h5>
+                </div>
+                 <!-- second advisor -->
 
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active container-fluid" id="pills-home" role="tabpanel"
-                aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
+                 <div class="col-md-12 text-center mt-4">
+                    <h3 class="text-center" style="color: black; ">Second Advisor</h3>
+                    <img class="images mt-3" src="./assets/images/sc/lukman.jpg">
+                    <h5 class="text mt-3">MENTERI AGAMA</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Lukman Hakim Syaifuddin</h5>
+                </div>
+                    <!-- sTERRING COMMITE -->
+                 <div class="col-md-12 text-center" style="margin-top: 50px;">
+                    <h3 class="text-center" style="color: black; ">Steering Commiittee</h3>
+                    <img class="images mt-3" src="./assets/images/sc/fachir.jpg">
+                    <h5 class="text mt-3">WAKIL MENTERI AGAMA</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">AM Fachir</h5>
+                </div>
 
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
+                    <!-- ANGGOTA SC -->
+                  <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/cecep.jpg">
+                    <h5 class="text mt-3">DIREKTUR JENDERAL INFORMASI dan DIPLOMASI PUBLIK</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Cecep Herawan</h5>
+                </div>
+                    <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/Febrian.jpg">
+                    <h5 class="text mt-3">DIREKTUR JENDERAL MULTILATERAL</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Febrian Alphyanto Ruddyard</h5>
+                </div>
+                   <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/andri.jpg">
+                    <h5 class="text mt-3">DIREKTUR JENDERAL PROTOKOL DAN KONSULER</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Andri Hadi</h5>
+                </div>
+                   <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/siswo.jpg">
+                    <h5 class="text mt-3">KEPALA BADAN PENGKAJIAN dan PENGEMBANGAN KEBIJAKAN</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Siswo Pramono</h5>
+                </div>
 
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <!-- ANGGOTA SC -->
+                 <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/ansor.jpg">
+                    <h5 class="text mt-3">DIREKTUR JENDERAL AMERIKA dan EROPA</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Muhammad Anshor</h5>
+                </div>
+                    <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/.jpg">
+                    <h5 class="text mt-3">SECRETARY GENERAL MINISTRY OF RELIGIOUS AFFAIRS</h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;"></h5>
+                </div>
+                   <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/.jpg">
+                    <h5 class="text mt-3">HEAD OF RESEARCH, DEVELOPMENT, EDUCATION AND TRAINING
+                    MINISTRY OF RELIGIOUS AFFAIRS
+                    </h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;"></h5>
+                </div>
+                   <div class="col-md-3 text-center" style="margin-top: 50px;">
+                    <img class="images mt-3" src="./assets/images/sc/.jpg">
+                    <h5 class="text mt-3"></h5>
+                    <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Siti Ruhaini Dzuhayatin</h5>
                 </div>
             </div>
         </div>
+        <style type="text/css">
+            .images{
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+            }
+            body{
+                color: black;
+            }
+            .text{
+                font-family: 'Avenir LT Std 45 Book', Helvetica, sans-serif;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+            }
+        </style>
+    
     </div>
     <?php
 $this->load->view('/header_footer/footer');
