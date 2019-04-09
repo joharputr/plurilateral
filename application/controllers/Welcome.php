@@ -15,11 +15,19 @@ class Welcome extends CI_Controller {
 	public function international()
 	{
 		$this->load->view('event');
-		$this->load->view('plurilateral_dialog');
 	}
-	public function national()
+	public function national($pages = null)
 	{
-		$this->load->view('national_init');
+		if(!empty($pages)){
+			if($pages == "data")
+			{
+				$this->load->view('content_national/data');
+			} else if($pages == "preview"){
+				$this->load->view('content_national/preview');
+			}
+		}else{
+			$this->load->view('national_init');
+		}
 	}
 	public function paper()
 	{

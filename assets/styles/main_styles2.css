@@ -145,10 +145,16 @@ h6::selection
 {
 	
 }
+
+i{
+	margin-right: 1vh;
+}
 .form-control
 {
-	color: #db5246;
+	color: #636363;
+	font-family: 'Raleway', sans-serif;
 }
+
 section
 {
 	display: block;
@@ -252,6 +258,18 @@ section
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.title-head-one{
+	margin-bottom: -10px; 
+	font-family: 'Raleway', sans-serif; 
+	margin-bottom: 10px; 
+	color:#996633
+}
+
+.title-head-two{
+	color: #329fec;
+}
+
 .button
 {
 	width: 205px;

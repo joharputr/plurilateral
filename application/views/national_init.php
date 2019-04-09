@@ -50,154 +50,21 @@
 $this->load->view('/header_footer/header');
 ?>
     </div>
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 20px; ">National Initiative</h2>
-        <ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist" style="left: 50%;">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true" style="font-size: 25px;">2018</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false" style="font-size: 25px;">2019</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active container-fluid" id="pills-home" role="tabpanel"
-                aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-lg-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
-                                    2018</h3>
-
-                                <hr class="my-0">
-                                <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    STATEMENT</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">Australia</li>
-                                    <li class="list-group-item">Cambodia</li>
-                                    <li class="list-group-item">EU</li>
-                                    <li class="list-group-item">New Zealand</li>
-                                </ul>
-
-
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    PRESS RELEASE</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">BPMC 7 Ministerial Declaration-Final</li>
-                                    <li class="list-group-item">Strategy for Cooperation – Seventh Ministerial
-                                        Conference, 7 August 2018</li>
-                                    <li class="list-group-item">Ministerial Conference Co-Chairs’ Statement</li>
-                                    <li class="list-group-item">SOM Co-Chairs’ Statement</li>
-                                </ul>
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h5>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
-                                    2018</h3>
-
-                                <hr class="my-0">
-                                <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    STATEMENT</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">Australia</li>
-                                    <li class="list-group-item">Cambodia</li>
-                                    <li class="list-group-item">EU</li>
-                                    <li class="list-group-item">New Zealand</li>
-                                </ul>
-
-
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    PRESS RELEASE</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">BPMC 7 Ministerial Declaration-Final</li>
-                                    <li class="list-group-item">Strategy for Cooperation – Seventh Ministerial
-                                        Conference, 7 August 2018</li>
-                                    <li class="list-group-item">Ministerial Conference Co-Chairs’ Statement</li>
-                                    <li class="list-group-item">SOM Co-Chairs’ Statement</li>
-                                </ul>
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h5>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Senior Officials' Meeting and Ministerial Conference -Bali, Indonesia, 6-7 August
-                                    2018</h3>
-
-                                <hr class="my-0">
-                                <h5 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    STATEMENT</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">Australia</li>
-                                    <li class="list-group-item">Cambodia</li>
-                                    <li class="list-group-item">EU</li>
-                                    <li class="list-group-item">New Zealand</li>
-                                </ul>
-
-
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    PRESS RELEASE</h5>
-                                <ul class="list-group list-group-flush text-primary">
-                                    <li class="list-group-item">BPMC 7 Ministerial Declaration-Final</li>
-                                    <li class="list-group-item">Strategy for Cooperation – Seventh Ministerial
-                                        Conference, 7 August 2018</li>
-                                    <li class="list-group-item">Ministerial Conference Co-Chairs’ Statement</li>
-                                    <li class="list-group-item">SOM Co-Chairs’ Statement</li>
-                                </ul>
-                                <h5 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h5>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container" id="main-content">
     </div>
     <?php
 $this->load->view('/header_footer/footer');
 ?>
 </body>
 </html>
+
+<script>
+actControl('data');
+function actControl(x, y){
+    if(x=='data'){
+        $("#main-content").load("<?php echo base_url("national") ?>/data");
+    } else if (x=='preview'){
+        $("#main-content").load("<?php echo base_url("national") ?>/preview");
+    }
+}
+</script>
