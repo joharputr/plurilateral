@@ -6,12 +6,12 @@
                 <div class="col-md-12 mb-3">
                     <label>Year</label>
                     <select class="form-control custom-select">
+                        <option>All</option>
                         <option>2018</option>
-                        <option>2019</option>
                     </select>
                 </div>
                 <div class="col-md-12 mb-3">
-                    <label>Search By Name</label>
+                    <label>Search By Title</label>
                     <input type="text" class="form-control" placeholder="Search . . .">
                 </div>
                 <div class="col-md-6">

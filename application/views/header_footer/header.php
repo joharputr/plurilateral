@@ -14,7 +14,7 @@
                                         <div class="logo_content">
                                             <div id="logo_text" class="logo_text logo_text_not_ie"
                                                 style="padding:5px; ">Plurilateral Dialogue</div>
-                                            <div class="logo_sub">April, 2019 - Jakarta, Indonesia</div>
+                                            <div class="logo_sub">June, 2019 - Jakarta, Indonesia</div>
                                         </div>
                                     </div>
                                 </a>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md navbar-light bg-light" style="margin-left: 30px;">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo base_url(); ?>national" class="nav-link">National Dialogue</a>
+                        <a href="<?php echo base_url(); ?>national" class="nav-link">National Initiative</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="<?php echo base_url(); ?>workshop">Workshop</a>
@@ -68,17 +68,18 @@
                 </ul>
             </div>
             <style type="text/css">
-            li a {
-                margin-left: 40px;
+            .navbar li {
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .dropdown-menu {
-                margin-left: 40px;
+                margin-left: 20px;
 
             }
 
             .dropdown-item {
-                margin-left: 0%;
+                margin-left: 0px;
             }
             </style>
         </nav>

@@ -12,21 +12,24 @@ class Welcome extends CI_Controller {
 		$data['title'] = "Plurilateral Dialogue";
 		$this->load->view('landing_page');
 	}
+	
 	public function international()
 	{
 		$this->load->view('event');
 	}
+
 	public function national($pages = null)
 	{
+		$data['show'] = 'ada'; //execute query
 		if(!empty($pages)){
 			if($pages == "data")
 			{
-				$this->load->view('content_national/data');
+				$this->load->view('content_national/data', $data);
 			} else if($pages == "preview"){
-				$this->load->view('content_national/preview');
+				$this->load->view('content_national/preview', $data);
 			}
 		}else{
-			$this->load->view('national_init');
+			$this->load->view('national_init', $data);
 		}
 	}
 	public function paper()
@@ -37,9 +40,18 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('./journal');
 	}
-	public function workshop()
+	public function workshop($pages = null)
 	{
-		$this->load->view('./workshop');
+		if(!empty($pages)){
+			if($pages == "data")
+			{
+				$this->load->view('content_workshop/data');
+			} else if($pages == "preview"){
+				$this->load->view('content_workshop/preview');
+			}
+		}else{
+			$this->load->view('workshop');
+		}
 	}
 	public function steeringCommittee()
 	{

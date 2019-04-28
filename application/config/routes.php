@@ -8,10 +8,16 @@ $route['national/data'] = 'welcome/national/data';
 $route['national/preview'] = 'welcome/national/preview';
 $route['national/preview/(:any)'] = 'welcome/national/preview';
 
+$route['journal'] = 'welcome/journal';
+$route['article'] = 'welcome/article';
+
 $route['workshop'] = 'welcome/workshop';
+$route['workshop/data'] = 'welcome/workshop/data';
+$route['workshop/preview'] = 'welcome/workshop/preview';
+$route['workshop/preview/(:any)'] = 'welcome/workshop/preview';
+
 $route['steeringcommittee'] = 'welcome/steeringCommittee';
 $route['paper'] = 'welcome/paper';
-$route['journal'] = 'welcome/journal';
 $route['videos'] = 'welcome/videos';
 
 $route['default_controller'] = 'welcome';

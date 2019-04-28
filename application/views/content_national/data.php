@@ -7,7 +7,8 @@ $this->load->view('/content_national/filter');
 ?>
     </div>
     <div class="col-md-8">
-        <div class="card">
+        <?php if (!empty($show)){ ?>
+        <div class="card mb-3">
             <div class="card-body">
                 <a href="#" onclick="actControl('preview');">
                     <h3 class="title-head-one">Lokakarya Nasional : Pengarusutamaan Moderasi Beragama Sebagai
@@ -15,10 +16,15 @@ $this->load->view('/content_national/filter');
                 </a>
                 <h5 class="title-head-one text-success">Hotel Royal Kuningan Jakarta, 25-27 July 2018</h5>
                 <hr>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident velit adipisci mollitia,
-                    perferendis soluta reprehenderit possimus distinctio obcaecati recusandae numquam aperiam
-                    consectetur maiores deleniti dolor molestiae tenetur exercitationem expedita laborum!</p>
+                <p class="text-justify">Lokakarya Nasional dengan tema “Pengarusutamaan Toleransi Aktif dan Moderasi Agama sebagai Implementasi Resolusi Dewan HAM PBB 16/18” diselenggarakan di Jakarta, pada tanggal 25-27 Juli 2018. Lokakarya Nasional ini akan menyosialisasikan nilai-nilai Resolusi 16/18 kepada seluruh pemangku kepentingan, sekaligus juga menjaring masukan dari seluruh Forum Kerukunan Umat Beragama (FKUB) Propinsi tentang upaya penanganan intoleransi dan ujaran serta hasutan kebencian. Lokakarya Nasional merupakan kerjasama Kementerian Agama RI, Kementerian Luar Negeri RI, Kalijaga Institute for Justice dan didukung oleh Ford Foundation.</p>
             </div>
         </div>
+    <?php } else { ?>
+        <div>
+            <div class="card-body bg-success text-white text-center">
+            Oppss Data Not Found !
+        </div>
+        </div>
+    <?php }?>
     </div>
 </div>

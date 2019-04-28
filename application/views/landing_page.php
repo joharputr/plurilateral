@@ -19,66 +19,66 @@
     <meta name="viewport">
 </head>
 <style type="text/css">
-@media only screen and (max-width: 500px) {
-    h2.display-4 {
-        font-size: 30px;
+    @media only screen and (max-width: 500px) {
+        h2.display-4 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        div.carousel-caption {
+            margin-bottom: 60px;
+        }
     }
 
-    h4 {
-        font-size: 15px;
+    .carousel-item {
+        height: 100vh;
+        width: 100%;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
-
-    div.carousel-caption {
-        margin-bottom: 60px;
-    }
-}
-
-.carousel-item {
-    height: 100vh;
-    width: 100%;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 </style>
 <style type="text/css">
-.card-img-wrap {
-    overflow: hidden;
-    position: relative;
-}
+    .card-img-wrap {
+        overflow: hidden;
+        position: relative;
+    }
 
-.card-img-wrap:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
-    opacity: 0;
-    transition: opacity .5s;
-}
+    .card-img-wrap:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.3);
+        opacity: 0;
+        transition: opacity .5s;
+    }
 
-.card-img-wrap img {
-    transition: transform .5s;
-    width: 100%;
-}
+    .card-img-wrap img {
+        transition: transform .5s;
+        width: 100%;
+    }
 
-.card-img-wrap:hover img {
-    transform: scale(1.1);
-}
+    .card-img-wrap:hover img {
+        transform: scale(1.1);
+    }
 
-.card-img-wrap:hover:after {
-    opacity: 1;
-}
+    .card-img-wrap:hover:after {
+        opacity: 1;
+    }
 </style>
 
 <body>
     <?php
-$this->load->view('/header_footer/header');
-?>
+    $this->load->view('/header_footer/header');
+    ?>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -86,67 +86,64 @@ $this->load->view('/header_footer/header');
         </ol>
         <div class="carousel-inner" role="listbox" style="">
             <div class="carousel-item active"
-                style="background-position: top right; background-image: url('./assets/images/istiqlal.jpg')">
+            style="background-position: top right; background-image: url('./assets/images/istiqlal.jpg')">
+            <div class="background-blur-dark" style="width: 100%; height: 100%;">
                 <div class="carousel-caption">
-                    <h2 class="display-4" style="color: black; font-weight: bold;">Jakarta Plurilateral Dialogue: </h2>
-                    <h4 style="color: black; font-weight: bold;">Mainstreaming Culture of Tolerance and Healthy
+                    <h2 class="display-4" style="color: white; font-weight: bold;">Jakarta Plurilateral Dialogue </h2>
+                    <h4 style="color: white;">Mainstreaming Culture of Tolerance and Healthy
                         Practices of
                         Freedom of Expression through
-                        revitalizing the Resolution 16/18 </h4>
-                    <p class="lead" style="color: black; font-weight: bold;">Jakarta, April 2019 (TBC)</p>
+                    revitalizing the Resolution 16/18 </h4>
+                    <p class="lead" style="color: white;">Jakarta, April 2019 (TBC)</p>
                     <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
-                            href="<?php echo base_url(); ?>event">VISIT PAGE</a></div>
+                        href="<?php echo base_url(); ?>event">VISIT PAGE</a></div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item"
-                style="background-position: top right; background-image: url('./assets/images/loknas.jpg')">
+            style="background-position: top right; background-image: url('./assets/images/loknas.jpg')">
+            <div class="background-blur-dark" style="width: 100%; height: 100%;">
                 <div class="carousel-caption">
-                    <h2 class="display-4">National Initiative</h2>
+                    <h2 class="display-4" style="color: white; font-weight: bold;">National Initiative</h2>
 
-                    <a href="<?php echo base_url(); ?>pd_event/Event/index"><button type="button"
-                            class="btn btn-info btn-lg">Visit Page</button></a>
+                    <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
+                        href="<?php echo base_url(); ?>national">VISIT PAGE</a></div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
 
-                <!-- SPECIAL FEATURE -->
-                <section class="gray-bg section-padding" id="feature-page">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center" style="margin-bottom: 50px;">
-                                <div class="page-title">
-                                    <h2 style="color: #1E90FF">SPECIAL FEATURES</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates,
-                                        temporibus at, facere harum fugiat!</p>
+            <!-- SPECIAL FEATURE -->
+            <section class="gray-bg section-padding" id="feature-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 ">
+                            <div class="box">
+                                <div class="box-icon card-img-wrap" style="text-align: center;">
+                                    <img src="./assets/images/logo_event.png" alt=""
+                                    style="height: 130px; width: 130px;">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-4 ">
-                                <div class="box">
-                                    <div class="box-icon card-img-wrap" style="text-align: center;">
-                                        <img src="./assets/images/logo_event.png" alt=""
-                                            style="height: 130px; width: 130px;">
-                                    </div>
-                                    <h3 style="text-align: center; color: #1E90FF">International Event</h3>
-                                    <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
-                                        Practices
-                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                                    <a href="<?php echo base_url(); ?>event">
-                                        <div style="text-align: center;">
-                                            <button type="button" class="btn btn-info ">more info</button></div>
+                                <h3 style="text-align: center; color: #1E90FF">International Event</h3>
+                                <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
+                                    Practices
+                                of Freedom of Expression through revitalizing the Resolution 16/18 </p>
+                                <a href="<?php echo base_url(); ?>event">
+                                    <div style="text-align: center;">
+                                        <button type="button" class="btn btn-info ">more info</button></div>
                                     </a>
                                 </div>
                                 <br><br>
@@ -156,103 +153,101 @@ $this->load->view('/header_footer/header');
                                 <div class="box">
                                     <div class="box-icon card-img-wrap" style="text-align: center;">
                                         <img src="./assets/images/logo_event.png" alt=""
-                                            style="height: 130px; width: 130px;">
+                                        style="height: 130px; width: 130px;">
                                     </div>
                                     <h3 style="text-align: center; color: #1E90FF">National Event</h3>
                                     <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
                                         Practices
-                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
+                                    of Freedom of Expression through revitalizing the Resolution 16/18 </p>
                                     <a href="<?php echo base_url(); ?>national">
                                         <div style="text-align: center;">
                                             <button type="button" class="btn btn-info ">more info</button></div>
-                                    </a>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="box">
-                                    <div class="box-icon card-img-wrap" style="text-align: center;">
-                                        <img src="./assets/images/logo_event.png" alt=""
-                                            style="height: 130px; width: 130px;">
+                                        </a>
                                     </div>
-                                    <h3 style="text-align: center; color: #1E90FF">Workshop</h3>
-                                    <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
-                                        Practices
-                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                                    <a href="<?php echo base_url(); ?>workshopl">
-                                        <div style="text-align: center;">
-                                            <button type="button" class="btn btn-info ">more info</button></div>
-                                    </a>
+                                    <br><br>
                                 </div>
-                                <br><br>
-                            </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="box">
+                                        <div class="box-icon card-img-wrap" style="text-align: center;">
+                                            <img src="./assets/images/logo_event.png" alt=""
+                                            style="height: 130px; width: 130px;">
+                                        </div>
+                                        <h3 style="text-align: center; color: #1E90FF">Workshop</h3>
+                                        <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
+                                            Practices
+                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
+                                        <a href="<?php echo base_url(); ?>workshopl">
+                                            <div style="text-align: center;">
+                                                <button type="button" class="btn btn-info ">more info</button></div>
+                                            </a>
+                                        </div>
+                                        <br><br>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- RESOURCES -->
+                        <section class="gray-bg section-padding" id="feature-page">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center" style="margin-bottom: 50px;">
+                                        <div class="page-title">
+                                            <h2 style="color: #1E90FF;">Resources</h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="box">
+                                            <div class="box-icon card-img-wrap " style="text-align: center;">
+                                                <img src="./assets/images/logo_event.png" alt=""
+                                                style="height: 130px; width: 130px;">
+                                            </div>
+                                            <h3 style="text-align: center; color: #1E90FF;">Paper</h3>
+                                            <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
+                                                Practices
+                                            of Freedom of Expression through revitalizing the Resolution 16/18 </p>
+
+                                            <a href="<?php echo base_url(); ?>paper">
+                                                <div style="text-align: center;">
+                                                    <button type="button" class="btn btn-info ">more info</button></div>
+                                                </a>
+                                            </div>
+                                            <br><br>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="box">
+                                                <div class="box-icon card-img-wrap" style="text-align: center;">
+                                                    <img src="./assets/images/logo_event.png" alt=""
+                                                    style="height: 130px; width: 130px;">
+                                                </div>
+                                                <h3 style="text-align: center; color: #1E90FF;">Journal</h3>
+                                                <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
+                                                    Practices
+                                                of Freedom of Expression through revitalizing the Resolution 16/18 </p>
+
+                                                <a href="<?php echo base_url(); ?>journal">
+                                                    <div style="text-align: center;">
+                                                        <button type="button" class="btn btn-info ">more info</button></div>
+                                                    </a>
+                                                </div>
+                                                <br><br>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
                         </div>
+
                     </div>
-                </section>
-
-
-                <!-- RESOURCES -->
-                <section class="gray-bg section-padding" id="feature-page" style="margin-top: 50px;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center" style="margin-bottom: 50px;">
-                                <div class="page-title">
-                                    <h2 style="color: #1E90FF;">Resources</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates,
-                                        temporibus at, facere harum fugiat!</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="box">
-                                    <div class="box-icon card-img-wrap " style="text-align: center;">
-                                        <img src="./assets/images/logo_event.png" alt=""
-                                            style="height: 130px; width: 130px;">
-                                    </div>
-                                    <h3 style="text-align: center; color: #1E90FF;">Paper</h3>
-                                    <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
-                                        Practices
-                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-
-                                    <a href="<?php echo base_url(); ?>paper">
-                                        <div style="text-align: center;">
-                                            <button type="button" class="btn btn-info ">more info</button></div>
-                                    </a>
-                                </div>
-                                <br><br>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="box">
-                                    <div class="box-icon card-img-wrap" style="text-align: center;">
-                                        <img src="./assets/images/logo_event.png" alt=""
-                                            style="height: 130px; width: 130px;">
-                                    </div>
-                                    <h3 style="text-align: center; color: #1E90FF;">Journal</h3>
-                                    <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
-                                        Practices
-                                        of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-
-                                    <a href="<?php echo base_url(); ?>journal">
-                                        <div style="text-align: center;">
-                                            <button type="button" class="btn btn-info ">more info</button></div>
-                                    </a>
-                                </div>
-                                <br><br>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-
-    </div>
-    <?php
-$this->load->view('/header_footer/footer');
-?>
-</body>
+                    <?php
+                    $this->load->view('/header_footer/footer');
+                    ?>
+                </body>

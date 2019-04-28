@@ -35,13 +35,13 @@
             style="background: url('<?php echo base_url()?>assets/images/istiqlal.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
             <div class="container-fluid m-0 py-5 background-blur">
                 <div class="w-100 startchange inner mx-auto">
-                    <h1 class="text-center border-font" id="title-nav">Plurilateral Dialogue</h1>
+                    <h1 class="text-center text-white" id="title-nav">Plurilateral Dialogue</h1>
                     <hr style="border: 1px solid white; border-radius: 1px; width: 90%;">
-                    <h2 class="text-center mx-auto border-font-orange" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
+                    <h2 class="text-center mx-auto" style="width: 80%; color:#ffe600;">Mainstreaming Culture of
                         Tolerance and
                         Healthy Practices of Freedom of Expression through revitalizing the Resolution 16/18
                     </h2>
-                    <h2 class="text-center mx-auto border-font" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
+                    <h2 class="text-center mx-auto" style="width: 80%; color:#ffffff;">Jakarta, April 2019 </h2>
                 </div>
             </div>
         </section>

@@ -1,3 +1,8 @@
+    <link rel="stylesheet" type="text/css"
+        href="<?php echo base_url() ?>assets/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="<?php echo base_url() ?>assets/plugins/owlcarousel/owl.theme.default.min.css">
+
 <div class="row mb-3">
     <div class="col-md-2">
         <button type="button" class="btn btn-secondary w-100" onclick="actControl('data');"><i
@@ -12,142 +17,269 @@
         <h5 class="title-head-one text-success">Hotel Royal Kuningan Jakarta, 25-27 July 2018</h5>
         <hr>
         <div class="content-event mb-4">
-            <p class="desc-event">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident velit adipisci
-                mollitia,
-                perferendis soluta reprehenderit possimus distinctio obcaecati recusandae numquam aperiam
-                consectetur maiores deleniti dolor molestiae tenetur exercitationem expedita laborum!</p>
+            <p class="desc-event text-justify">Lokakarya Nasional dengan tema “Pengarusutamaan Toleransi Aktif dan Moderasi Agama sebagai Implementasi Resolusi Dewan HAM PBB 16/18” diselenggarakan di Jakarta, pada tanggal 25-27 Juli 2018. Lokakarya Nasional ini akan menyosialisasikan nilai-nilai Resolusi 16/18 kepada seluruh pemangku kepentingan, sekaligus juga menjaring masukan dari seluruh Forum Kerukunan Umat Beragama (FKUB) Propinsi tentang upaya penanganan intoleransi dan ujaran serta hasutan kebencian. Lokakarya Nasional merupakan kerjasama Kementerian Agama RI, Kementerian Luar Negeri RI, Kalijaga Institute for Justice dan didukung oleh Ford Foundation.</p>
             
         </div>
-        <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
-                                        data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg"
-                            alt="video" data-toggle="modal" data-target="#modal1"></a>
-                </div>
- 
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                    <!--Modal: Name-->
-                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-
-                            <!--Content-->
-                            <div class="modal-content">
-
-                                <!--Body-->
-                                <div class="modal-body mb-0 p-0">
-
-                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/wTcNtgA6gHs" allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
-
-                                <!--Footer-->
-                                <div class="modal-footer justify-content-center">
-                                    <span class="mr-4">Spread the word!</span>
-                                    <a type="button" class="btn-floating btn-sm btn-fb"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <!--Twitter-->
-                                    <a type="button" class="btn-floating btn-sm btn-tw"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <!--Google +-->
-                                    <a type="button" class="btn-floating btn-sm btn-gplus"><i
-                                            class="fab fa-google-plus-g"></i></a>
-                                    <!--Linkedin-->
-                                    <a type="button" class="btn-floating btn-sm btn-ins"><i
-                                            class="fab fa-linkedin-in"></i></a>
-
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
-                                        data-dismiss="modal">Close</button>
-
-                                </div>
-
-                            </div>
-                            <!--/.Content-->
-
-                        </div>
-                    </div>
-                    <!--Modal: Name-->
-
-                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg"
-                            alt="video" data-toggle="modal" data-target="#modal6"></a>
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                    <!--Modal: Name-->
-                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-
-                            <!--Content-->
-                            <div class="modal-content">
-
-                                <!--Body-->
-                                <div class="modal-body mb-0 p-0">
-
-                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
-
-                                <!--Footer-->
-                                <div class="modal-footer justify-content-center">
-                                    <span class="mr-4">Spread the word!</span>
-                                    <a type="button" class="btn-floating btn-sm btn-fb"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <!--Twitter-->
-                                    <a type="button" class="btn-floating btn-sm btn-tw"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <!--Google +-->
-                                    <a type="button" class="btn-floating btn-sm btn-gplus"><i
-                                            class="fab fa-google-plus-g"></i></a>
-                                    <!--Linkedin-->
-                                    <a type="button" class="btn-floating btn-sm btn-ins"><i
-                                            class="fab fa-linkedin-in"></i></a>
-
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
-                                        data-dismiss="modal">Close</button>
-
-                                </div>
-
-                            </div>
-                            <!--/.Content-->
-
-                        </div>
-                    </div>
-                    <!--Modal: Name-->
-
-                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg"
-                            alt="video" data-toggle="modal" data-target="#modal4"></a>
-
-                </div>
-                <!-- Grid column -->
-
+        <div id="owl-example" class="owl-carousel owl-theme">
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/1.jpg" alt="photo" data-toggle="modal" data-target="#modal1"></a>
+            </div>       
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/2.jpg" alt="photo" data-toggle="modal" data-target="#modal2"></a>
             </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/3.jpg" alt="photo" data-toggle="modal" data-target="#modal3"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/4.jpg" alt="photo" data-toggle="modal" data-target="#modal4"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/5.jpg" alt="photo" data-toggle="modal" data-target="#modal5"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/6.jpg" alt="photo" data-toggle="modal" data-target="#modal6"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/7.jpg" alt="photo" data-toggle="modal" data-target="#modal7"></a>
+            </div>       
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/8.jpg" alt="photo" data-toggle="modal" data-target="#modal8"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/9.jpg" alt="photo" data-toggle="modal" data-target="#modal9"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/10.jpg" alt="photo" data-toggle="modal" data-target="#modal10"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/11.jpg" alt="photo" data-toggle="modal" data-target="#modal11"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/12.jpg" alt="photo" data-toggle="modal" data-target="#modal12"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/13.jpg" alt="photo" data-toggle="modal" data-target="#modal13"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/14.jpg" alt="photo" data-toggle="modal" data-target="#modal14"></a>
+            </div>
+            <div>
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/15.jpg" alt="photo" data-toggle="modal" data-target="#modal15"></a>
+            </div>
+        </div>
     </div>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/1.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/2.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/3.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/4.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/5.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/6.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/7.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/8.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/10.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/11.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/12.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/13.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/14.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body mb-0 p-0">
+                <a><img class="img-fluid z-depth-1" src="./assets/image/national/loknas/gallery/15.jpg"></a>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="<?php echo base_url() ?>assets/js/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ["<i class='fa fa-caret-left'></i>", "<i class='fa fa-caret-right'></i>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        479: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        979: {
+            items: 3
+        },
+        1200: {
+            items: 4
+        }
+    }
+});

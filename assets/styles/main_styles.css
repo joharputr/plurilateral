@@ -156,6 +156,7 @@ section
 	position: relative;
 	box-sizing: border-box;
 }
+
 .clear
 {
 	clear: both;
@@ -1343,4 +1344,8 @@ section
 
 .dropdown-menu .show > .dropdown-toggle::after{
     transform: rotate(-90deg);
+}
+
+.background-blur-dark{
+	background-color: rgba(0,0,0, 0.5);
 }

@@ -16,7 +16,7 @@
 	                                    <div class="logo_content">
 	                                        <div id="logo_text" class="logo_text logo_text_not_ie" style="padding: 3px;">
 	                                            Plurilateral Dialogue</div>
-	                                        <div class="logo_sub">August 25, 2018 - Miami Marina Bay</div>
+	                                        <div class="logo_sub">June, 2019 - Jakarta, Indonesia</div>
 	                                    </div>
 	                                </div>
 	                            </a>
@@ -88,21 +88,26 @@
 	                        <div class="footer_social">
 	                            <div class="footer_social_title">Follow us on Social Media</div>
 	                            <ul class="footer_social_list">
-	                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-	                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
+	                                <li>
+	                                	<a href="#">
+	                                		<i class="fa fa-instagram" aria-hidden="true"></i>
+	                                	</a>
+	                                </li>
+	                                <li>
+	                                	<a href="#">
+	                                		<i class="fa fa-twitter" aria-hidden="true"></i>
+	                                	</a>
+	                                </li>
 	                            </ul>
 	                        </div>
 	                        <div class="footer_extra_right ml-lg-auto text-lg-right">
 	                            <div class="footer_extra_links">
-	                                <ul>
-	                                    <a style="color: white; font-size: 12px;" href="#contact">Contact us</a>
-	                                    <li>
-	                                        <a href="#" class="btn btn-info">
-	                                            <span class="glyphicon glyphicon-chevron-up"
-	                                                style="height: 10px; width: 10px; color: white;">home</span>
-	                                        </a></li>
-
+	                            	<ul>
+	                            		<li>
+	                                        <a href="#" class="btn btn-info rounded-circle text-white">
+	                                            <i class="fa fa-chevron-up m-0"></i>
+	                                        </a>
+	                                    </li>
 	                                </ul>
 	                            </div>
 	                            <div class="copyright">
