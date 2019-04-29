@@ -14,7 +14,7 @@
                                         <div class="logo_content">
                                             <div id="logo_text" class="logo_text logo_text_not_ie"
                                                 style="padding:5px; ">Plurilateral Dialogue</div>
-                                            <div class="logo_sub">June, 2019 - Jakarta, Indonesia</div>
+                                            <div class="logo_sub">Jakarta, Indonesia</div>
                                         </div>
                                     </div>
                                 </a>
@@ -59,7 +59,6 @@
                             <li><a href="<?php echo base_url(); ?>paper" class="dropdown-item" href="#">Paper</a></li>
                             <li><a href="<?php echo base_url(); ?>journal" class="dropdown-item" href="#">Journal</a>
                             </li>
-                            <li><a href="<?php echo base_url(); ?>videos" class="dropdown-item" href="#">Videos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

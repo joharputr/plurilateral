@@ -16,15 +16,21 @@
     <meta name="viewport">
 
 </head>
+<style type="text/css">
+    @media only screen and (max-width: 500px) {
+        h2.display-4 {
+            font-size: 30px;
+        }
 
+        h4 {
+            font-size: 15px;
+        }
+    }
+</style>
 <body>
 
-    <div class="super_container">
-
-        <!-- Home -->
-
-        <div class="home" id="home">
-            <style type="text/css">
+    <div class="home" id="home">
+        <style type="text/css">
             @media only screen and (max-width: 500px) {
                 .home {
                     height: 20vh;
@@ -39,145 +45,61 @@
                     margin-left: -50px;
                 }
             }
-            </style>
-            <?php
-$this->load->view('/header_footer/header');
-?>
-        </div>
-
-        <h2 style="text-align: center; margin-bottom: 20px; ">Paper</h2>
-        <ul class="nav nav-pills mb-3 nav justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true" style="font-size: 25px; ">International</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false" style="font-size: 25px;">National</a>
-            </li>
-
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active container-fluid" id="pills-home" role="tabpanel"
-                aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        </style>
+        <?php
+        $this->load->view('/header_footer/header');
+        ?>
+    </div>
+    <div class="container" id="main-content">
+        <h2 id="title-tab">Paper</h2>
+        <hr>
+        <form>
+            <div class="form-row">
+                <h4 class="title-head-two mb-3 col-md-12"><i class="fa fa-search"></i>Filter Data</h4>
+                    <div class="col-md-4 mb-3">
+                        <label>Type</label>
+                        <select class="form-control custom-select">
+                            <option>All</option>
+                            <option>National</option>
+                            <option>International</option>
+                        </select>
                     </div>
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Year</label>
+                        <select class="form-control custom-select">
+                            <option>All</option>
+                            <option>2018</option>
+                        </select>
                     </div>
-                    <div class="col-md-4 p-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2
-                                    style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
-                                    Seminar ABC</h2>
-                                <!-- paper -->
-                                <h3 class="mt-2 text-center" style=" font-family: 'Raleway', sans-serif;">
-                                    PAPER</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-
-                                <!-- journal -->
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    JOURNAL</h3>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                                <h3 class="mt-2 text-center" style="font-family: 'Raleway', sans-serif;">
-                                    GALLERY</h3>
-                                <hr class="mt-0">
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-primary w-100">Photos</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="btn btn-secondary w-100">Videos</a>
-                                    </div>
-                                </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Search</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search by Title or Name of Event . . .">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary rounded-0" type="submit"><i class="fa fa-search"></i></button>
                             </div>
-                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
+                        Lokakarya Nasional</h3>
+                        <h4 class="text-success text-center">2018</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="<?php echo base_url() ?>assets/memahami_pentingnya_resolusi_16.pdf">Memahami Pentingnya Resolusi 16</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <?php
-$this->load->view('/header_footer/footer');
-?>
+    $this->load->view('/header_footer/footer');
+    ?>
 </body>
 </html>

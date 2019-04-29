@@ -20,10 +20,10 @@ $this->load->view('/content_national/filter');
             </div>
         </div>
     <?php } else { ?>
-        <div>
-            <div class="card-body bg-success text-white text-center">
-            Oppss Data Not Found !
-        </div>
+        <div class="card mb-3">
+            <div class="card-body text-center bg-danger text-white">
+            <span>Oppss Data Not Found <i class="fa fa-exclamation-circle"></i></span>
+            </div>
         </div>
     <?php }?>
     </div>

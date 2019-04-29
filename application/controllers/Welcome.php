@@ -42,15 +42,16 @@ class Welcome extends CI_Controller {
 	}
 	public function workshop($pages = null)
 	{
+		$data['show'] = null; //execute query
 		if(!empty($pages)){
 			if($pages == "data")
 			{
-				$this->load->view('content_workshop/data');
+				$this->load->view('content_workshop/data', $data);
 			} else if($pages == "preview"){
-				$this->load->view('content_workshop/preview');
+				$this->load->view('content_workshop/preview', $data);
 			}
 		}else{
-			$this->load->view('workshop');
+			$this->load->view('workshop', $data);
 		}
 	}
 	public function steeringCommittee()

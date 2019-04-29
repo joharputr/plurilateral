@@ -106,7 +106,6 @@
                 <div class="row services">
                     <!-- Service Box 1 -->
                     <div class="col-lg-4 wp2 item">
-                        <a href="#">
                             <div class="mx-auto">
                                 <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
                                     class="img-thumbnail speakers blue-bg mb-2 p-2">
@@ -117,7 +116,6 @@
                     </div>
                     <!-- Service Box 2 -->
                     <div class="col-lg-4 wp2 item delay-05s">
-                        <a href="#">
                             <div class="mx-auto">
                                 <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/lukman.jpg"
                                     class="img-thumbnail speakers blue-bg mb-2 p-2">
@@ -128,7 +126,6 @@
                     </div>
                     <!-- Service Box 3 -->
                     <div class="col-lg-4 wp2 item delay-1s">
-                        <a href="#">
                             <div class="mx-auto">
                                 <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/retno.jpg"
                                     class="img-thumbnail speakers blue-bg mb-2 p-2">
@@ -141,7 +138,7 @@
                 </div>
             </div>
             <div class="w-100 mx-auto">
-                <a href="speakers.php" class="button-white px-5 py-3">
+                <a href="<?php echo base_url()?>event/speaker" class="button-white px-5 py-3">
                     <span style="font-weight: 700;">SEE ALL INVITED SPEAKERS <i
                             class="fas fa-arrow-circle-right"></i></span>
                 </a>

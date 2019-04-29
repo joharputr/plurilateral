@@ -17,14 +17,21 @@
 
 </head>
 
+<style type="text/css">
+    @media only screen and (max-width: 500px) {
+        h2.display-4 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+    }
+</style>
+
 <body>
-
-    <div class="super_container">
-
-        <!-- Home -->
-
-        <div class="home" id="home">
-            <style type="text/css">
+    <div class="home" id="home">
+        <style type="text/css">
             @media only screen and (max-width: 500px) {
                 .home {
                     height: 20vh;
@@ -39,26 +46,26 @@
                     margin-left: -50px;
                 }
             }
-            </style>
-            <?php
-$this->load->view('/header_footer/header');
-?>
-        </div>
+        </style>
+        <?php
+        $this->load->view('/header_footer/header');
+        ?>
+    </div>
     <div class="container" id="main-content">
     </div>
     <?php
-$this->load->view('/header_footer/footer');
-?>
+    $this->load->view('/header_footer/footer');
+    ?>
 </body>
 </html>
 
 <script>
-actControl('data');
-function actControl(x, y){
-    if(x=='data'){
-        $("#main-content").load("<?php echo base_url("workshop") ?>/data");
-    } else if (x=='preview'){
-        $("#main-content").load("<?php echo base_url("workshop") ?>/preview");
+    actControl('data');
+    function actControl(x, y){
+        if(x=='data'){
+            $("#main-content").load("<?php echo base_url("workshop") ?>/data");
+        } else if (x=='preview'){
+            $("#main-content").load("<?php echo base_url("workshop") ?>/preview");
+        }
     }
-}
 </script>
