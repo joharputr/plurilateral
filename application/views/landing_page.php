@@ -107,12 +107,15 @@
             style="background-position: top right; background-image: url('./assets/images/istiqlal.jpg')">
             <div class="background-blur-dark" style="width: 100%; height: 100%;">
                 <div class="carousel-caption">
-                    <h2 class="display-4" style="color: white; font-weight: bold;">Jakarta Plurilateral Dialogue </h2>
+                    <div style="margin-bottom: 60px;">
+                         <h2 class="display-4" style="color: white; font-weight: bold;">Jakarta Plurilateral Dialogue </h2>
                     <h4 style="color: white;">Mainstreaming Culture of Tolerance and Healthy
                         Practices of
                         Freedom of Expression through
                     revitalizing the Resolution 16/18 </h4>
                     <p class="lead" style="color: white;">Jakarta, April 2019 (TBC)</p>
+                    </div>
+                   
                     <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
                         href="<?php echo base_url(); ?>event">VISIT PAGE</a></div>
                     </div>
@@ -122,8 +125,11 @@
             style="background-position: top right; background-image: url('./assets/images/loknas.jpg')">
             <div class="background-blur-dark" style="width: 100%; height: 100%;">
                 <div class="carousel-caption">
-                    <h2 class="display-4" style="color: white; font-weight: bold;">National Initiative</h2>
-
+                    <div style="margin-bottom: 60px;">
+                        <h2 class="display-4" style="color: white; font-weight: bold;">National Initiative</h2>
+ 
+                    </div>
+                   
                     <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
                         href="<?php echo base_url(); ?>national">VISIT PAGE</a></div>
                     </div>
@@ -132,11 +138,11 @@
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="margin-top: 400px;">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="margin-top: 400px;">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>

@@ -72,19 +72,25 @@ class Welcome extends CI_Controller {
 			
 $email_config = Array(
             'protocol'  => 'smtp',
-            'smtp_host' => 'ssl://smtp.googlemail.com',
+            'smtp_host' => 'ssl://mail.plurilateral.org',
             'smtp_port' => '465',
-            'smtp_user' => 'joharputraadek@gmail.com',
-            'smtp_pass' => 'adekjelek1',
+            'smtp_user' => 'plurilateral@plurilateral.org',
+            'smtp_pass' => 'plurilateral',
             'mailtype'  => 'html',
             'starttls'  => true,
             'newline'   => "\r\n"
+
+            //A)g73Pv@yz79RW
+            //A)g73Pv@yz79RW
+
+            //A)g73Pv@yz79RW
+
         );
  		
         $this->load->library('email', $email_config);
 
-        $this->email->to('joharputraadek@gmail.com');
-   		$this->email->from($this->input->post('email_id'),'email_id'); // change 
+        $this->email->to('plurilateral@plurilateral.org');
+   		$this->email->from($this->input->post('email_id')); // change 
        $this->email->subject($this->input->post('subject'));
        $this->email->message($this->input->post('body'));
 
