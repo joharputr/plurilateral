@@ -200,7 +200,7 @@
                                     <p style="text-align: center;">Mainstreaming Culture of Tolerance and Healthy
                                         Practices
                                     of Freedom of Expression through revitalizing the Resolution 16/18 </p>
-                                    <a href="<?php echo base_url(); ?>workshopl">
+                                    <a href="<?php echo base_url(); ?>workshop">
                                         <div style="text-align: center;">
                                             <button type="button" class="btn btn-info ">more info</button>
                                         </div>

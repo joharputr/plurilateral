@@ -110,7 +110,7 @@
                                 <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
                                     class="img-thumbnail speakers blue-bg mb-2 p-2">
                             </div>
-                            <span class="speaker-name">JOKO WIDOWO</span>
+                            <span class="speaker-name">JOKO WIDODO</span>
                         </a><!-- Title -->
                         <h4 class="speaker-desc font-weight-bold">THE PRESIDENT OF THE REPUBLIC OF INDONESIA</h4>
                     </div>
