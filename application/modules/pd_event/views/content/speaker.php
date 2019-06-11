@@ -52,34 +52,7 @@
                                 <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
                                     class=" speakers blue-bg mb-2 p-2">
                             </div>
-                            <span class="speaker-name" style="font-size: 18px;">JOKO WIDOWO</span><br>
-                     <strong class="speaker-desc font-weight-bold" style="font-size: 14px;">THE PRESIDENT OF THE REPUBLIC OF INDONESIA</strong>
-                    </div>
-                    <!-- Service Box 2 -->
-                    <div class="col-lg-4 wp2 item delay-05s">
-                            <div class="mx-auto">
-                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/lukman.jpg"
-                                    class="speakers blue-bg mb-2 p-2">
-                            </div>
-                            <span class="speaker-name" style="font-size: 18px;">LUKMAN HAKIM SAIFUDDIN</span><br>
-                        <strong class="speaker-desc font-weight-bold" style="font-size: 14px;">INDONESIAN MINISTER FOR RELIGIOUS AFFAIRS</strong>
-                    </div>
-                    <!-- Service Box 3 -->
-                    <div class="col-lg-4 wp2 item delay-1s">
-                            <div class="mx-auto">
-                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/retno.jpg"
-                                    class="speakers blue-bg mb-2 p-2">
-                            </div>
-                            <span class="speaker-name" style="font-size: 18px;">RETNO LESTARI PRIANSARI MARSUDI</span><br>
-                        <strong class="speaker-desc font-weight-bold" style="font-size: 14px;">INDONESIAN MINISTER FOR FOREIGN AFFAIRS</strong>
-                    </div>
-                    <!-- Service Box 1 -->
-                    <div class="col-lg-4 mb-5 wp2 item">
-                            <div class="mx-auto">
-                                <img src="<?php echo base_url() ?>assets/image/event/Invited Speaker/jokowi.jpg"
-                                    class=" speakers blue-bg mb-2 p-2">
-                            </div>
-                            <span class="speaker-name" style="font-size: 18px;">JOKO WIDOWO</span><br>
+                            <span class="speaker-name" style="font-size: 18px;">JOKO WIDODO</span><br>
                      <strong class="speaker-desc font-weight-bold" style="font-size: 14px;">THE PRESIDENT OF THE REPUBLIC OF INDONESIA</strong>
                     </div>
                     <!-- Service Box 2 -->
