@@ -112,7 +112,7 @@ $this->load->view('/header_footer/header');
                     <h5 class="mt-3" style="font-weight: bold; font-size: 18px;"></h5>
                 </div>
                    <div class="col-md-3 text-center" style="margin-top: 50px;">
-                    <img class="images mt-3" src="./assets/images/sc/.jpg">
+                    <img class="images mt-3" style="object-fit: cover;" src="./assets/images/sc/siti.jpg">
                     <h5 class="text mt-3"></h5>
                     <h5 class="mt-3" style="font-weight: bold; font-size: 18px;">Siti Ruhaini Dzuhayatin</h5>
                 </div>

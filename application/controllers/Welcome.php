@@ -70,7 +70,7 @@ class Welcome extends CI_Controller {
 			$this->load->library('upload');
 		//	$this->load->library('email');
 			
-$email_config = Array(
+	$email_config = Array(
             'protocol'  => 'smtp',
             'smtp_host' => 'ssl://mail.plurilateral.org',
             'smtp_port' => '465',
@@ -82,17 +82,15 @@ $email_config = Array(
 
             //A)g73Pv@yz79RW
             //A)g73Pv@yz79RW
-
             //A)g73Pv@yz79RW
 
         );
- 		
+ 
         $this->load->library('email', $email_config);
-
         $this->email->to('plurilateral@plurilateral.org');
    		$this->email->from($this->input->post('email_id')); // change 
-       $this->email->subject($this->input->post('subject'));
-       $this->email->message($this->input->post('body'));
+        $this->email->subject($this->input->post('subject'));
+        $this->email->message($this->input->post('body'));
 
 			if($this->email->send())
 			{
@@ -102,7 +100,6 @@ $email_config = Array(
 				echo "gagal mengirim email";
 			}
 
- 
  	redirect('','refresh');
 }
 

@@ -419,7 +419,8 @@
                 <div class="row mt-4">
                     <!-- Contact Form -->
                     <div class="col-md-12 contact">
-                        <form role="form">
+                           <form role="form" action="<?php echo base_url()?>Event/sendEmail" method="POST"
+                                enctype='multipart/form-data'>
                             <!-- Name -->
                             <div class="row">
                                 <div class="col-md-6">
