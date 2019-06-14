@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Folarium Technomedia">
-        <title>Portal</title>
-        <link href="<?php echo base_url() ?>assets/css/style_min/style.min.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Folarium Technomedia">
+    <title>Portal</title>
+    <link href="<?php echo base_url() ?>assets/css/style_min/style.min.css" rel="stylesheet">
         <!-- <link href="<?php echo base_url() ?>assets/libs/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url() ?>backup-assets/assets-b1/confirm/sweetalert.css">
         <script src="<?php echo base_url() ?>backup-assets/assets-b1/confirm/sweetalert.min.js"></script> -->
@@ -86,84 +86,56 @@
             <div id="main-wrapper" style="box-shadow: 0px 0px 0px 0px !important;">
                 <div class="page-wrapper" style="background: none">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-4 col-xlg-3 col-md-5">
-                                <div class="card" style="border-radius: 5px;">
-                                    <div class="card-body">
-                                        <center class="m-t-10"> 
+
+                        <div class="col-lg-5 col-xlg-3 col-md-5 mx-auto">
+                            <div class="card" style="border-radius: 5px;">
+                                <div class="card-body">
+                                    <center class="m-t-10"> 
                                         <img src="<?php echo base_url()?>assets/image/event/Logo-Event.png" class="rounded-circle" width="150" />
-                                            <h4 class="card-title m-t-10">SuperUser</h4>
-                                            <h6 class="card-subtitle m-b-20">Administrator</h6>
-                                        </center>
-                                        <div class="card bg-light" style="border-radius: 5px; margin-bottom: 0px">
-                                            <div class="card-body text-center" style="height: 313px; padding-top: 40px">
-                                                <small style="colour: grey"><i class="fas fa-info-circle m-r-10"></i>Belum ada notifikasi !</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-xlg-9 col-md-7">
-                                <div class="row m-b-15">
-                                    <div class="col-sm-1">
-                                        <img src="<?php echo base_url()?>assets/image/event/Logo-Event.png" style="width: 130%"/>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <h3 class="text-white">
-                                            Plurilateral Dialog
-                                        </h3>
-                                        <hr style="margin: 0px; padding: 0px; border-bottom: 1px solid white; width: 90%"/>
-                                        <small class="text-white">Perbaharui password akses secara berkala !</small>
-                                    </div>
-                                    <div class="col-sm-3 text-right">
-                                        <a class="btn btn-sm btn-info text-white"  href="<?php echo base_url("my-portal") ?>" style="cursor: pointer; border-radius: 5px"><i class="fas fa-podcast m-r-5 m-l-5"></i> Profil</a>
-                                        <a class="logout btn btn-sm btn-light"  role="button" style="cursor: pointer; border-radius: 5px"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                                    </div>
-                                </div>
-                                <div class="card bg-transparent">
-                                    <div class="card-body p-b-0">
-                                        <div class="row">
-                                            <div class="col-lg-11">
-                                                <div class="input-group m-b-10">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon11"><i class="fas fa-search"></i></span>
-                                                    </div>
-                                                    <input type="text" name='sortir_name' id="sort-ahass" onkeyup="sort_page()" value="" class="form-control" placeholder="Cari Modul . . ." />
+                                        <h3 class="card-title m-t-10">Login Admin</h3>
+                                    </center>
+                                    <div class="card bg-light" style="border-radius: 5px; margin-bottom: 0px">
+                                        <div class="card-body text-center" style="height: 313px; padding-top: 40px">
+                                            <form>
+                                              <div class="form-group">
+                                                <label for="InputUsername">Username</label>
+                                                <input type="username" class="form-control" id="InputUsername"  placeholder="Input Username">
                                                 </div>
+                                            <div class="form-group">
+                                                <label for="InputPassword">Password</label>
+                                                <input type="password" class="form-control" id="InputPassword" placeholder="Input Password">
                                             </div>
-                                            <div class="col-lg-1 m-b-10">
-                                                <a href="<?php echo base_url() ?>home" class="btn btn-danger"><i class="fas fa-undo"></i></a>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check">
+                                                <label class="form-check-label" for="check">Remember Password?</label>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="scrollable" style="height: 428px; ">
-                                        <div id="loader-data"></div>
-                                        <div class="card bg-transparent no-card-border">
-                                            <div class="card-body p-t-0" id="display-home"></div>
-                                        </div>
+                                            <br>
+                                            <button type="submit" class="btn btn-primary">Login</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <?php
+    </div>
+</div>
+<?php
         // if (!empty($modal)) {
         //     $this->load->view("modal");
         // }
-        ?>
-        <script>
+?>
+<script>
 
-            dsPlugin('modul');
-            setTimeout(function () {
-                $(".ps-scrollbar-y").attr("style", "background-color:white");
-            }, 1000);
-            function dsPlugin(x) {
-                $("#loader-data").html('<div class="text-center m-t-30"><i class="fas fa-spin ti-reload m-r-10"></i>Proses menampilkan data . . .</div>');
+    dsPlugin('modul');
+    setTimeout(function () {
+        $(".ps-scrollbar-y").attr("style", "background-color:white");
+    }, 1000);
+    function dsPlugin(x) {
+        $("#loader-data").html('<div class="text-center m-t-30"><i class="fas fa-spin ti-reload m-r-10"></i>Proses menampilkan data . . .</div>');
                 // $("#display-home").html("").load("<?php echo base_url($private_url) ?>?data=" + x);
             }
             // function sort_page() {
@@ -202,4 +174,4 @@
         <script src="<?php echo base_url() ?>assets/js/custom.min.js"></script>
         <!-- <script src="<?php echo base_url() ?>assets/folarium/js/core.folarbiz.js"></script> -->
     </body>
-</html>
+    </html>
