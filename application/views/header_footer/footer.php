@@ -16,7 +16,7 @@
 	                                    <div class="logo_content">
 	                                        <div id="logo_text" class="logo_text logo_text_not_ie" style="padding: 3px;">
 	                                            Plurilateral Dialogue</div>
-	                                        <div class="logo_sub">June, 2019 - Jakarta, Indonesia</div>
+	                                        <div class="logo_sub"> 2019 - Jakarta, Indonesia</div>
 	                                    </div>
 	                                </div>
 	                            </a>
@@ -25,6 +25,13 @@
 	                          <p>Ministry of Foreign Affairs, Republic of Indonesia<br>Jl. Pejambon No. 6<br>Jakarta Pusat, 10110
 							<br>Indonesia</p>
 	                          <p>Ministry of Religious Affairs, Republic of Indonesia<br>Jl. Lapangan Banteng Barat No. 3-4, Jakarta, 10710<br>Indonesia</p>
+	                          <p>In Collaborations with Kalijaga Institute for Justice - Islamic State University of Sunan Kalijaga Yogyakarta, and Ford Foundation.</p>
+	                          
+	                          <div class="collab_logo">
+	                                        <img src="./assets/images/uin.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
+	                                        <img src="./assets/images/ford.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
+	                                    </div>
+
 	                          <p>Email Us: plurilateral@plurilateral.org</p>
 	                        </div>
 	                    </div>
@@ -64,7 +71,7 @@
 	                                <!-- Message Area -->
 	                                <div class="form-group">
 	                                    <textarea class="form-control" placeholder="Write you message here..."
-	                                        style="height:232px;" name="body"></textarea>
+	                                        style="height:290px;" name="body"></textarea>
 
 
 

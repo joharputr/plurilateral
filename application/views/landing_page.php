@@ -2,7 +2,7 @@
 <html lang="en" style="scroll-behavior: smooth;">
 
 <head>
-    <title>The Conference</title>
+    <title>Pluritlateral Dialogue</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Conference project">
@@ -113,7 +113,7 @@
                         Practices of
                         Freedom of Expression through
                     revitalizing the Resolution 16/18 </h4>
-                    <p class="lead" style="color: white;">Jakarta, April 2019 (TBC)</p>
+                    <p class="lead" style="color: white;">Jakarta, 2019 (TBC)</p>
                     </div>
                    
                     <div class="button home_button" style="width: 170px;"><a style="font-size: 18px;"
