@@ -13,8 +13,7 @@
                                         </div>
                                         <div class="logo_content">
                                             <div id="logo_text" class="logo_text logo_text_not_ie"
-                                                style="padding:5px; font-size: 40px; ">Plurilateral Dialogue</div>
-                                            <!-- <div class="logo_sub">Jakarta, Indonesia</div> -->
+                                                style="padding:5px; ">Plurilateral Dialogue</div>
                                         </div>
                                     </div>
                                 </a>
