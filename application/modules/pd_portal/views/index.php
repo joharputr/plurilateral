@@ -122,29 +122,6 @@
         setTimeout(function() {
             $(".ps-scrollbar-y").attr("style", "background-color:white");
         }, 1000);
-        // function sort_page() {
-        //     var selected = $("input[name=sortir_name]").val().replace(" ", "-");
-        //     var rowx = $('.forbiz-available').length;
-        //     var rowx_ = 0;
-
-        //     for (var axa = 1; axa <= rowx; axa++) {
-        //         var forbiz = $("#sort-forbiz-" + axa).attr("class");
-        //         $("#ada-" + axa).removeAttr("class", "forbiz-available");
-        //         $("#ada-" + axa).attr("class", "forbiz-available ada");
-
-        //         if (forbiz.indexOf(selected) > -1) {
-        //             $("#sort-forbiz-" + axa).show();
-        //             rowx_ = $('.ada').length;
-        //         } else {
-        //             if (selected.length > 0) {
-        //                 $("#ada-" + axa).removeAttr("class", "forbiz-available ada");
-        //                 $("#ada-" + axa).attr("class", "forbiz-available");
-        //                 $("#sort-forbiz-" + axa).hide();
-        //             }
-        //         }
-        //         $("#notif-ahass").html(rowx_);
-        //     }
-        // }
     </script>
     <script>
         var baseUrl = '<?php echo base_url(); ?>';

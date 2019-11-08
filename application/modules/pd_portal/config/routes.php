@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['event/contact-us'] = 'pd_event/event/index/contus';
 
 $route['portal'] = 'pd_portal/home/index';
+$route['portal/document'] = 'pd_portal/document/index';
 $route['portal/login'] = 'pd_portal/login';
 // $route['event/about'] = 'pd_event/event/index/about';
 // $route['event/goal'] = 'pd_event/event/index/goal';
