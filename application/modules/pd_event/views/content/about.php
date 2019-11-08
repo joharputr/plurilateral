@@ -172,14 +172,7 @@
     <!-- MAPS -->
     <section class="features text-center section-padding" id="blog">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="head-title" style="font-size: 25px;">
-                        <span style="font-size:50px; display: table-cell;"><i class="fas fa-compass"></i></span>
-                        <span class="pl-2 align-middle" style="display: table-cell;">MAPS</span>
-                    </h1><!-- Headline -->
-                </div>
-            </div>
+            
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row" id="location" style="margin">
