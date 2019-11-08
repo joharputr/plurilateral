@@ -13,6 +13,7 @@ class Document extends MY_Controller {
     }
 
     public function index() {
+        $data['title'] = "Plurilateral Document";
             $data['private_url'] = "document";
                 $this->load->view('content/document', $data);
     }
