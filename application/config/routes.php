@@ -18,6 +18,8 @@ $route['workshop/preview/(:any)'] = 'welcome/workshop/preview';
 
 $route['steeringcommittee'] = 'welcome/steeringCommittee';
 $route['paper'] = 'welcome/paper';
+$route['paper/data'] = 'welcome/dataPaper';
+$route['paper/data/(:num)'] = 'welcome/dataPaper/$1';
 $route['videos'] = 'welcome/videos';
 
 $route['default_controller'] = 'welcome';
