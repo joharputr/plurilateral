@@ -11,7 +11,7 @@
   <title><?php echo $title ?></title>
 	<link href="<?php echo base_url() ?>assets/css/css/sb-admin.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url() ?>assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?php echo base_url() ?>assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Page level plugin CSS-->
   <link href="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -86,36 +86,35 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url()?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Document</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="login.html">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
-          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <h6 class="dropdown-header">Document types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
+          
           <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
+          <h6 class="dropdown-header">Article types:</h6>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Events</span></a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Messages</span></a>
       </li>
     </ul>
 
@@ -126,9 +125,9 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
+            <a href="<?php echo base_url()?>portal">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Tables</li>
+          <li class="breadcrumb-item active">Paper or Journal</li>
         </ol>
 
         <!-- DataTables Example -->
@@ -144,7 +143,7 @@
         
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Data Table Example</div>
+            Document Table</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -154,6 +153,7 @@
                     <th>Judul</th>
                     <th>Dokumen</th>
                     <th>Event</th>
+                    <th>Type</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -174,7 +174,7 @@
                       <td><div style="width: 100px;"> <a href="<?php echo base_url('/assets/files/'.$lihat->dokumen) ?>" width="64" > <?php echo base_url('upload/files/'.$lihat->dokumen) ?> </a></td> 
                   
                       <td><div style="width: 150px;"><?php echo ucwords($lihat->event) ?></td> 
-                    
+                    <td></td>
                         <td  align="center">
                           <div class="btn-group" role="group" style="width: 200px;">
                             <a href="<?php echo base_url(); ?>portal/document/edit/<?php echo $lihat->id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
@@ -190,10 +190,6 @@
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
 
-        <p class="small text-center text-muted my-5">
-          <em>More table examples coming soon...</em>
-        </p>
-
       </div>
       <!-- /.container-fluid -->
 
@@ -201,7 +197,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
+            <span>Copyright ©Plurilateral 2019</span>
           </div>
         </div>
       </footer>

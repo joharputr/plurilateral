@@ -18,6 +18,26 @@ class Document extends MY_Controller {
         $data['show'] = $this->db->query("SELECT * FROM dokumen")->result();
         $this->load->view('content/dokumen/document', $data);
     }
+    public function national_initiative() {
+        $data['title'] = "Plurilateral National Initiative";
+        $data['private_url'] = "national";
+        // $data['show'] = $this->db->query("SELECT * FROM dokumen")->result();
+        $this->load->view('content/dokumen/national_initiative', $data);
+    }
+
+    public function workshop() {
+        $data['title'] = "Plurilateral Workshop";
+        $data['private_url'] = "workshop";
+        // $data['show'] = $this->db->query("SELECT * FROM dokumen")->result();
+        $this->load->view('content/dokumen/workshop', $data);
+    }
+
+     public function message() {
+        $data['title'] = "Plurilateral Message";
+        $data['private_url'] = "message";
+        // $data['show'] = $this->db->query("SELECT * FROM dokumen")->result();
+        $this->load->view('content/dokumen/message', $data);
+    }
 
     public function tambah_document() {
         $data['title'] = "Tambah Plurilateral Document";
@@ -25,6 +45,28 @@ class Document extends MY_Controller {
         $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
         $this->load->view('content/dokumen/tambah_document', $data);
     }
+
+    public function tambah_national() {
+        $data['title'] = "Add Plurilateral National Initiative Article";
+        $data['private_url'] = "tambah_national";
+        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/dokumen/tambah_national', $data);
+    }
+
+     public function tambah_workshop() {
+        $data['title'] = "Add Plurilateral Workshop Article";
+        $data['private_url'] = "tambah_workshop";
+        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/dokumen/tambah_workshop', $data);
+    }
+
+    public function imageUpload() {
+        $data['title'] = "Add Plurilateral National Initiative Article";
+        $data['private_url'] = "imageUpload";
+        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/dokumen/imageUpload', $data);
+    }
+
 
     function insert_document(){
 
@@ -83,6 +125,20 @@ private function _uploadImage3()
     
             $a['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
         $this->load->view('content/dokumen/edit_document',$a);
+    }
+
+public function edit_national() {
+        $data['title'] = "Add Plurilateral Workshop Article";
+        $data['private_url'] = "edit_national";
+        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/dokumen/edit_national', $data);
+    }
+
+    public function edit_workshop() {
+        $data['title'] = "Add Plurilateral Workshop Article";
+        $data['private_url'] = "edit_workshop";
+        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/dokumen/edit_workshop', $data);
     }
 
 
