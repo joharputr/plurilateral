@@ -8,19 +8,19 @@ $route['national/data'] = 'welcome/national/data';
 $route['national/preview'] = 'welcome/national/preview';
 $route['national/preview/(:any)'] = 'welcome/national/preview';
 
-$route['journal'] = 'welcome/journal';
-$route['article'] = 'welcome/article';
-
 $route['workshop'] = 'welcome/workshop';
 $route['workshop/data'] = 'welcome/workshop/data';
 $route['workshop/preview'] = 'welcome/workshop/preview';
 $route['workshop/preview/(:any)'] = 'welcome/workshop/preview';
 
 $route['steeringcommittee'] = 'welcome/steeringCommittee';
-$route['paper'] = 'welcome/paper';
-$route['paper/data'] = 'welcome/dataPaper';
-$route['paper/data/(:num)'] = 'welcome/dataPaper/$1';
-$route['videos'] = 'welcome/videos';
+$route['paper'] = 'Paper/index';
+$route['paper/data'] = 'Paper/data';
+$route['paper/data/(:num)'] = 'Paper/data/$1';
+
+$route['journal'] = 'Journal/index';
+$route['journal/data'] = 'Journal/data';
+$route['journal/data/(:num)'] = 'Journal/data/$1';
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';

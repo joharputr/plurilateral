@@ -259,6 +259,10 @@ section
 	padding-right: 0;
 }
 
+#title-tab{
+	margin-top: 10vh;
+}
+
 .title-head-one{
 	margin-bottom: -10px; 
 	font-family: 'Raleway', sans-serif; 
@@ -492,9 +496,8 @@ section
 
 .home
 {
-	
 	width: 100%;
-	height: 30vh;
+	height: 20vh;
 }
 .home_background
 {

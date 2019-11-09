@@ -34,23 +34,6 @@ class Welcome extends CI_Controller
 		}
 	}
 
-	public function paper()
-	{
-		$data['tahun'] = $this->db->query("SELECT DISTINCT YEAR(tanggal_mulai) as year FROM kegiatan")->result();
-		$data['private_url'] = 'paper';
-		$this->load->view('paper/index', $data);
-	}
-
-	public function dataPaper(){
-		$data['private_url'] = 'paper';
-		$sql_where = "WHERE id IS NOT NULL";
-		$sql_where .= (!empty($_GET['sort_type']) ? ($_GET['sort_type'] != "all" ? " and e.tipe='$_GET[sort_type]'" : null) : null);
-		$sql_where .= (!empty($_GET['sort_year']) ? ($_GET['sort_year'] != "all" ? " and YEAR(e.tanggal_mulai)='$_GET[sort_year]'" : null) : null);
-		$data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan e $sql_where" )->result();
-		$data['dokumen'] = $this->db->query("SELECT * FROM dokumen d")->result();
-		$this->load->view('paper/data', $data);
-	}
-
 	public function journal()
 	{
 		$this->load->view('./journal');
