@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2019 at 11:53 AM
+-- Generation Time: Nov 09, 2019 at 02:37 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -25,99 +25,106 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `document`
+-- Table structure for table `artikel`
 --
 
-CREATE TABLE `document` (
-  `doc_id` int(15) NOT NULL,
-  `event_id` int(15) NOT NULL,
-  `nama_doc` varchar(150) NOT NULL,
-  `path_doc` varchar(255) NOT NULL,
-  `jenis_doc` enum('Paper','Journal') NOT NULL
+CREATE TABLE `artikel` (
+  `id` int(255) NOT NULL,
+  `nama` varchar(500) NOT NULL,
+  `tempat` varchar(500) NOT NULL,
+  `tanggal` date NOT NULL,
+  `deskripsi` varchar(500) NOT NULL,
+  `gambar` text NOT NULL,
+  `tipe` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `event`
+-- Table structure for table `dokumen`
 --
 
-CREATE TABLE `event` (
-  `event_id` int(15) NOT NULL,
-  `nama_event` varchar(150) NOT NULL,
-  `sub_nama_event` varchar(150) NOT NULL,
-  `tempat_event` varchar(150) NOT NULL,
-  `tanggal_event_mulai` date NOT NULL,
-  `tanggal_event_selesai` date NOT NULL,
-  `kategori_event` enum('National','International') NOT NULL,
-  `deskripsi_event` text,
-  `doc_event` text
+CREATE TABLE `dokumen` (
+  `id` int(11) NOT NULL,
+  `judul` varchar(100) NOT NULL,
+  `dokumen` varchar(100) NOT NULL,
+  `event` int(100) NOT NULL,
+  `tipe` enum('paper','jurnal') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `event`
+-- Dumping data for table `dokumen`
 --
 
-INSERT INTO `event` (`event_id`, `nama_event`, `sub_nama_event`, `tempat_event`, `tanggal_event_mulai`, `tanggal_event_selesai`, `kategori_event`, `deskripsi_event`, `doc_event`) VALUES
-(1, 'Lokakarya Nasional', 'Pengarusutamaan Moderasi Beragama Sebagai Implementasi Resolusi Dewan HAM PBB 16/18', 'Hotel Royal Kuningan Jakarta', '2018-07-25', '2018-07-27', 'National', 'Lokakarya Nasional dengan tema “Pengarusutamaan Toleransi Aktif dan Moderasi Agama sebagai Implementasi Resolusi Dewan HAM PBB 16/18” diselenggarakan di Jakarta, pada tanggal 25-27 Juli 2018. Lokakarya Nasional ini akan menyosialisasikan nilai-nilai Resolusi 16/18 kepada seluruh pemangku kepentingan, sekaligus juga menjaring masukan dari seluruh Forum Kerukunan Umat Beragama (FKUB) Propinsi tentang upaya penanganan intoleransi dan ujaran serta hasutan kebencian. Lokakarya Nasional merupakan kerjasama Kementerian Agama RI, Kementerian Luar Negeri RI, Kalijaga Institute for Justice dan didukung oleh Ford Foundation.', '');
+INSERT INTO `dokumen` (`id`, `judul`, `dokumen`, `event`, `tipe`) VALUES
+(1, 'Memahami Pentingnya Resolusi', 'assets/memahami_pentingnya_resolusi_16.pdf', 1, 'paper'),
+(2, 'Coba DOlo', 'assets/memahami_pentingnya_resolusi_16.pdf', 2, 'paper');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `kegiatan`
 --
 
-CREATE TABLE `user` (
-  `user_id` int(20) NOT NULL,
-  `password` varchar(150) NOT NULL,
-  `username` varchar(150) NOT NULL,
-  `email` varchar(150) NOT NULL,
-  `status` int(20) NOT NULL
+CREATE TABLE `kegiatan` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `tanggal_mulai` date NOT NULL,
+  `tanggal_selesai` date NOT NULL,
+  `tipe` enum('national','international') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kegiatan`
+--
+
+INSERT INTO `kegiatan` (`id`, `nama`, `tanggal_mulai`, `tanggal_selesai`, `tipe`) VALUES
+(1, 'Lokakarya', '2018-07-25', '2018-07-27', 'national'),
+(2, 'Jayakarta', '2019-11-11', '2019-11-29', 'international');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `document`
+-- Indexes for table `artikel`
 --
-ALTER TABLE `document`
-  ADD PRIMARY KEY (`doc_id`);
+ALTER TABLE `artikel`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `event`
+-- Indexes for table `dokumen`
 --
-ALTER TABLE `event`
-  ADD PRIMARY KEY (`event_id`);
+ALTER TABLE `dokumen`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indexes for table `kegiatan`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
+ALTER TABLE `kegiatan`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `document`
+-- AUTO_INCREMENT for table `artikel`
 --
-ALTER TABLE `document`
-  MODIFY `doc_id` int(15) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `artikel`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `event`
+-- AUTO_INCREMENT for table `dokumen`
 --
-ALTER TABLE `event`
-  MODIFY `event_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `dokumen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT for table `kegiatan`
 --
-ALTER TABLE `user`
-  MODIFY `user_id` int(20) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `kegiatan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
