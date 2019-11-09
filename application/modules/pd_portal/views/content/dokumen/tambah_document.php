@@ -169,7 +169,7 @@
                         <?php 
                         foreach($kegiatan as $k){
                         ?>
-                        <option value="<?php echo $k->id?>"> <?php echo $k->judul?> </option>
+                        <option value="<?php echo $k->id?>"> <?php echo $k->nama?> </option>
                         <?php }?>
 
                       </select>
