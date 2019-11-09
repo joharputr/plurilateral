@@ -175,7 +175,7 @@
                         <?php 
                         foreach($kegiatan as $k){
                         ?>
-                        <option value="<?php echo $k->id?>"> <?php echo $k->judul?> </option>
+                        <option <?php if($k->id == $data->event){echo "selected";}?> value="<?php echo $k->id?>"> <?php echo $k->nama?> </option>
                         <?php }?>
 
                       </select>

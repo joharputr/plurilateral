@@ -51,9 +51,9 @@
         ?>
     </div>
     <div class="container" id="main-content">
-        <h2 id="title-tab">Paper</h2>
+        <h2 id="title-tab"><?php echo $title?></h2>
         <hr>
-        <form>
+        <form class="search-form">
             <div class="form-row">
                 <h4 class="title-head-two mb-3 col-md-12"><i class="fa fa-search"></i>Filter Data</h4>
                 <div class="col-md-4 mb-3">
@@ -77,11 +77,10 @@
                 <div class="col-md-4 mb-3">
                     <label>Search</label>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search Name of Event . . .">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary rounded-0" type="submit"><i class="fa fa-search"></i></button>
+                    <div class="input-group-prepend">
+                            <div class="search-button btn btn-primary rounded-0"><i class="fa fa-search"></i></div>
                         </div>
-
+                        <input type="text" name="sort_title" class="form-control" onkeyup="actControl()"placeholder="Search Name of Event . . .">
                     </div>
                 </div>
             </div>
@@ -97,12 +96,13 @@
 </html>
 <script>
     actControl();
-
     function actControl() {
             var type = !$("select[name=sort_type] option:selected").val() ? "" : $("select[name=sort_type] option:selected").val();            
             var year = !$("select[name=sort_year] option:selected").val() ? "" : $("select[name=sort_year] option:selected").val();            
+            var title = !$("input[name=sort_title]").val() ? "" : $("input[name=sort_title]").val();            
             $(".load-data").load("<?php echo base_url($private_url) ?>/data" + 
                     (!type ? "" : "?&sort_type=" + type) +
-                    (!year ? "" : "&sort_year=" + year));
+                    (!year ? "" : "&sort_year=" + year) +
+                    (!title ? "" : "&sort_title=" + title));
     }
 </script>
