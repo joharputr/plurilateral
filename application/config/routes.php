@@ -3,15 +3,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 $route['home'] = 'welcome/index';
 
-$route['national'] = 'welcome/national';
-$route['national/data'] = 'welcome/national/data';
-$route['national/preview'] = 'welcome/national/preview';
-$route['national/preview/(:any)'] = 'welcome/national/preview';
+$route['national'] = 'national/index';
+$route['national/data'] = 'national/data/data';
+$route['national/preview/(:any)'] = 'national/preview/$1';
 
-$route['workshop'] = 'welcome/workshop';
-$route['workshop/data'] = 'welcome/workshop/data';
-$route['workshop/preview'] = 'welcome/workshop/preview';
-$route['workshop/preview/(:any)'] = 'welcome/workshop/preview';
+$route['workshop'] = 'workshop/index';
+$route['workshop/data'] = 'workshop/data/data';
+$route['workshop/preview/(:any)'] = 'workshop/preview/$1';
 
 $route['steeringcommittee'] = 'welcome/steeringCommittee';
 $route['paper'] = 'Paper/index';

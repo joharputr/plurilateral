@@ -11,7 +11,7 @@
 	                            <a href="#">
 	                                <div class="logo_container d-flex flex-row align-items-start justify-content-start">
 	                                    <div class="logo_image">
-	                                        <div><img src="./assets/images/logo_event.png" alt="" style=""></div>
+	                                        <div><img src="<?php echo base_url()?>assets/images/logo_event.png" alt="" style=""></div>
 	                                    </div>
 	                                    <div class="logo_content">
 	                                        <div id="logo_text" class="logo_text logo_text_not_ie" style="padding: 3px;">
@@ -28,8 +28,8 @@
 	                          <p>In Collaborations with Kalijaga Institute for Justice - Islamic State University of Sunan Kalijaga Yogyakarta, and Ford Foundation.</p>
 	                          
 	                          <div class="collab_logo">
-	                                        <img src="./assets/images/uin.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
-	                                        <img src="./assets/images/ford.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
+	                                        <img src="<?php echo base_url()?>assets/images/uin.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
+	                                        <img src="<?php echo base_url()?>assets/images/ford.png" alt="" style="width: 90px; height: 90px; padding: 10px;">
 	                                    </div>
 
 	                          <p>Email Us: plurilateral@plurilateral.org</p>
@@ -156,9 +156,9 @@
 	</style>
 	</div>
 
-	<script src="./assets/js/jquery-3.2.1.min.js"></script>
-	<script src="./assets/styles/bootstrap4/popper.js"></script>
-	<script src="./assets/styles/bootstrap4/bootstrap.min.js"></script>
-	<script src="./assets/plugins/easing/easing.js"></script>
-	<script src="./assets/plugins/parallax-js-master/parallax.min.js"></script>
-	<script src="./assets/js/custom.js"></script>
+	<script src="<?php echo base_url()?>assets/js/jquery-3.2.1.min.js"></script>
+	<script src="<?php echo base_url()?>assets/styles/bootstrap4/popper.js"></script>
+	<script src="<?php echo base_url()?>assets/styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="<?php echo base_url()?>assets/plugins/easing/easing.js"></script>
+	<script src="<?php echo base_url()?>assets/plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="<?php echo base_url()?>assets/js/custom.js"></script>

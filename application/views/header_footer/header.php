@@ -9,7 +9,7 @@
                                 <a href="#">
                                     <div class="logo_container d-flex flex-row align-items-start justify-content-start">
                                         <div class="logo_image">
-                                            <div><img src="./assets/images/logo_event.png" alt=""></div>
+                                            <div><img src="<?php echo base_url() ?>assets/images/logo_event.png" alt=""></div>
                                         </div>
                                         <div class="logo_content">
                                             <div id="logo_text" class="logo_text logo_text_not_ie"
@@ -18,7 +18,6 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
