@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2019 at 01:27 AM
+-- Generation Time: Nov 10, 2019 at 03:43 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `artikel` (
   `artikel_id` int(255) NOT NULL,
-  `nama` varchar(500) NOT NULL,
+  `judul` varchar(500) NOT NULL,
   `tempat` varchar(500) NOT NULL,
   `tanggal` date NOT NULL,
   `deskripsi` varchar(500) NOT NULL,
@@ -59,7 +59,8 @@ CREATE TABLE `dokumen` (
 INSERT INTO `dokumen` (`dokumen_id`, `judul`, `dokumen`, `event`, `tipe_dokumen`) VALUES
 (1, 'Memahami Pentingnya Resolusi', 'assets/memahami_pentingnya_resolusi_16.pdf', 1, 'paper'),
 (2, 'Coba DOlo', 'assets/memahami_pentingnya_resolusi_16.pdf', 2, 'paper'),
-(4, 'Kokaokakao', 'assets/files/default.jpg', 2, 'jurnal');
+(4, 'Kokaokakao', 'assets/files/default.jpg', 2, 'jurnal'),
+(5, 'addasafasfasfasaf', 'assets/files/default.jpg', 1, 'paper');
 
 -- --------------------------------------------------------
 
@@ -69,7 +70,8 @@ INSERT INTO `dokumen` (`dokumen_id`, `judul`, `dokumen`, `event`, `tipe_dokumen`
 
 CREATE TABLE `kegiatan` (
   `kegiatan_id` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
+  `nama` varchar(100) DEFAULT NULL,
+  `deskripsi_kegiatan` text,
   `tanggal_mulai` date NOT NULL,
   `tanggal_selesai` date NOT NULL,
   `tipe` enum('national','international') NOT NULL
@@ -79,9 +81,9 @@ CREATE TABLE `kegiatan` (
 -- Dumping data for table `kegiatan`
 --
 
-INSERT INTO `kegiatan` (`kegiatan_id`, `nama`, `tanggal_mulai`, `tanggal_selesai`, `tipe`) VALUES
-(1, 'Lokakarya', '2018-07-25', '2018-07-27', 'national'),
-(2, 'Jayakarta', '2019-11-11', '2019-11-29', 'international');
+INSERT INTO `kegiatan` (`kegiatan_id`, `nama`, `deskripsi_kegiatan`, `tanggal_mulai`, `tanggal_selesai`, `tipe`) VALUES
+(1, 'Lokakarya', '', '2018-07-25', '2018-07-27', 'national'),
+(2, 'Jayakarta', '', '2019-11-11', '2019-11-29', 'international');
 
 --
 -- Indexes for dumped tables
@@ -119,7 +121,7 @@ ALTER TABLE `artikel`
 -- AUTO_INCREMENT for table `dokumen`
 --
 ALTER TABLE `dokumen`
-  MODIFY `dokumen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `dokumen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `kegiatan`
