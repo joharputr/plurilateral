@@ -180,7 +180,7 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Tipe</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe">
+                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe_dokumen">
                         <option value="paper" <?php if ($data->tipe_dokumen == 'paper'): ?>
                           selected
                         <?php endif ?>>Paper</option>

@@ -18,13 +18,18 @@
 
   <!-- Page level plugin CSS-->
   <link href="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-<style type="text/css">
-        .fileinput-remove,
-        .fileinput-upload{
-            display: none;
-        }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    .fileinput-remove,
+    .fileinput-upload{
+      display: none;
+    }
 
-    </style>
+  </style>
 </head>
 
 <body id="page-top">
@@ -115,17 +120,17 @@
           <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
         </div>
       </li>
-       <li class="nav-item active">
+      <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>portal/message">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Messages</span></a>
-      </li>
-    </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo base_url()?>portal/message">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Messages</span></a>
+          </li>
+        </ul>
 
         <div id="content-wrapper">
 
@@ -159,39 +164,66 @@
                   </div>
                   <div class="box-body">
                     <!-- form start -->
-                    <!-- <?php echo form_open_multipart('portal/document/save'); ?> -->
+                    <?php echo form_open_multipart('portal/document/insert_national'); ?> 
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Nama</label>
+                      <label for="exampleInputEmail1">Judul</label>
                       <input type="text" class="form-control" name="judul" placeholder="Judul"/>
                     </div>
 
-                     <div class="form-group">
+                    <div class="form-group">
                       <label for="exampleInputEmail1">Tempat</label>
                       <input type="text" class="form-control" name="tempat" placeholder="Tempat"/>
                     </div>
 
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Event</label>
-                      <input type="text" class="form-control" name="event" placeholder="Event"/>
-                    </div>
-                    <div class="form-group">
-                    <label for="exampleInputEmail1">Content</label>
-                    <div id="summernote"></div>
-                    </div>
 
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Image</label>
-                        <div class="file-loading">
-                            <input id="file-1" type="file" name="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
-                        </div>
+                    <label for="exampleInputEmail1">Tanggal</label>
+                    <input type="text" class="form-control" name="tanggal" id="datepicker" data-date-format="yyyy-mm-dd" placeholder="Tanggal "/>
+                    <script>
+                      $('#datepicker').datepicker({
+                        format: 'yyyy/mm/dd',
+                        uiLibrary: 'bootstrap4'
+                      });
+                    </script>
+<!-- 
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Content</label>
+                      <div id="summernote"></div>
                     </div>
+                  -->
 
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Deskripsi</label>
+                    <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi"/>
+                  </div>
+
+                  <!-- <div class="form-group">
+                    <label for="exampleInputEmail1">Image</label>
+                    <div class="file-loading">
+                      <input id="file-1" type="file" name="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                    </div>
+                  </div> -->
+
+
+                  <div class="form-group">
+                    <label for="name">Upload </label>
+                    <br>
+                    <input type="file" name="gambar" />
+                  </div> 
+
+
+    <div class="form-group">
+                    <label for="exampleInputEmail1">Tipe</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" name="tipe_artikel">
+                      <option value="1">National</option>
+                      <option value="2">International</option>
+                    </select>
+                  </div>
                        <!-- <div class="form-group">
                     <label for="name">Upload </label>
                     <br>
                     <input type="file" name="dokumen" />
-                 </div>    -->
+                  </div>    -->
 
 
                     <!-- <div class="form-group">
@@ -206,16 +238,10 @@
 
                       </select>
                     </div> -->
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Tipe</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe">
-                        <option value="1">National Initiative</option>
-                        <!-- <option value="2">Jurnal</option> -->
-                      </select>
-                    </div>
+             
 
-                      <button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
-                <?php echo form_close(); ?>
+                    <button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+                    <?php echo form_close(); ?>
                   </div>
                 </div>
               </div>
@@ -279,30 +305,30 @@
       <script src="<?php echo base_url() ?>assets/js/datatables-demo.js"></script>
 
       <script src="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
       <script>
-      $('#summernote').summernote({
-        placeholder: 'Hello bootstrap 4',
-        tabsize: 2,
-        height: 100
-      });
-    </script>
-    <script type="text/javascript">
-        $("#file-1").fileinput({
-            theme: 'fa',
-            uploadUrl: "/imageUpload.php",
-            allowedFileExtensions: ['jpg', 'png', 'gif'],
-            overwriteInitial: false,
-            maxFileSize:2000,
-            maxFilesNum: 10,
-            slugCallback: function (filename) {
-                return filename.replace('(', '_').replace(']', '_');
-            }
+        $('#summernote').summernote({
+          placeholder: 'Hello bootstrap 4',
+          tabsize: 2,
+          height: 100
         });
-    </script>
+      </script>
+      <script type="text/javascript">
+        $("#file-1").fileinput({
+          theme: 'fa',
+          uploadUrl: "/imageUpload.php",
+          allowedFileExtensions: ['jpg', 'png', 'gif'],
+          overwriteInitial: false,
+          maxFileSize:2000,
+          maxFilesNum: 10,
+          slugCallback: function (filename) {
+            return filename.replace('(', '_').replace(']', '_');
+          }
+        });
+      </script>
     </body>
 
     </html>

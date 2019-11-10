@@ -13,6 +13,7 @@
 	<!-- Custom fonts for this template-->
 	<link href="<?php echo base_url() ?>assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
 
+
 	<!-- Page level plugin CSS-->
 	<link href="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
@@ -86,28 +87,27 @@
 		<!-- Sidebar -->
 		<ul class="sidebar navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="index.html">
+				<a class="nav-link" href="<?php echo base_url() ?>portal">
 					<i class="fas fa-fw fa-tachometer-alt"></i>
 					<span>Dashboard</span>
 				</a>
 			</li>
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown active">
 				<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<i class="fas fa-fw fa-folder"></i>
-					<span>Document</span>
+					<span>Documents</span>
 				</a>
 				<div class="dropdown-menu" aria-labelledby="pagesDropdown">
-					<h6 class="dropdown-header">Document types:</h6>
-					<a class="dropdown-item active" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
-
+					<h6 class="dropdown-header">Document Types:</h6>
+					<a class="dropdown-item active" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
 					<div class="dropdown-divider"></div>
 					<h6 class="dropdown-header">Article types:</h6>
-					<a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
-					<a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+					<a class="dropdown-item" href="<?php echo base_url() ?>portal/document/national">National Initiative</a>
+					<a class="dropdown-item" href="<?php echo base_url() ?>portal/document/workshop">Workshop</a>>
 				</div>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="<?php echo base_url()?>pd_portal/Kegiatan/index">
+			<li class="nav-item">
+				<a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
 					<i class="fas fa-fw fa-chart-area"></i>
 					<span>Events</span></a>
 				</li>
@@ -125,12 +125,9 @@
 						<!-- Breadcrumbs-->
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
-								<a href="<?php echo base_url()?>portal">Dashboard</a>
+								<a href="#">Dashboard</a>
 							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo base_url()?>pd_portal/Kegiatan/index">Event</a>
-							</li>
-							<li class="breadcrumb-item active">Edit Event</li>
+							<li class="breadcrumb-item active">Tables</li>
 						</ol>
 
 						<!-- DataTables Example -->
@@ -146,41 +143,55 @@
       			<section class="content">
       				<div class="box box-info">
       					<div class="box-header with-border">
-      						<h3 class="box-title">Form Data Edit Kegiatan</h3>
+      						<h3 class="box-title">Form Data Edit Dokumen</h3>
       					</div>
       					<div class="box-body">
       						<!-- form start -->
-      						<?php echo form_open_multipart('pd_portal/Kegiatan/save'); ?>
+      						<?php echo form_open_multipart('portal/event/edit_kegiatan'); ?>
+      						<?php  
+      						foreach ($editdata as $data):
+      							?>
 
-      						<div class="form-group">
-      							<label for="exampleInputEmail1">Nama</label>
-      							<input type="text" class="form-control" name="judul" placeholder="Judul"/>
-      						</div>
 
-      						<div class="form-group">
-      							<label for="exampleInputEmail1">Deskripsi</label>
-      							<textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"></textarea>
-      						</div>
+      							<input type="hidden"  class="form-control" name="kegiatan_id" placeholder="Judul" value="<?php echo $data->kegiatan_id ?>"/>
 
-      						<div class="form-group">
-      							<label for="example-date-input">Tanggal Mulai</label>
-      								<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-      						</div>
 
-      						<div class="form-group">
-      							<label for="example-date-input">Tanggal Selesai</label>
-      								<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-      						</div>
+      							<div class="form-group">
+      								<label for="exampleInputEmail1">Nama</label>
+      								<input type="text" class="form-control" name="nama" placeholder="Nama" value="<?php echo $data->nama ?>"/>
+      							</div>
 
-      						<div class="form-group">
-      							<label for="exampleInputEmail1">Tipe</label>
-      							<select class="browser-default custom-select custom-select-md mb-3" name="tipe">
-      								<option value="1">National</option>
-      								<option value="2">International</option>
-      							</select>
-      						</div>
+      							<div class="form-group">
+      								<label for="exampleInputEmail1">Deskripsi</label>
+      								<input type="text" class="form-control" name="deskripsi_kegiatan" placeholder="deskripsi_kegiatan" value="<?php echo $data->deskripsi_kegiatan ?>"/>
+      							</div>
 
-      						<button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+      							<div class="form-group">
+      								<label for="example-date-input">Tanggal Mulai</label>
+      								<input class="form-control" type="date" name="tanggal_mulai" id="example-date-input"  value="<?php echo $data->tanggal_mulai ?>">
+      							</div>
+
+
+
+      							<div class="form-group">
+      								<label for="example-date-input">Tanggal Selesai</label>
+      								<input class="form-control" type="date" name="tanggal_selesai" id="example-date-input"  value="<?php echo $data->tanggal_selesai ?>">
+      							</div>
+      							<div class="form-group">
+      								<label for="exampleInputEmail1">Tipe</label>
+      								<select class="browser-default custom-select custom-select-md mb-3" name="tipe">
+      									<option value="national" <?php if ($data->tipe == 'national'): ?>
+      									selected
+      									<?php endif ?>>national</option>
+      									<option value="international" <?php if ($data->tipe == 'international'): ?>
+      									selected
+      									<?php endif ?>>international</option>
+      								</select>
+      							</div>
+
+      							<button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+
+      						<?php endforeach ?>
       						<?php echo form_close(); ?>
       					</div>
       				</div>

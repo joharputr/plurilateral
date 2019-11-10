@@ -150,26 +150,26 @@
       					</div>
       					<div class="box-body">
       						<!-- form start -->
-      						<?php echo form_open_multipart('pd_portal/Kegiatan/save'); ?>
+      						<?php echo form_open_multipart('pd_portal/Kegiatan/insert_kegiatan'); ?>
 
       						<div class="form-group">
       							<label for="exampleInputEmail1">Nama</label>
-      							<input type="text" class="form-control" name="judul" placeholder="Judul"/>
+      							<input type="text" class="form-control" name="nama" placeholder="Nama"/>
       						</div>
 
       						<div class="form-group">
       							<label for="exampleInputEmail1">Deskripsi</label>
-      							<textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"></textarea>
+      							<textarea class="form-control" rows="3" name="deskripsi_kegiatan" placeholder="Deskripsi"></textarea>
       						</div>
 
       						<div class="form-group">
       							<label for="example-date-input">Tanggal Mulai</label>
-      								<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      								<input class="form-control" type="date" name="tanggal_mulai" id="example-date-input">
       						</div>
 
       						<div class="form-group">
       							<label for="example-date-input">Tanggal Selesai</label>
-      								<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      								<input class="form-control" type="date" name="tanggal_selesai" id="example-date-input">
       						</div>
 
       						<div class="form-group">
