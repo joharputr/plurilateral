@@ -23,8 +23,9 @@ $route['portal/document/workshop'] = 'pd_portal/document/workshop';
 $route['portal/document/tambah_workshop'] = 'pd_portal/document/tambah_workshop';
 $route['portal/document/edit_workshop'] = 'pd_portal/document/edit_workshop';
 
-//Bagian ini yang kau tambahin
 $route['portal/event']= 'pd_portal/Kegiatan/index';
+$route['portal/event/tambah_kegiatan']= 'pd_portal/Kegiatan/tambah';
+$route['portal/event/tambah_kegiatan']= 'pd_portal/Kegiatan/edit';
 
 $route['portal/login'] = 'pd_portal/login';
 $route['portal/message'] = 'pd_portal/document/message';

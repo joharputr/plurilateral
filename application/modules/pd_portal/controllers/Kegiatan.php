@@ -22,5 +22,19 @@ class Kegiatan extends MY_Controller
         $this->load->view('content/event/kegiatan', $data);
     }
 
-    //buat fungsi nampilin bisa liat di controller lain
+    public function tambah_kegiatan()
+    {
+        $data['title'] = "Plurilateral Add Event";
+        $data['private_url'] = "tambah_kegiatan";
+        $data['show'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/event/tambah_kegiatan', $data);
+    }
+
+    public function edit_kegiatan()
+    {
+        $data['title'] = "Plurilateral Edit Event";
+        $data['private_url'] = "edit_kegiatan";
+        $data['show'] = $this->db->query("SELECT * FROM kegiatan")->result();
+        $this->load->view('content/event/edit_kegiatan', $data);
+    }
 }
