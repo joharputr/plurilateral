@@ -1,5 +1,5 @@
 <div class="row mb-3">
-    <div class="col-md-2">
+    <div id="title-tab" class="col-md-2">
         <button type="button" class="btn btn-secondary w-100" onclick="actControl('data');"><i
                 class="fa fa-arrow-left"></i>Back</button>
     </div>
