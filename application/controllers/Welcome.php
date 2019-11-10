@@ -34,11 +34,6 @@ class Welcome extends CI_Controller
 		}
 	}
 
-	public function journal()
-	{
-		$this->load->view('./journal');
-	}
-
 	public function workshop($pages = null)
 	{
 		$data['show'] = null; //execute query
