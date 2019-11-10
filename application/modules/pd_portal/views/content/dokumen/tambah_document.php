@@ -102,8 +102,7 @@
           
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative or <br> Workshop</a>
         </div>
       </li>
       <li class="nav-item">

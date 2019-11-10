@@ -102,8 +102,8 @@
           
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/national">National Initiative or <br> Workshop</a>
+          <!-- <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a> -->
         </div>
       </li>
       <li class="nav-item">
@@ -127,7 +127,7 @@
               <li class="breadcrumb-item">
                 <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
-              <li class="breadcrumb-item active">National Initiative</li>
+              <li class="breadcrumb-item active">Article</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -143,7 +143,7 @@
 
           <div class="card-header">
             <i class="fas fa-table"></i>
-          National Initiative Table</div>
+          Article Table</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

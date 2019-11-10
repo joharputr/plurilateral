@@ -112,15 +112,14 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Document types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
           
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/national">National Initiative or <br> Workshop</a>
         </div>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
@@ -142,9 +141,9 @@
                 <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="<?php echo base_url()?>portal/document/national">National Initiative</a>
+                <a href="<?php echo base_url()?>portal/document/national">National Initiative or Workshop</a>
               </li>
-              <li class="breadcrumb-item active">Add National Initiative Article</li>
+              <li class="breadcrumb-item active">Add Article</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -160,7 +159,7 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Tambah Artikel National Initiative</h3>
+                    <h3 class="box-title">Form Data Tambah Artikel</h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->
@@ -212,11 +211,11 @@
                   </div> 
 
 
-    <div class="form-group">
+                   <div class="form-group">
                     <label for="exampleInputEmail1">Tipe</label>
                     <select class="browser-default custom-select custom-select-md mb-3" name="tipe_artikel">
-                      <option value="1">National</option>
-                      <option value="2">International</option>
+                      <option value="1">National Initiative</option>
+                      <option value="2">Workshop</option>
                     </select>
                   </div>
                        <!-- <div class="form-group">

@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
-    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
+    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document">Edit Plurilateral Workshop Article</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -102,11 +102,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Document Types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
+          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
           <div class="dropdown-divider"></div>
       <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/national">National Initiative</a>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/workshop">Workshop</a>>
+          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document/national">National Initiative or <br> Workshop</a>            
         </div>
       </li>
        <li class="nav-item">
@@ -128,9 +127,12 @@
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Dashboard</a>
+                <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
-              <li class="breadcrumb-item active">Tables</li>
+              <li class="breadcrumb-item">
+                <a href="<?php echo base_url()?>portal/document/national">National Initiative or Workshop</a>
+              </li>
+              <li class="breadcrumb-item active">Edit Article</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -146,7 +148,7 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Edit Dokumen</h3>
+                    <h3 class="box-title">Form Data Edit Article</h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->
@@ -197,10 +199,10 @@
                       <select class="browser-default custom-select custom-select-md mb-3" name="tipe_artikel">
                         <option value="national" <?php if ($data->tipe_artikel == 'national'): ?>
                         selected
-                        <?php endif ?>>national</option>
+                        <?php endif ?>>National Initiative</option>
                         <option value="international" <?php if ($data->tipe_artikel == 'international'): ?>
                         selected
-                        <?php endif ?>>international</option>
+                        <?php endif ?>>Workshop</option>
                       </select>
                     </div>
 
