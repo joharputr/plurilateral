@@ -106,13 +106,13 @@
           <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+       <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url()?>portal/message">
           <i class="fas fa-fw fa-table"></i>
           <span>Messages</span></a>
       </li>

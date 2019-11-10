@@ -86,7 +86,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url() ?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -107,12 +107,12 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/Kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url() ?>portal/message">
           <i class="fas fa-fw fa-table"></i>
           <span>Messages</span></a>
       </li>
