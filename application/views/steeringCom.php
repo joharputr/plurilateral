@@ -45,7 +45,7 @@ $this->load->view('/header_footer/header');
 ?>
         </div>
 
-        <h2 style="text-align: center; color: #a5a5a5" class="mt-4">Steering Committee</h2>
+        <h2 id="title-tab" style="text-align: center; color: #a5a5a5">Steering Committee</h2>
         <div class="container">
             <div class="row">
                 <!-- first advisor -->
