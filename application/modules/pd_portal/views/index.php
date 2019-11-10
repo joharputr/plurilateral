@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Folarium Technomedia">
-    <title>Portal</title>
+    <meta name="author">
+    <title>Portal Administrator</title>
+    <link href="<?php echo base_url() ?>assets/image/event/Logo-Event.png" rel="shortcut icon" type="image/x-icon" />
     <link href="<?php echo base_url() ?>assets/css/style_min/style.min.css" rel="stylesheet">
     <!-- <link href="<?php echo base_url() ?>assets/libs/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url() ?>backup-assets/assets-b1/confirm/sweetalert.css">
@@ -97,7 +98,7 @@
                         <small class="text-white">Selamat Datang, Administrator !</small>
                     </div>
                     <div class="col-sm-3 text-right">
-                        <a class="btn btn-sm btn-info text-white" href="<?php echo base_url("my-portal") ?>" style="cursor: pointer; border-radius: 5px"><i class="fas fa-podcast m-r-5 m-l-5"></i> Profil</a>
+                        <a class="btn btn-sm btn-info text-white" href="<?php echo base_url("my-portal") ?>" style="cursor: pointer; border-radius: 5px"><i class="fas fa-podcast m-r-5 m-l-5"></i> Pengaturan</a>
                         <a class="logout btn btn-sm btn-light" role="button" style="cursor: pointer; border-radius: 5px"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                     </div>
                 </div>

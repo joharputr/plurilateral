@@ -21,7 +21,7 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
     <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
 
@@ -145,7 +145,7 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Tambah Dokumen</h3>
+                    <h3 class="box-title">Form Data Edit Dokumen</h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->
@@ -155,7 +155,7 @@
                 ?>
 
               
-                      <input type="hidden"  class="form-control" name="id" placeholder="Judul" value="<?php echo $data->id ?>"/>
+                      <input type="hidden"  class="form-control" name="id" placeholder="Judul" value="<?php echo $data->dokumen_id ?>"/>
                    
 
                     <div class="form-group">
@@ -175,7 +175,7 @@
                         <?php 
                         foreach($kegiatan as $k){
                         ?>
-                        <option <?php if($k->id == $data->event){echo "selected";}?> value="<?php echo $k->id?>"> <?php echo $k->nama?> </option>
+                        <option <?php if($k->kegiatan_id == $data->event){echo "selected";}?> value="<?php echo $k->kegiatan_id?>"> <?php echo $k->nama?> </option>
                         <?php }?>
 
                       </select>
@@ -183,10 +183,10 @@
                     <div class="form-group">
                       <label for="exampleInputEmail1">Tipe</label>
                       <select class="browser-default custom-select custom-select-md mb-3" name="tipe">
-                        <option value="paper" <?php if ($data->tipe == 'paper'): ?>
+                        <option value="paper" <?php if ($data->tipe_dokumen == 'paper'): ?>
                           selected
                         <?php endif ?>>Paper</option>
-                        <option value="jurnal" <?php if ($data->tipe == 'jurnal'): ?>
+                        <option value="jurnal" <?php if ($data->tipe_dokumen == 'jurnal'): ?>
                           selected
                         <?php endif ?>>Jurnal</option>
                       </select>

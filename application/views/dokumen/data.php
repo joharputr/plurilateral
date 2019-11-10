@@ -6,12 +6,12 @@
                     <div class="card-body">
                         <h3 style=" text-align: center; margin-bottom: -10px; font-family: 'Raleway', sans-serif; margin-bottom: 10px; color:#996633">
                             <?php echo $e->nama ?></h3>
-                        <h4 class="text-success text-center"><?php echo date_indo($e->tanggal_mulai) . " - " . date_indo($e->tanggal_selesai) ?></h4>
+                        <h5 class="text-success text-center"><?php echo date_indo($e->tanggal_mulai) . " - " . date_indo($e->tanggal_selesai) ?></h5>
                         <?php if (!empty($dokumen)) { ?>
                             <ul class="list-group">
                                 <?php foreach ($dokumen as $d) { ?>
-                                    <?php if ($d->event == $e->id) { ?>
-                                        <li class="list-group-item"><a href="<?php echo base_url($d->dokumen) ?>"><?php echo $d->judul ?></a></li>
+                                    <?php if ($d->event == $e->kegiatan_id) { ?>
+                                        <li class="list-group-item"><a href="<?php echo base_url($d->dokumen) ?>"><i class="fa fa-file" style="font-size: 15px"></i> <?php echo $d->judul ?></a></li>
                                 <?php }
                                             } ?>
                             </ul>

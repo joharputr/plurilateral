@@ -20,7 +20,7 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
     <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
 
@@ -171,7 +171,7 @@
                         <?php 
                         foreach($kegiatan as $k){
                         ?>
-                        <option value="<?php echo $k->id?>"> <?php echo $k->nama?> </option>
+                        <option value="<?php echo $k->kegiatan_id?>"> <?php echo $k->nama?> </option>
                         <?php }?>
 
                       </select>
