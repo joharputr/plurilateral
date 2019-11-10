@@ -18,7 +18,7 @@ $route['portal/document/edit/(:num)'] = 'pd_portal/document/edit_document/$1';
 
 $route['portal/document/national'] = 'pd_portal/document/national_initiative';
 $route['portal/document/tambah_national'] = 'pd_portal/document/tambah_national';
-$route['portal/document/edit_national'] = 'pd_portal/document/edit_national';
+$route['portal/document/edit_national/(:num)'] = 'pd_portal/document/edit_national/$1';
 $route['portal/document/workshop'] = 'pd_portal/document/workshop';
 $route['portal/document/tambah_workshop'] = 'pd_portal/document/tambah_workshop';
 $route['portal/document/edit_workshop'] = 'pd_portal/document/edit_workshop';

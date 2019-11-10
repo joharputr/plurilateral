@@ -150,10 +150,12 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama</th>
+                   
+                    <th>Judul</th>
                     <th>Tempat</th>
-                    <th>Event</th>
-                    <th>Date</th>
+                     <th>Tanggal</th>
+                      <th>Deskripsi</th>
+                          <th>Gambar</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -170,17 +172,17 @@
                         <td><?php echo $no++?></td>
                     
                           
-                      <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?></td> </div>
-                      <td><div style="width: 100px;"> <a href="<?php echo base_url('/assets/files/'.$lihat->dokumen) ?>" width="64" > <?php echo base_url('upload/files/'.$lihat->dokumen) ?> </a></td> 
+                      <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?></div></td> 
+                                 <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->tempat) ?></div></td> 
+                                  <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->tanggal) ?></div></td> 
+                                   <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->deskripsi) ?></div></td> 
+                      <td><div style="width: 100px;"> <a href="<?php echo base_url('/assets/files/'.$lihat->gambar) ?>" width="64" > <?php echo base_url('upload/files/'.$lihat->gambar) ?> </a></td> 
                   
-                      <td><div style="width: 150px;"><?php echo ucwords($lihat->event) ?></td> 
-                    <td></td>
-                        <td  align="center">
-                          <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/edit/<?php echo $lihat->id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
-                            <a href="<?php echo base_url(); ?>portal/document/hapus/<?php echo $lihat->id?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
-                            
-                        </td>                     
+               <td align="center">
+              <div class="btn-group" role="group" style="width: 200px;">
+                <a href="<?php echo base_url(); ?>portal/document/edit_national/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
+                <a href="<?php echo base_url(); ?>portal/document/hapus/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+            </td>                     
                       </tr>
                       <?php }} ?>
                     </tbody>

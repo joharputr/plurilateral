@@ -25,7 +25,7 @@ class Document extends MY_Controller
     {
         $data['title'] = "Plurilateral National Initiative";
         $data['private_url'] = "national";
-        // $data['show'] = $this->db->query("SELECT * FROM dokumen")->result();
+         $data['show'] = $this->db->query("SELECT * FROM artikel WHERE tipe_artikel = 'national'")->result();
         $this->load->view('content/dokumen/national_initiative', $data);
     }
 
