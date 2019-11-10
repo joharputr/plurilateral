@@ -87,37 +87,35 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url() ?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Documents</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="login.html">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
-          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+          <h6 class="dropdown-header">Document Types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
           <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
+      <h6 class="dropdown-header">Article types:</h6>
+          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/national">National Initiative</a>
+          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/workshop">Workshop</a>>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-          </li>
+          <span>Events</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url()?>portal/message">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Messages</span></a>
+      </li>
         </ul>
 
         <div id="content-wrapper">
