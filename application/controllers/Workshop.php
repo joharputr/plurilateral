@@ -32,6 +32,7 @@ class Workshop extends MY_Controller
     {
         $data['private_url'] = 'workshop';
         $data['preview'] = $this->db->query("SELECT * FROM artikel d WHERE d.artikel_id = '" . $id . "'")->result();
+        $data['gambar'] = $this->db->query("SELECT * FROM gambar g WHERE g.artikel = '" . $id . "'")->result();
         $this->load->view('artikel/preview', $data);
     }
 }
