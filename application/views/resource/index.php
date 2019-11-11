@@ -2,7 +2,7 @@
 <html lang="en" style="scroll-behavior: smooth;">
 
 <head>
-    <title>The Conference : <?php echo $title?></title>
+    <title>The Conference : <?php echo $title ?></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Conference project">
@@ -51,7 +51,7 @@
         ?>
     </div>
     <div class="container" id="main-content">
-        <h2 id="title-tab" style="margin-bottom: 20px; "><?php echo $title?></h2>
+        <h2 id="title-tab" style="margin-bottom: 20px; "><?php echo $title ?></h2>
         <hr>
         <div class="row">
             <div class="col-md-4 mb-2">
@@ -59,7 +59,11 @@
                 $this->load->view('/resource/filter', $tahun);
                 ?>
             </div>
-            <div class="col-md-8 data-content">
+            <div class="col-md-8">
+                <div class="load-data card-body text-center bg-white text-primary">
+                    <i class="fa fa-spinner fa-spin mr-10"></i>Permintaan Data Anda Sedang di Proses . . .</span>
+                </div>
+                <div class="data-content"></div>
             </div>
         </div>
     </div>

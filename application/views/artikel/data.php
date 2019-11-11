@@ -16,3 +16,7 @@
         </div>
     </div>
 <?php } ?>
+
+<script type="text/javascript">
+    $(".load-data").hide();
+</script>

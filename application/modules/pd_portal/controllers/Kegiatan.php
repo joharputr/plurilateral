@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Kegiatan extends MY_Controller
 {
 
-    private $title = "kegiatan";
+    private $title = "Event";
     private $url = "kegiatan";
 
     public function __construct()
@@ -18,7 +18,7 @@ class Kegiatan extends MY_Controller
 
     public function index()
     {
-        $data['title'] = "Plurilateral kegiatan";
+        $data['title'] = "Plurilateral Events";
         $data['private_url'] = "kegiatan";
         $data['show'] = $this->db->query("SELECT * FROM kegiatan")->result();
         $this->load->view('content/event/kegiatan', $data);

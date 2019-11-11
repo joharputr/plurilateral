@@ -9,7 +9,9 @@ class Home extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
-        // is_logged_in();
+        if ($this->session->userdata('status') != "login") {
+            redirect(base_url("portal/login"));
+        }
     }
 
     public function index($page = NULL) {
