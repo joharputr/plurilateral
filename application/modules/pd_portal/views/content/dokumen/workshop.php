@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title><?php echo $title ?></title>
-  <link href="<?php echo base_url() ?>assets/css/css/sb-admin.css" rel="stylesheet">
+	<link href="<?php echo base_url() ?>assets/css/css/sb-admin.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url() ?>assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
 
@@ -22,7 +22,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
-    <a class="navbar-brand mr-1" href="<?php echo base_url() ?>portal/document"><?php echo $title ?></a>
+    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -86,7 +86,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>portal">
+        <a class="nav-link" href="<?php echo base_url()?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -98,20 +98,21 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Document types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
-
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
+          
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/national">National Initiative or <br> Workshop</a>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/Kegiatan">
+       <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>portal/message">
+        <a class="nav-link" href="<?php echo base_url()?>portal/message">
           <i class="fas fa-fw fa-table"></i>
           <span>Messages</span></a>
       </li>
@@ -124,89 +125,85 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="<?php echo base_url() ?>portal">Dashboard</a>
+            <a href="<?php echo base_url()?>portal">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Paper or Journal</li>
+          <li class="breadcrumb-item active">Workshop</li>
         </ol>
 
         <!-- DataTables Example -->
-        <!--  <pre>
-          <?php print_r($show) ?>
+       <!--  <pre>
+          <?php print_r($show)?>
         </pre> -->
-
-        <h3 class="box-title">
-          <a href="<?php echo base_url(); ?>portal/document/tambah" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
-        </h3>
+         
+                   <h3 class="box-title">
+                    <a href="<?php echo base_url(); ?>portal/document/tambah_workshop" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
+                     </h3>
 
         <div class="card mb-3">
-
+        
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Document Table</div>
+            Workshop Table</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Judul</th>
-                    <th>Dokumen</th>
+                    <th>Nama</th>
+                    <th>Tempat</th>
                     <th>Event</th>
-                    <th>Type</th>
+                    <th>Date</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
 
-                  <?php
-                  $no = 1;
-                  $id = 1;
-                  if (!empty($show)) {
-                    foreach ($show as $lihat) {
-                      ?>
+                          <?php  
+                        $no = 1; 
+                        $id = 1;
+                        if(!empty($show)){
+                        foreach ($show as $lihat){
+                        ?>
                       <tr>
-                        <td><?php echo $no++ ?></td>
-                        <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?>
-                        </td>
-            </div>
-            <td>
-              <div style="width: 250px;"> <a href="<?php echo base_url($lihat->dokumen) ?>" width="64"> <?php echo base_url('upload/files/' . $lihat->dokumen) ?> </a>
-            </td>
 
-            <td>
-              <div style="width: 150px;"><?php echo ucwords($lihat->nama) ?>
-            </td>
-            <td><div style="width: 100px;"><?php echo ucwords($lihat->tipe_dokumen) ?></td>
-            <td align="center">
-              <div class="btn-group" role="group" style="width: 200px;">
-                <a href="<?php echo base_url(); ?>portal/document/edit/<?php echo $lihat->dokumen_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
-                <a href="<?php echo base_url(); ?>portal/document/hapus/<?php echo $lihat->dokumen_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
-            </td>
-            </tr>
-        <?php }
-        } ?>
-        </tbody>
-        </table>
+                        <td><?php echo $no++?></td>
+                    
+                          
+                      <td>  <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?></td> </div>
+                      <td><div style="width: 100px;"> <a href="<?php echo base_url('/assets/files/'.$lihat->dokumen) ?>" width="64" > <?php echo base_url('upload/files/'.$lihat->dokumen) ?> </a></td> 
+                  
+                      <td><div style="width: 150px;"><?php echo ucwords($lihat->event) ?></td> 
+                    <td></td>
+                        <td  align="center">
+                          <div class="btn-group" role="group" style="width: 200px;">
+                            <a href="<?php echo base_url(); ?>portal/document/edit/<?php echo $lihat->id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
+                            <a href="<?php echo base_url(); ?>portal/document/hapus/<?php echo $lihat->id?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            
+                        </td>                     
+                      </tr>
+                      <?php }} ?>
+                    </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+      </div>
+      <!-- /.container-fluid -->
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright ©Plurilateral 2019</span>
           </div>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-      </div>
+      </footer>
 
     </div>
-    <!-- /.container-fluid -->
-
-    <!-- Sticky Footer -->
-    <footer class="sticky-footer">
-      <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-          <span>Copyright ©Plurilateral 2019</span>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-  <!-- /.content-wrapper -->
+    <!-- /.content-wrapper -->
 
   </div>
   <!-- /#wrapper -->

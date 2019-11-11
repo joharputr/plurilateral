@@ -17,13 +17,22 @@ $route['portal/document/hapus/(:num)'] = 'pd_portal/document/hapus_document/$1';
 $route['portal/document/edit/(:num)'] = 'pd_portal/document/edit_document/$1';
 
 
-//press
-$route['portal/document/press'] = 'pd_portal/document/press';
-$route['portal/document/tambah_press'] = 'pd_portal/document/tambah_press';
-$route['portal/document/edit_press/(:num)'] = 'pd_portal/document/edit_press/$1';
-$route['portal/document/insert_press'] = 'pd_portal/document/insert_press';
-$route['portal/document/hapus_press/(:num)'] = 'pd_portal/document/hapus_press/$1';
-$route['portal/document/edit_press'] = 'pd_portal/document/update_press';
+//national initiative
+$route['portal/document/national'] = 'pd_portal/document/national_initiative';
+$route['portal/document/tambah_national'] = 'pd_portal/document/tambah_national';
+$route['portal/document/edit_national/(:num)'] = 'pd_portal/document/edit_national/$1';
+$route['portal/document/insert_national'] = 'pd_portal/document/insert_national';
+$route['portal/document/hapus_national/(:num)'] = 'pd_portal/document/hapus_national/$1';
+$route['portal/document/edit_national'] = 'pd_portal/document/update_national';
+
+
+//workshop
+$route['portal/document/workshop'] = 'pd_portal/document/workshop';
+$route['portal/document/tambah_workshop'] = 'pd_portal/document/tambah_workshop';
+$route['portal/document/insert_workshop'] = 'pd_portal/document/insert_workshop';
+$route['portal/document/hapus_workshop/(:num)'] = 'pd_portal/document/hapus_workshop/$1';
+$route['portal/document/edit_workshop'] = 'pd_portal/document/update_workshop';
+$route['portal/document/edit_workshop/(:num)'] = 'pd_portal/document/edit_workshop/$1';
 
 
 //Event

@@ -9,14 +9,22 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title><?php echo $title ?></title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.css" rel="stylesheet">
   <link href="<?php echo base_url() ?>assets/css/css/sb-admin.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url() ?>assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
-  
 
   <!-- Page level plugin CSS-->
   <link href="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+<style type="text/css">
+        .fileinput-remove,
+        .fileinput-upload{
+            display: none;
+        }
 
+    </style>
 </head>
 
 <body id="page-top">
@@ -87,7 +95,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>portal">
+        <a class="nav-link" href="<?php echo base_url()?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -95,18 +103,19 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Documents</span>
+          <span>Document</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Document Types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
+          <h6 class="dropdown-header">Document types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
+          
           <div class="dropdown-divider"></div>
-      <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/national">National Initiative</a>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/workshop">Workshop</a>>
+          <h6 class="dropdown-header">Article types:</h6>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/national">National Initiative</a>
+          <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
         </div>
       </li>
-       <li class="nav-item">
+       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
@@ -115,8 +124,8 @@
         <a class="nav-link" href="<?php echo base_url()?>portal/message">
           <i class="fas fa-fw fa-table"></i>
           <span>Messages</span></a>
-      </li>
-        </ul>
+      </li>>
+    </ul>
 
         <div id="content-wrapper">
 
@@ -125,9 +134,12 @@
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Dashboard</a>
+                <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
-              <li class="breadcrumb-item active">Tables</li>
+              <li class="breadcrumb-item">
+                <a href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+              </li>
+              <li class="breadcrumb-item active">Add Workshop Article</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -143,56 +155,66 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Edit Dokumen</h3>
+                    <h3 class="box-title">Form Data Tambah Artikel Workshop </h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->
-                    <?php echo form_open_multipart('portal/document/edit'); ?>
-                 <?php  
-                foreach ($editdata as $data):
-                ?>
-
-              
-                      <input type="hidden"  class="form-control" name="id" placeholder="Judul" value="<?php echo $data->dokumen_id ?>"/>
-                   
+                    <!-- <?php echo form_open_multipart('portal/document/save'); ?> -->
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Judul</label>
-                      <input type="text" class="form-control" name="judul" placeholder="Judul" value="<?php echo $data->judul ?>"/>
+                      <label for="exampleInputEmail1">Nama</label>
+                      <input type="text" class="form-control" name="judul" placeholder="Judul"/>
                     </div>
 
                      <div class="form-group">
+                      <label for="exampleInputEmail1">Tempat</label>
+                      <input type="text" class="form-control" name="tempat" placeholder="Tempat"/>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Event</label>
+                      <input type="text" class="form-control" name="event" placeholder="Event"/>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Content</label>
+                    <div id="summernote"></div>
+                    </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Image</label>
+                        <div class="file-loading">
+                            <input id="file-1" type="file" name="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                        </div>
+                    </div>
+
+                       <!-- <div class="form-group">
                     <label for="name">Upload </label>
                     <br>
-                    <input type="file" name="dokumen"  />
-                 </div>   
-                    <div class="form-group">
+                    <input type="file" name="dokumen" />
+                 </div>    -->
+
+
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">Event</label>
                       <select class="browser-default custom-select custom-select-md mb-3" name="event">
                  
                         <?php 
                         foreach($kegiatan as $k){
                         ?>
-                        <option <?php if($k->kegiatan_id == $data->event){echo "selected";}?> value="<?php echo $k->kegiatan_id?>"> <?php echo $k->nama?> </option>
+                        <option value="<?php echo $k->id?>"> <?php echo $k->judul?> </option>
                         <?php }?>
 
                       </select>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <label for="exampleInputEmail1">Tipe</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe_dokumen">
-                        <option value="paper" <?php if ($data->tipe_dokumen == 'paper'): ?>
-                          selected
-                        <?php endif ?>>Paper</option>
-                        <option value="jurnal" <?php if ($data->tipe_dokumen == 'jurnal'): ?>
-                          selected
-                        <?php endif ?>>Jurnal</option>
+                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe">
+                        <option value="1">Workshop</option>
+                        <!-- <option value="2">Jurnal</option> -->
                       </select>
                     </div>
 
                       <button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
-
-                        <?php endforeach ?>
                 <?php echo form_close(); ?>
                   </div>
                 </div>
@@ -239,7 +261,6 @@
           </div>
         </div>
       </div>
-
       <!-- Bootstrap core JavaScript-->
       <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
       <script src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -256,6 +277,32 @@
 
       <!-- Demo scripts for this page-->
       <script src="<?php echo base_url() ?>assets/js/datatables-demo.js"></script>
+
+      <script src="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+      <script>
+      $('#summernote').summernote({
+        placeholder: 'Hello bootstrap 4',
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+    <script type="text/javascript">
+        $("#file-1").fileinput({
+            theme: 'fa',
+            uploadUrl: "/imageUpload.php",
+            allowedFileExtensions: ['jpg', 'png', 'gif'],
+            overwriteInitial: false,
+            maxFileSize:2000,
+            maxFilesNum: 10,
+            slugCallback: function (filename) {
+                return filename.replace('(', '_').replace(']', '_');
+            }
+        });
+    </script>
     </body>
 
     </html>
