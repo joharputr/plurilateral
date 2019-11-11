@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-sm-3 text-right">
                         <a class="btn btn-sm btn-info text-white" href="<?php echo base_url("my-portal") ?>" style="cursor: pointer; border-radius: 5px"><i class="fas fa-podcast m-r-5 m-l-5"></i> Pengaturan</a>
-                        <a class="logout btn btn-sm btn-light" role="button" style="cursor: pointer; border-radius: 5px"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                        <a class="logout btn btn-sm btn-light" href="<?php echo base_url(); ?>portal/login/logout" role="button" style="cursor: pointer; border-radius: 5px"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                     </div>
                 </div>
                 <div class="container-fluid">

@@ -44,8 +44,11 @@ $route['portal/document/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_
 
 
 
-$route['portal/login'] = 'pd_portal/login';
+$route['portal/login'] = 'pd_portal/login/index';
+$route['portal/login/do_login'] = 'pd_portal/login/do_login';
+$route['portal/login/logout'] = 'pd_portal/login/logout';
 $route['portal/message'] = 'pd_portal/document/message';
+
 // $route['event/about'] = 'pd_event/event/index/about';
 // $route['event/goal'] = 'pd_event/event/index/goal';
 

@@ -12,6 +12,11 @@ class Document extends MY_Controller
     {
         parent::__construct();
 
+
+    if($this->session->userdata('status') != "login"){
+            redirect(base_url("portal/login"));
+        }
+
     }
 
     public function index()
@@ -107,7 +112,7 @@ class Document extends MY_Controller
     private function _uploadImage3()
     {
         $config['upload_path']          = './assets/files/';
-        $config['allowed_types']        = 'gif|jpg|png|pdf|ppt|pptx';
+        $config['allowed_types']        = 'gif|jpg|png|pdf|ppt|pptx|doc|docx';
         $config['file_name']            = time();
         $config['max_width']            = 121024;
         $config['overwrite']            = true;
@@ -175,7 +180,6 @@ class Document extends MY_Controller
         $tipe_artikel = $this->input->post('tipe_artikel');
         $object = array(
             'judul' => $judul,
-            'gambar' => 'assets/files/'.$this->upload_gambar_press(),
             'tanggal' => $tanggal,
             'tempat' => $tempat,
             'deskripsi' => $deskripsi,
@@ -200,7 +204,6 @@ class Document extends MY_Controller
             'tempat' => $tempat,
             'tanggal' => $tanggal,
             'deskripsi' => $deskripsi,
-            'gambar' => 'assets/storage/press/'.$this->upload_gambar_press(),
             'tipe_artikel' => $tipe_artikel,
         );
         //     $this->dokumen = $this->_uploadImage3();

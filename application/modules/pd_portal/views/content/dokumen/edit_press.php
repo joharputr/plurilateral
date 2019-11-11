@@ -187,12 +187,7 @@
                       <label for="exampleInputEmail1">Deskripsi</label>
                       <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi" value="<?php echo $data->deskripsi ?>"/>
                     </div>
-
-                     <div class="form-group">
-                    <label for="name">Upload </label>
-                    <br>
-                    <input type="file" name="dokumen"  />
-                 </div>  
+ 
 
                    <div class="form-group">
                       <label for="exampleInputEmail1">Tipe</label>

@@ -76,7 +76,7 @@
                                 <div>
                                     <a><img class="img-fluid z-depth-1" src="<?php echo base_url() ?><?php echo $g->path ?>" alt="photo" data-toggle="modal" data-target="#modal<?php echo $no; ?>"></a>
                                 </div>
-                            <?php } ?>
+                            <?php $no++;} ?>
                         </div>
                     <?php } ?>
                 </div>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+            <?php $no++;} ?>
         <?php } ?>
     </div>
     <?php

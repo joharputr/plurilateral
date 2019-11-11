@@ -135,7 +135,7 @@
         </pre> -->
 
         <h3 class="box-title">
-          <a href="<?php echo base_url(); ?>portal/document/tambah" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
+          <a href="<?php echo base_url(); ?>portal/login/logout" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
         </h3>
 
         <div class="card mb-3">

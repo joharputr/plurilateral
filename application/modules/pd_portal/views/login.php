@@ -102,14 +102,15 @@
                                 </center>
                                 <div class="card bg-light" style="border-radius: 5px; margin-bottom: 0px">
                                     <div class="card-body text-center" style="padding-top: 40px">
+                                          <?php echo form_open('portal/login/do_login'); ?>
                                         <form>
                                             <div class="form-group">
                                                 <label for="InputUsername">Username</label>
-                                                <input type="username" class="form-control" id="InputUsername" placeholder="Input Username">
+                                                <input type="username" class="form-control" name="nama" id="InputUsername" placeholder="Input Username">
                                             </div>
                                             <div class="form-group">
                                                 <label for="InputPassword">Password</label>
-                                                <input type="password" class="form-control" id="InputPassword" placeholder="Input Password">
+                                                <input type="password" class="form-control" name="password" id="InputPassword" placeholder="Input Password">
                                             </div>
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input" id="check">
@@ -118,6 +119,7 @@
                                             <br>
                                             <button type="submit" class="btn btn-info w-100">Login</button>
                                         </form>
+                                          <?php echo form_close(); ?>
                                     </div>
                                 </div>
                             </div>
