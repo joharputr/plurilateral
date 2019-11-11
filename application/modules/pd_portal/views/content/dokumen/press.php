@@ -127,7 +127,7 @@
               <li class="breadcrumb-item">
                 <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
-              <li class="breadcrumb-item active">Article</li>
+              <li class="breadcrumb-item active">Press</li>
             </ol>
 
             <!-- DataTables Example -->

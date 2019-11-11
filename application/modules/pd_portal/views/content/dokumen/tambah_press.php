@@ -143,7 +143,7 @@
               <li class="breadcrumb-item">
                 <a href="<?php echo base_url()?>portal/document/press">National Initiative or Workshop</a>
               </li>
-              <li class="breadcrumb-item active">Add Article</li>
+              <li class="breadcrumb-item active">Add Press</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -159,7 +159,7 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Tambah Artikel</h3>
+                    <h3 class="box-title">Form Data Tambah Press</h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->

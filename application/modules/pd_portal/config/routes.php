@@ -18,7 +18,7 @@ $route['portal/document/edit/(:num)'] = 'pd_portal/document/edit_document/$1';
 
 
 //press
-$route['portal/document/press'] = 'pd_portal/document/press_initiative';
+$route['portal/document/press'] = 'pd_portal/document/press';
 $route['portal/document/tambah_press'] = 'pd_portal/document/tambah_press';
 $route['portal/document/edit_press/(:num)'] = 'pd_portal/document/edit_press/$1';
 $route['portal/document/insert_press'] = 'pd_portal/document/insert_press';

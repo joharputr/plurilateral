@@ -141,7 +141,7 @@ class Document extends MY_Controller
 
 
     //press initiative
-    public function press_initiative()
+    public function press()
     {
         $data['title'] = "Plurilateral National Initiative or Workshop";
         $data['private_url'] = "press";
