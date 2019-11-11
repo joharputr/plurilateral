@@ -9,29 +9,24 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title><?php echo $title ?></title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
-  <link href="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.css" rel="stylesheet">
   <link href="<?php echo base_url() ?>assets/css/css/sb-admin.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url() ?>assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
-
+  
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
   <!-- Page level plugin CSS-->
   <link href="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-<style type="text/css">
-        .fileinput-remove,
-        .fileinput-upload{
-            display: none;
-        }
 
-    </style>
 </head>
 
 <body id="page-top">
 
   <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
-    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
+    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document">Edit Plurilateral Workshop or National Initiative</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -95,7 +90,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>portal">
+        <a class="nav-link" href="<?php echo base_url() ?>portal">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -103,18 +98,17 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Document</span>
+          <span>Documents</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Document types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
-          
+          <h6 class="dropdown-header">Document Types:</h6>
+          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
           <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/national">National Initiative or <br> Workshop</a>
+      <h6 class="dropdown-header">Presse types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document/press">National Initiative or <br> Workshop</a>            
         </div>
       </li>
-       <li class="nav-item active">
+       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Events</span></a>
@@ -124,7 +118,7 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Messages</span></a>
       </li>
-    </ul>
+        </ul>
 
         <div id="content-wrapper">
 
@@ -136,9 +130,9 @@
                 <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="<?php echo base_url()?>portal/document/workshop">Workshop</a>
+                <a href="<?php echo base_url()?>portal/document/press">National Initiative or Workshop</a>
               </li>
-              <li class="breadcrumb-item active">Edit Workshop Article</li>
+              <li class="breadcrumb-item active">Edit Press</li>
             </ol>
 
             <!-- DataTables Example -->
@@ -154,68 +148,68 @@
               <section class="content">
                 <div class="box box-info">
                   <div class="box-header with-border">
-                    <h3 class="box-title">Form Data Edit Artikel Workshop</h3>
+                    <h3 class="box-title">Form Data Edit Press</h3>
                   </div>
                   <div class="box-body">
                     <!-- form start -->
-                    <!-- <?php echo form_open_multipart('portal/document/save'); ?> -->
+                    <?php echo form_open_multipart('portal/document/edit_press'); ?>
+                 <?php  
+                foreach ($editdata as $data):
+                ?>
+
+              
+                      <input type="hidden"  class="form-control" name="id" placeholder="Judul" value="<?php echo $data->artikel_id ?>"/>
+                   
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Nama</label>
-                      <input type="text" class="form-control" name="judul" placeholder="Judul"/>
+                      <label for="exampleInputEmail1">Judul</label>
+                      <input type="text" class="form-control" name="judul" placeholder="Judul" value="<?php echo $data->judul ?>"/>
+                    </div>
+                      <div class="form-group">
+                      <label for="exampleInputEmail1">Tempat</label>
+                      <input type="text" class="form-control" name="tempat" placeholder="tempat" value="<?php echo $data->tempat ?>"/>
+                    </div>
+                      <div class="form-group">
+                     <label for="exampleInputEmail1">Tanggal</label>
+                    <input type="text" class="form-control" name="tanggal" id="datepicker" data-date-format="yyyy-mm-dd" placeholder="Tanggal" value="<?php echo $data->tanggal ?>"/>
+                    <script>
+                      $('#datepicker').datepicker({
+                        format: 'yyyy/mm/dd',
+                        uiLibrary: 'bootstrap4'
+                      });
+                    </script>
+                    </div>
+
+                  
+
+
+                      <div class="form-group">
+                      <label for="exampleInputEmail1">Deskripsi</label>
+                      <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi" value="<?php echo $data->deskripsi ?>"/>
                     </div>
 
                      <div class="form-group">
-                      <label for="exampleInputEmail1">Tempat</label>
-                      <input type="text" class="form-control" name="tempat" placeholder="Tempat"/>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Event</label>
-                      <input type="text" class="form-control" name="event" placeholder="Event"/>
-                    </div>
-                    <div class="form-group">
-                    <label for="exampleInputEmail1">Content</label>
-                    <div id="summernote"></div>
-                    </div>
-
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Image</label>
-                        <div class="file-loading">
-                            <input id="file-1" type="file" name="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
-                        </div>
-                    </div>
-
-                       <!-- <div class="form-group">
                     <label for="name">Upload </label>
                     <br>
-                    <input type="file" name="dokumen" />
-                 </div>    -->
+                    <input type="file" name="dokumen"  />
+                 </div>  
 
-
-                    <!-- <div class="form-group">
-                      <label for="exampleInputEmail1">Event</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" name="event">
-                 
-                        <?php 
-                        foreach($kegiatan as $k){
-                        ?>
-                        <option value="<?php echo $k->id?>"> <?php echo $k->judul?> </option>
-                        <?php }?>
-
-                      </select>
-                    </div> -->
-                    <div class="form-group">
+                   <div class="form-group">
                       <label for="exampleInputEmail1">Tipe</label>
-                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe">
-                        <option value="1">Workshop</option>
-                        <!-- <option value="2">Jurnal</option> -->
+                      <select class="browser-default custom-select custom-select-md mb-3" name="tipe_artikel">
+                        <option value="national" <?php if ($data->tipe_artikel == 'national'): ?>
+                        selected
+                        <?php endif ?>>National Initiative</option>
+                        <option value="workshop" <?php if ($data->tipe_artikel == 'workshop'): ?>
+                        selected
+                        <?php endif ?>>Workshop</option>
                       </select>
                     </div>
 
                       <button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
+
+                        <?php endforeach ?>
                 <?php echo form_close(); ?>
-                <button type="submit" name="batal" class="btn btn-danger"><i class="fa fa-window-close"></i> Batal</button>
                   </div>
                 </div>
               </div>
@@ -261,6 +255,7 @@
           </div>
         </div>
       </div>
+
       <!-- Bootstrap core JavaScript-->
       <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
       <script src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -277,32 +272,6 @@
 
       <!-- Demo scripts for this page-->
       <script src="<?php echo base_url() ?>assets/js/datatables-demo.js"></script>
-
-      <script src="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
-      <script>
-      $('#summernote').summernote({
-        placeholder: 'Hello bootstrap 4',
-        tabsize: 2,
-        height: 100
-      });
-    </script>
-    <script type="text/javascript">
-        $("#file-1").fileinput({
-            theme: 'fa',
-            uploadUrl: "/imageUpload.php",
-            allowedFileExtensions: ['jpg', 'png', 'gif'],
-            overwriteInitial: false,
-            maxFileSize:2000,
-            maxFilesNum: 10,
-            slugCallback: function (filename) {
-                return filename.replace('(', '_').replace(']', '_');
-            }
-        });
-    </script>
     </body>
 
     </html>
