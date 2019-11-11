@@ -138,12 +138,12 @@
         <h3 class="box-title">
           Tambah Gambar
         </h3>
-        <?php echo form_open_multipart('portal/document/upload_gallery'); ?>
+        <?php echo form_open_multipart('portal/document/insert_gambar'); ?>
         <input name="artikel_id" type="hidden" value="<?php echo $articleid;?>">
         <div class="row">
           <div class="col-md-10">
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="customFile">
+              <input type="file" name="gambar" class="custom-file-input" id="customFile">
               <label class="custom-file-label" for="customFile">Choose file</label>
             </div>
           </div>
@@ -171,17 +171,17 @@
                   <?php
                   $no = 1;
                   $id = 1;
-                  if (!empty($show)) {
-                    foreach ($show as $lihat) {
+                  if (!empty($editdata)) {
+                    foreach ($editdata as $lihat) {
                       ?>
                       <tr>
                         <td><?php echo $no++ ?></td>
                         <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->path) ?></div>
+                          <div style="width: 150px;"> <img  style="width: 100px;" src="<?php echo base_url($lihat->path) ?>"></div>
                         </td>
                         <td align="center">
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->gambar_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            <a href="<?php echo base_url(); ?>portal/document/hapus_gambar/<?php echo $lihat->gambar_id ?>/<?php echo $lihat->artikel?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                           </div>
                         </td>
                       </tr>

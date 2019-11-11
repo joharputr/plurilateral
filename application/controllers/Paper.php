@@ -12,9 +12,9 @@ class Paper extends MY_Controller
 
     public function index()
     {
-        $data['title'] = "Paper";
+        $data['title'] = "Papers & Articles";
         $data['tahun'] = $this->db->query("SELECT DISTINCT YEAR(tanggal_mulai) as year FROM kegiatan")->result();
-        $data['private_url'] = 'PAPERS & ARTICLES';
+        $data['private_url'] = 'paper';
         $this->load->view('dokumen/index', $data);
     }
 

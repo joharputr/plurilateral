@@ -210,16 +210,23 @@ class Document extends MY_Controller
         redirect('portal/document/press', 'refresh');
     }
 
+ function hapus_press($id)
+    {
+        $delete = $this->db->delete('artikel', array('artikel_id' => $id));
+        redirect('portal/document/press', 'refresh');
+    }
+
+//Gambar
     function tambah_gambar($id){
         $data['title'] = "Add Gallery";
         $data['articleid'] = $id;
-        $data['editdata']  = $this->db->get_where('gambar', array('gambar_id' => $id))->result_object();
+        $data['editdata']  = $this->db->get_where('gambar', array('artikel' => $id))->result_object();
         $this->load->view('content/dokumen/gambar', $data);
     }
 
     private function upload_gambar_press()
     {
-        $config['upload_path']          = './assets/storage/press/';
+        $config['upload_path']          = './assets/storage/press/image/';
         $config['allowed_types']        = 'gif|jpg|png|pdf';
         $config['file_name']            = time();
         $config['overwrite']            = true;
@@ -235,10 +242,28 @@ class Document extends MY_Controller
         }
     }
 
-    function hapus_press($id)
+   
+
+
+    function insert_gambar()
     {
-        $delete = $this->db->delete('artikel', array('artikel_id' => $id));
-        redirect('portal/document/press', 'refresh');
+        $artikel_id = $this->input->post('artikel_id');
+   
+        $object = array(
+            'artikel' => $artikel_id,
+            'path' => 'assets/storage/press/image/'.$this->upload_gambar_press()
+        );
+        //     $this->dokumen = $this->_uploadImage3();
+        $test = $this->db->insert('gambar', $object);
+
+
+      redirect('portal/document/tambah_gambar/'.$artikel_id, 'refresh');
+    }
+
+     function hapus_gambar($id, $artikel)
+    {
+        $delete = $this->db->delete('gambar', array('gambar_id' => $id));
+        redirect('portal/document/tambah_gambar/'.$artikel, 'refresh');
     }
 
 
