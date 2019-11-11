@@ -200,7 +200,7 @@
                         <option value="national" <?php if ($data->tipe_artikel == 'national'): ?>
                         selected
                         <?php endif ?>>National Initiative</option>
-                        <option value="international" <?php if ($data->tipe_artikel == 'international'): ?>
+                        <option value="workshop" <?php if ($data->tipe_artikel == 'workshop'): ?>
                         selected
                         <?php endif ?>>Workshop</option>
                       </select>

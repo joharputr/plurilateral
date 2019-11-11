@@ -171,7 +171,7 @@
                         </td>
             </div>
             <td>
-              <div style="width: 250px;"> <a href="<?php echo base_url('/assets/files/' . $lihat->dokumen) ?>" width="64"> <?php echo base_url('upload/files/' . $lihat->dokumen) ?> </a>
+              <div style="width: 250px;"> <a href="<?php echo base_url($lihat->dokumen) ?>" width="64"> <?php echo base_url('upload/files/' . $lihat->dokumen) ?> </a>
             </td>
 
             <td>

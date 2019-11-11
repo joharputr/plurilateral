@@ -95,10 +95,10 @@ class Document extends MY_Controller
     private function _uploadImage3()
     {
         $config['upload_path']          = './assets/files/';
-        $config['allowed_types']        = 'gif|jpg|png|pdf';
+        $config['allowed_types']        = 'gif|jpg|png|pdf|ppt|pptx';
         $config['file_name']            = time();
         $config['overwrite']            = true;
-        $config['max_size']             = 25600; // 1MB
+        $config['max_size']             = 125600; // 1MB
         // $config['max_width']            = 1024;
         // $config['max_height']           = 768;
         $this->load->library('upload', $config);
