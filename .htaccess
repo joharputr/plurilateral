@@ -9,3 +9,5 @@ RewriteRule ^(.+)$ my_file.php?/$1 [L]
 # php -- BEGIN cPanel-generated handler, do not edit
 # This domain inherits the “PHP” package.
 # php -- END cPanel-generated handler, do not edit
+php_value upload_max_filesize 40M
+php_value post_max_size 42M

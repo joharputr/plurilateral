@@ -159,7 +159,7 @@
                        <div class="form-group">
                     <label for="name">Upload </label>
                     <br>
-                    <input type="file" name="dokumen" />
+                    <input type="file" name="dokumen"/>
                  </div>   
 
 

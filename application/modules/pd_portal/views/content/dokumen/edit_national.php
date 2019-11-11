@@ -140,7 +140,7 @@
           <?php print_r($show)?>
         </pre> -->
 
-
+ 
         <div class="card mb-3">
           <div class="card-header">
 
@@ -189,7 +189,7 @@
                     </div>
 
                      <div class="form-group">
-                    <label for="name">Upload </label>
+                    <label for="name" value="<?php echo $data->dokumen ?>">Upload </label>
                     <br>
                     <input type="file" name="dokumen"  />
                  </div>  

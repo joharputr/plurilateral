@@ -11,7 +11,7 @@ class Document extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-        // is_logged_in();
+
     }
 
     public function index()
@@ -29,16 +29,28 @@ class Document extends MY_Controller
         $event = $this->input->post('event');   
         $tipe = $this->input->post('tipe_dokumen');
 
-        $object = array(
-            'judul' => $judul,
-            'dokumen' => 'assets/files/'.$this->_uploadImage3(),
-            'event' => $event,
-            'tipe_dokumen' => $tipe,
-        );
-   //     $this->dokumen = $this->_uploadImage3();
-        $test = $this->db->update('dokumen', $object, array('dokumen_id' => $id));
+        if (!empty($_FILES["dokumen"]["name"])) {
+            //milih file
+            $dokumen = $this->_uploadImage3();
+            $object = array(
+                'judul' => $judul,
+                'dokumen' => 'assets/files/'. $dokumen,
+                'event' => $event,
+                'tipe_dokumen' => $tipe,
+            );   
+        } else {
+            $dokumen = $this->input->post('old_dokumen');
+            $object = array(
+                'judul' => $judul,
+                'dokumen' => $dokumen,
+                'event' => $event,
+                'tipe_dokumen' => $tipe,
+            );   
+        }
+        
+         $test = $this->db->update('dokumen', $object, array('dokumen_id' => $id));
 
-        redirect('portal/document','refresh');
+         redirect('portal/document','refresh');
     }
 
 
@@ -97,6 +109,7 @@ class Document extends MY_Controller
         $config['upload_path']          = './assets/files/';
         $config['allowed_types']        = 'gif|jpg|png|pdf|ppt|pptx';
         $config['file_name']            = time();
+        $config['max_width']            = 121024;
         $config['overwrite']            = true;
         $config['max_size']             = 125600; // 1MB
         // $config['max_width']            = 1024;
@@ -106,9 +119,11 @@ class Document extends MY_Controller
         if ($this->upload->do_upload('dokumen')) {
             return $this->upload->data('file_name');
         } else {
+            print_r($this->upload->display_errors());
             return 'default.jpg';
         }
     }
+
 
     function hapus_document($id)
     {
@@ -125,7 +140,6 @@ class Document extends MY_Controller
     }
 
 
-    
     //National initiative
     public function national_initiative()
     {
@@ -180,7 +194,7 @@ class Document extends MY_Controller
         $tempat = $this->input->post('tempat');
         $tanggal = $this->input->post('tanggal');
         $deskripsi = $this->input->post('deskripsi');
-$tipe_artikel = $this->input->post('tipe_artikel');
+        $tipe_artikel = $this->input->post('tipe_artikel');
         $object = array(
             'judul' => $judul,
             'tempat' => $tempat,

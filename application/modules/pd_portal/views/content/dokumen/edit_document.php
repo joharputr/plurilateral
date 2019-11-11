@@ -151,20 +151,22 @@
                  <?php  
                 foreach ($editdata as $data):
                 ?>
-
+<!-- <pre>
+          <?php print_r($editdata) ?>
+        </pre> -->
               
                       <input type="hidden"  class="form-control" name="id" placeholder="Judul" value="<?php echo $data->dokumen_id ?>"/>
                    
-
                     <div class="form-group">
                       <label for="exampleInputEmail1">Judul</label>
                       <input type="text" class="form-control" name="judul" placeholder="Judul" value="<?php echo $data->judul ?>"/>
                     </div>
 
                      <div class="form-group">
-                    <label for="name">Upload </label>
+                    <label for="name" >Upload </label>
                     <br>
                     <input type="file" name="dokumen"  />
+                    <input type="hidden" name="old_dokumen" value="<?php echo $data->dokumen?>"/>
                  </div>   
                     <div class="form-group">
                       <label for="exampleInputEmail1">Event</label>
