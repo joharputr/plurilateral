@@ -177,11 +177,11 @@
                       <tr>
                         <td><?php echo $no++ ?></td>
                         <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?></div>
+                          <div style="width: 150px;"> <?php echo ucwords($lihat->path) ?></div>
                         </td>
                         <td align="center">
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->gambar_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                           </div>
                         </td>
                       </tr>
