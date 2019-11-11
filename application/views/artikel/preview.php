@@ -55,7 +55,7 @@
     <div class="container" id="main-content">
         <div class="row mb-3">
             <div id="title-tab" class="col-md-2">
-                <a href="<?php echo base_url('national') ?>" class="btn btn-secondary w-100"><i class="fa fa-arrow-left"></i>Back</a>
+                <a href="<?php echo base_url($private_url) ?>" class="btn btn-secondary w-100"><i class="fa fa-arrow-left"></i>Back</a>
             </div>
         </div>
         <div class="row">

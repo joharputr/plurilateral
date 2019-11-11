@@ -5,8 +5,12 @@
                 <h3 class="title-head-one"><?php echo $s->judul; ?></h3>
                 <h5 class="title-head-one text-success"><?php echo $s->tempat . ', ' . date_indo($s->tanggal); ?></h5>
                 <hr>
-                <p class="text-justify"><?php echo substr($s->deskripsi, 0, 200) . " . . . "; ?><a href="<?php echo base_url($private_url) ?>/preview/<?php echo $s->artikel_id; ?>" class="text-primary stretched-link" onclick="actControl('preview', <?php echo $s->artikel_id; ?>);">Baca Selengkapnya</a></p>
+                <p class="text-justify"><?php echo $s->deskripsi; ?></p>
+                <br>
+                <a class="btn btn-light text-primary" href="<?php echo base_url($s->dokumen) ?>"><i class="fa fa-file" style="font-size: 15px"></i> <?php echo $s->judul ?></a>
             </div>
+        </div>
+        </div>
         </div>
     <?php }
     } else { ?>
@@ -16,3 +20,6 @@
         </div>
     </div>
 <?php } ?>
+<nav class="listing__pagination">
+    <?php echo $halaman ?>
+</nav>

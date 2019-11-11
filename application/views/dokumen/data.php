@@ -28,3 +28,6 @@
         </div>
     </div>
 <?php } ?>
+<nav class="listing__pagination">
+    <?php echo $halaman ?>
+</nav>

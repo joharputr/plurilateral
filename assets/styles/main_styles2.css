@@ -263,6 +263,19 @@ section
 	margin-top: 10vh;
 }
 
+nav.listing__pagination ul li a{
+	padding: 10px 15px;
+	margin: 0 5px;
+	border: 1px solid #ccc;
+}
+
+nav.listing__pagination ul li a:hover{
+	padding: 10px 15px;
+	margin: 0 5px;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+
 .title-head-one{
 	margin-bottom: -10px; 
 	font-family: 'Raleway', sans-serif; 

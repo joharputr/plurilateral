@@ -11,7 +11,6 @@ $route['workshop'] = 'workshop/index';
 $route['workshop/data'] = 'workshop/data/data';
 $route['workshop/preview/(:any)'] = 'workshop/preview/$1';
 
-$route['steeringcommittee'] = 'welcome/steeringCommittee';
 $route['paper'] = 'Paper/index';
 $route['paper/data'] = 'Paper/data';
 $route['paper/data/(:num)'] = 'Paper/data/$1';
@@ -19,6 +18,8 @@ $route['paper/data/(:num)'] = 'Paper/data/$1';
 $route['journal'] = 'Journal/index';
 $route['journal/data'] = 'Journal/data';
 $route['journal/data/(:num)'] = 'Journal/data/$1';
+
+$route['steeringcommittee'] = 'welcome/steeringCommittee';
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
