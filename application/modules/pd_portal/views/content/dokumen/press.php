@@ -101,8 +101,8 @@
           <a class="dropdown-item" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
           
           <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/national">National Initiative or <br> Workshop</a>
+          <h6 class="dropdown-header">Press types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/press">National Initiative or <br> Workshop</a>
           <!-- <a class="dropdown-item" href="<?php echo base_url()?>portal/document/workshop">Workshop</a> -->
         </div>
       </li>
@@ -136,7 +136,7 @@
         </pre> -->
 
         <h3 class="box-title">
-          <a href="<?php echo base_url(); ?>portal/document/tambah_national" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
+          <a href="<?php echo base_url(); ?>portal/document/tambah_press" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
         </h3>
 
         <div class="card mb-3">
@@ -183,8 +183,8 @@
 
                          <td align="center">
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/edit_national/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
-                            <a href="<?php echo base_url(); ?>portal/document/hapus_national/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            <a href="<?php echo base_url(); ?>portal/document/edit_press/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
+                            <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                           </td>                     
                         </tr>
                       <?php }} ?>

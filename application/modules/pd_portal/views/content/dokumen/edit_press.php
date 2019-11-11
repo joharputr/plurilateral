@@ -104,8 +104,8 @@
           <h6 class="dropdown-header">Document Types:</h6>
           <a class="dropdown-item" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
           <div class="dropdown-divider"></div>
-      <h6 class="dropdown-header">Article types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document/national">National Initiative or <br> Workshop</a>            
+      <h6 class="dropdown-header">Press types:</h6>
+          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document/press">National Initiative or <br> Workshop</a>            
         </div>
       </li>
        <li class="nav-item">
@@ -130,7 +130,7 @@
                 <a href="<?php echo base_url()?>portal">Dashboard</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="<?php echo base_url()?>portal/document/national">National Initiative or Workshop</a>
+                <a href="<?php echo base_url()?>portal/document/press">National Initiative or Workshop</a>
               </li>
               <li class="breadcrumb-item active">Edit Article</li>
             </ol>
@@ -152,7 +152,7 @@
                   </div>
                   <div class="box-body">
                     <!-- form start -->
-                    <?php echo form_open_multipart('portal/document/edit_national'); ?>
+                    <?php echo form_open_multipart('portal/document/edit_press'); ?>
                  <?php  
                 foreach ($editdata as $data):
                 ?>

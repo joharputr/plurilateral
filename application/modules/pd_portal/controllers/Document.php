@@ -76,7 +76,7 @@ class Document extends MY_Controller
 
     public function imageUpload()
     {
-        $data['title'] = "Add Plurilateral National Initiative Article";
+        $data['title'] = "Add Plurilateral National Initiative or Workshop Form";
         $data['private_url'] = "imageUpload";
         // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
         $this->load->view('content/dokumen/imageUpload', $data);
@@ -140,32 +140,32 @@ class Document extends MY_Controller
     }
 
 
-    //National initiative
-    public function national_initiative()
+    //press initiative
+    public function press_initiative()
     {
-        $data['title'] = "Plurilateral National Initiative";
-        $data['private_url'] = "national";
+        $data['title'] = "Plurilateral National Initiative or Workshop";
+        $data['private_url'] = "press";
         $data['show'] = $this->db->query("SELECT * FROM artikel")->result();
-        $this->load->view('content/dokumen/national_initiative', $data);
+        $this->load->view('content/dokumen/press', $data);
     }
 
-    public function tambah_national()
+    public function tambah_press()
     {
-        $data['title'] = "Add Plurilateral National Initiative Article";
-        $data['private_url'] = "tambah_national";
+        $data['title'] = "Add Plurilateral National Initiative or Workshop";
+        $data['private_url'] = "tambah_press";
         // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
-        $this->load->view('content/dokumen/tambah_national', $data);
+        $this->load->view('content/dokumen/tambah_press', $data);
     }
 
-    public function edit_national($id)
+    public function edit_press($id)
     {
         $data['title'] = "Add Plurilateral Workshop Article";
         $data['editdata']  = $this->db->get_where('artikel', array('artikel_id' => $id))->result_object();
-        $data['national'] = $this->db->query("SELECT * FROM artikel")->result();
-        $this->load->view('content/dokumen/edit_national', $data);
+        $data['press'] = $this->db->query("SELECT * FROM artikel")->result();
+        $this->load->view('content/dokumen/edit_press', $data);
     }
 
-    function update_national(){
+    function update_press(){
 
         $id = $this->input->post('id');
         $judul = $this->input->post('judul');
@@ -175,7 +175,7 @@ class Document extends MY_Controller
         $tipe_artikel = $this->input->post('tipe_artikel');
         $object = array(
             'judul' => $judul,
-            'gambar' => 'assets/files/'.$this->upload_gambar_national(),
+            'gambar' => 'assets/files/'.$this->upload_gambar_press(),
             'tanggal' => $tanggal,
             'tempat' => $tempat,
             'deskripsi' => $deskripsi,
@@ -184,10 +184,10 @@ class Document extends MY_Controller
    //     $this->dokumen = $this->_uploadImage3();
         $test = $this->db->update('artikel', $object, array('artikel_id' => $id));
 
-        redirect('portal/document/national', 'refresh');
+        redirect('portal/document/press', 'refresh');
     }
 
-    function insert_national()
+    function insert_press()
     {
         $judul = $this->input->post('judul');
         /*  $dokumen= $this->input->post('dokumen');*/
@@ -200,19 +200,19 @@ class Document extends MY_Controller
             'tempat' => $tempat,
             'tanggal' => $tanggal,
             'deskripsi' => $deskripsi,
-            'gambar' => 'assets/storage/national/'.$this->upload_gambar_national(),
+            'gambar' => 'assets/storage/press/'.$this->upload_gambar_press(),
             'tipe_artikel' => $tipe_artikel,
         );
         //     $this->dokumen = $this->_uploadImage3();
         $test = $this->db->insert('artikel', $object);
 
 
-        redirect('portal/document/national', 'refresh');
+        redirect('portal/document/press', 'refresh');
     }
 
-    private function upload_gambar_national()
+    private function upload_gambar_press()
     {
-        $config['upload_path']          = './assets/storage/national/';
+        $config['upload_path']          = './assets/storage/press/';
         $config['allowed_types']        = 'gif|jpg|png|pdf';
         $config['file_name']            = time();
         $config['overwrite']            = true;
@@ -228,105 +228,10 @@ class Document extends MY_Controller
         }
     }
 
-    function hapus_national($id)
+    function hapus_press($id)
     {
         $delete = $this->db->delete('artikel', array('artikel_id' => $id));
-        redirect('portal/document/national', 'refresh');
-    }
-
-
-
-  //Workshop
-    public function workshop()
-    {
-        $data['title'] = "Plurilateral Workshop";
-        $data['private_url'] = "Workshop";
-        $data['show'] = $this->db->query("SELECT * FROM artikel")->result();
-        $this->load->view('content/dokumen/workshop', $data);
-    }
-
-    public function tambah_workshop()
-    {
-        $data['title'] = "Add Plurilateral National Initiative Article";
-        $data['private_url'] = "tambah_national";
-        // $data['kegiatan'] = $this->db->query("SELECT * FROM kegiatan")->result();
-        $this->load->view('content/dokumen/tambah_national', $data);
-    }
-
-    public function edit_workshop($id)
-    {
-        $data['title'] = "Add Plurilateral Workshop Article";
-        $data['editdata']  = $this->db->get_where('artikel', array('artikel_id' => $id))->result_object();
-        $data['national'] = $this->db->query("SELECT * FROM artikel")->result();
-        $this->load->view('content/dokumen/edit_national', $data);
-    }
-
-    function update_workshop(){
-
-        $id = $this->input->post('id');
-        $judul = $this->input->post('judul');
-        $tanggal = $this->input->post('tanggal');   
-        $tempat = $this->input->post('tempat');
-        $deskripsi = $this->input->post('deskripsi');
-        $object = array(
-            'judul' => $judul,
-            'gambar' => 'assets/files/'.$this->upload_gambar_national(),
-            'tanggal' => $tanggal,
-            'tempat' => $tempat,
-            'deskripsi' => $deskripsi,
-            'tipe_artikel' => 'national',
-        );
-   //     $this->dokumen = $this->_uploadImage3();
-        $test = $this->db->update('artikel', $object, array('artikel_id' => $id));
-
-        redirect('portal/document/national', 'refresh');
-    }
-
-    function insert_workshop()
-    {
-        $judul = $this->input->post('judul');
-        /*  $dokumen= $this->input->post('dokumen');*/
-        $tempat = $this->input->post('tempat');
-        $tanggal = $this->input->post('tanggal');
-        $deskripsi = $this->input->post('deskripsi');
-
-        $object = array(
-            'judul' => $judul,
-            'tempat' => $tempat,
-            'tanggal' => $tanggal,
-            'deskripsi' => $deskripsi,
-            'gambar' => 'assets/storage/national/'.$this->upload_gambar_national(),
-            'tipe_artikel' => 'national',
-        );
-        //     $this->dokumen = $this->_uploadImage3();
-        $test = $this->db->insert('artikel', $object);
-
-
-        redirect('portal/document/national', 'refresh');
-    }
-
-    private function upload_gambar_workshop()
-    {
-        $config['upload_path']          = './assets/storage/national/';
-        $config['allowed_types']        = 'gif|jpg|png|pdf';
-        $config['file_name']            = time();
-        $config['overwrite']            = true;
-        $config['max_size']             = 25600; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
-        $this->load->library('upload', $config);
-
-        if ($this->upload->do_upload('gambar')) {
-            return $this->upload->data('file_name');
-        } else {
-            return 'default.jpg';
-        }
-    }
-
-    function hapus_workshop($id)
-    {
-        $delete = $this->db->delete('artikel', array('artikel_id' => $id));
-        redirect('portal/document/national', 'refresh');
+        redirect('portal/document/press', 'refresh');
     }
 
 

@@ -14,7 +14,7 @@ class Paper extends MY_Controller
     {
         $data['title'] = "Paper";
         $data['tahun'] = $this->db->query("SELECT DISTINCT YEAR(tanggal_mulai) as year FROM kegiatan")->result();
-        $data['private_url'] = 'paper';
+        $data['private_url'] = 'PAPERS & ARTICLES';
         $this->load->view('dokumen/index', $data);
     }
 
