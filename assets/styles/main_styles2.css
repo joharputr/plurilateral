@@ -263,6 +263,10 @@ section
 	margin-top: 10vh;
 }
 
+nav.listing__pagination{
+	float: right;
+}
+
 nav.listing__pagination ul li a{
 	padding: 10px 15px;
 	margin: 0 5px;

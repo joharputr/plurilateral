@@ -36,7 +36,7 @@ class Login extends MY_Controller {
 
             $this->session->set_userdata($data_session);
 
-            redirect('portal/document','refresh');
+            redirect('portal','refresh');
 
         }else{
             $this->session->set_flashdata("k", "<div id=\"alert\" class=\"alert alert-error\">username or password is not valid</div>");
