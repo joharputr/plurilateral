@@ -136,11 +136,24 @@
         </pre> -->
 
         <h3 class="box-title">
-          <a href="<?php echo base_url(); ?>portal/document/tambah_press" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
+          Tambah Gambar
         </h3>
+        <?php echo form_open_multipart('portal/document/upload_gallery'); ?>
+        <input name="artikel_id" type="hidden" value="<?php echo $articleid;?>">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" name="simpan" class="btn btn-success w-100"><i class="fa fa-save"></i> Simpan</button>
+          </div>
+        </div>
+        <?php echo form_close(); ?>
 
-        <div class="card mb-3">
-
+        <div class="card mb-3 mt-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
             Article Table</div>
@@ -150,12 +163,7 @@
                 <thead>
                   <tr>
                     <th>No</th>
-
-                    <th>Judul</th>
-                    <th>Tempat</th>
-                    <th>Tanggal</th>
-                    <th>Deskripsi</th>
-                    <th>Tipe</th>
+                    <th>Gambar</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -171,25 +179,8 @@
                         <td>
                           <div style="width: 150px;"> <?php echo ucwords($lihat->judul) ?></div>
                         </td>
-                        <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->tempat) ?></div>
-                        </td>
-                        <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->tanggal) ?></div>
-                        </td>
-                        <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->deskripsi) ?></div>
-                        </td>
-                        <td>
-                          <div style="width: 150px;"> <?php echo ucwords($lihat->tipe_artikel) ?></div>
-                        </td>
-
                         <td align="center">
-                        <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/tambah_gambar/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-success btn-flat"><i class="fa fa-edit"></i> Tambah Gambar</a>
-                          </div>
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/edit_press/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
                             <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                           </div>
                         </td>
@@ -264,3 +255,11 @@
 </body>
 
 </html>
+
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>

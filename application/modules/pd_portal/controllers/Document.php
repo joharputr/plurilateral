@@ -210,6 +210,13 @@ class Document extends MY_Controller
         redirect('portal/document/press', 'refresh');
     }
 
+    function tambah_gambar($id){
+        $data['title'] = "Add Gallery";
+        $data['articleid'] = $id;
+        $data['editdata']  = $this->db->get_where('gambar', array('gambar_id' => $id))->result_object();
+        $this->load->view('content/dokumen/gambar', $data);
+    }
+
     private function upload_gambar_press()
     {
         $config['upload_path']          = './assets/storage/press/';

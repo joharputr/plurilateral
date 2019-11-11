@@ -25,6 +25,9 @@ $route['portal/document/insert_press'] = 'pd_portal/document/insert_press';
 $route['portal/document/hapus_press/(:num)'] = 'pd_portal/document/hapus_press/$1';
 $route['portal/document/edit_press'] = 'pd_portal/document/update_press';
 
+
+$route['portal/document/tambah_gambar/(:num)'] = 'pd_portal/document/tambah_gambar/$1';
+
 //Event
 $route['portal/event']= 'pd_portal/Kegiatan/index';
 $route['portal/event/insert_kegiatan']= 'pd_portal/Kegiatan/insert_kegiatan';
