@@ -42,6 +42,10 @@ $route['portal/document/tambah_gambar/(:num)'] = 'pd_portal/document/tambah_gamb
 $route['portal/document/insert_gambar']= 'pd_portal/Document/insert_gambar';
 $route['portal/document/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_gambar/$1/$2';
 
+//Resource
+$route['portal/resource']= 'pd_portal/SumberDaya/index';
+$route['portal/resource/add']= 'pd_portal/SumberDaya/add';
+// $route['portal/event/insert_kegiatan']= 'pd_portal/Kegiatan/insert_kegiatan';
 
 
 $route['portal/login'] = 'pd_portal/login/index';
