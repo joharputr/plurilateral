@@ -20,65 +20,12 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
-
-    <a class="navbar-brand mr-1" href="<?php echo base_url() ?>portal/document"><?php echo $title ?></a>
-
-    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-      <i class="fas fa-bars"></i>
-    </button>
-
-      <ul class="navbar-nav ml-auto ">
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-2x"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item disabled">Hai, Admin!</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
-      </li>
-    </ul>
-
-  </nav>
+  <?php $this->load->view('../componen/navigation')?>
 
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>portal">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Document</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Document types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url() ?>portal/document">Paper or Journal</a>
-
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Press types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url() ?>portal/document/press">National Initiative or <br> Workshop</a>
-          <!-- <a class="dropdown-item" href="<?php echo base_url() ?>portal/document/workshop">Workshop</a> -->
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Events</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>portal/message">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Messages</span></a>
-      </li>
-    </ul>
+    <?php $this->load->view('../componen/sidebar')?>
 
     <div id="content-wrapper">
 
@@ -98,7 +45,7 @@
         </pre> -->
 
         <h3 class="box-title">
-          <a href="<?php echo base_url(); ?>portal/document/tambah_press" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
+          <a href="<?php echo base_url(); ?>portal/press/tambah_press" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-plus"></i> Tambah</a>
         </h3>
 
         <div class="card mb-3">
@@ -148,11 +95,11 @@
 
                         <td align="center">
                         <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/tambah_gambar/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-success btn-flat"><i class="fa fa-edit"></i> Tambah Gambar</a>
+                            <a href="<?php echo base_url(); ?>portal/press/tambah_gambar/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-success btn-flat"><i class="fa fa-file-image"></i> Tambah Gambar</a>
                           </div>
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/document/edit_press/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
-                            <a href="<?php echo base_url(); ?>portal/document/hapus_press/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            <a href="<?php echo base_url(); ?>portal/press/edit_press/<?php echo $lihat->artikel_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
+                            <a href="<?php echo base_url(); ?>portal/press/hapus_press/<?php echo $lihat->artikel_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                           </div>
                         </td>
                       </tr>

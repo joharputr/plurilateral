@@ -187,7 +187,7 @@ class Document extends MY_Controller
         //     $this->dokumen = $this->_uploadImage3();
         $test = $this->db->update('artikel', $object, array('artikel_id' => $id));
 
-        redirect('portal/document/press', 'refresh');
+        redirect('portal/press', 'refresh');
     }
 
     function insert_press()
@@ -209,13 +209,18 @@ class Document extends MY_Controller
         $test = $this->db->insert('artikel', $object);
 
 
-        redirect('portal/document/press', 'refresh');
+        redirect('portal/press', 'refresh');
     }
 
     function hapus_press($id)
     {
+        $data = $this->db->get_where('gambar', array('artikel' => $id))->result();        
+        foreach ($data as $d) {
+            unlink($d->path);  
+        }
+     
         $delete = $this->db->delete('artikel', array('artikel_id' => $id));
-        redirect('portal/document/press', 'refresh');
+        redirect('portal/press', 'refresh');
     }
 
     //Gambar
@@ -260,12 +265,14 @@ class Document extends MY_Controller
         $test = $this->db->insert('gambar', $object);
 
 
-        redirect('portal/document/tambah_gambar/' . $artikel_id, 'refresh');
+        redirect('portal/tambah_gambar/' . $artikel_id, 'refresh');
     }
 
     function hapus_gambar($id, $artikel)
     {
+        $data = $this->db->get_where('gambar', array('gambar_id' => $id))->result();        
+        unlink($data->path);   
         $delete = $this->db->delete('gambar', array('gambar_id' => $id));
-        redirect('portal/document/tambah_gambar/' . $artikel, 'refresh');
+        redirect('portal/tambah_gambar/' . $artikel, 'refresh');
     }
 }

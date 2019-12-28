@@ -34,81 +34,29 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
-
-    <a class="navbar-brand mr-1" href="<?php echo base_url()?>portal/document"><?php echo $title ?></a>
-
-    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-      <i class="fas fa-bars"></i>
-    </button>
-
-     <ul class="navbar-nav ml-auto ">
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-2x"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item disabled">Hai, Admin!</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </div>
-      </li>
-    </ul>
-
-  </nav>
+  <?php $this->load->view('../componen/navigation')?>
 
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()?>portal">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Document</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Document types:</h6>
-          <a class="dropdown-item" href="<?php echo base_url()?>portal/document">Paper or Journal</a>
-          
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Press types:</h6>
-          <a class="dropdown-item active" href="<?php echo base_url()?>portal/document/press">National Initiative or <br> Workshop</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url() ?>pd_portal/kegiatan">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Events</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url()?>portal/message">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Messages</span></a>
+    <?php $this->load->view('../componen/sidebar')?>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="<?php echo base_url()?>portal">Dashboard</a>
           </li>
-        </ul>
+          <li class="breadcrumb-item">
+            <a href="<?php echo base_url()?>portal/press">Press</a>
+          </li>
+          <li class="breadcrumb-item active">Add Press</li>
+        </ol>
 
-        <div id="content-wrapper">
-
-          <div class="container-fluid">
-
-            <!-- Breadcrumbs-->
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="<?php echo base_url()?>portal">Dashboard</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="<?php echo base_url()?>portal/document/press">National Initiative or Workshop</a>
-              </li>
-              <li class="breadcrumb-item active">Add Press</li>
-            </ol>
-
-            <!-- DataTables Example -->
+        <!-- DataTables Example -->
        <!--  <pre>
           <?php print_r($show)?>
         </pre> -->
@@ -125,7 +73,7 @@
                   </div>
                   <div class="box-body">
                     <!-- form start -->
-                    <?php echo form_open_multipart('portal/document/insert_press'); ?> 
+                    <?php echo form_open_multipart('portal/press/insert_press'); ?> 
 
                     <div class="form-group">
                       <label for="exampleInputEmail1">Judul</label>
@@ -155,7 +103,7 @@
 
                   <div class="form-group">
                     <label for="exampleInputEmail1">Deskripsi</label>
-                    <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi"/>
+                      <textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"></textarea>
                   </div>
 
                   <!-- <div class="form-group">
@@ -168,7 +116,7 @@
 
 
 
-                   <div class="form-group">
+                  <div class="form-group">
                     <label for="exampleInputEmail1">Tipe</label>
                     <select class="browser-default custom-select custom-select-md mb-3" name="tipe_artikel">
                       <option value="1">National Initiative</option>
@@ -194,7 +142,7 @@
 
                       </select>
                     </div> -->
-             
+
 
                     <button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
                     <?php echo form_close(); ?>
@@ -225,24 +173,24 @@
         <i class="fas fa-angle-up"></i>
       </a>
 
-     <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Apakah anda yakin ingin keluar ?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Pilih tombol "Logout" dibawah ini jika anda yakin ingin keluar.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Apakah anda yakin ingin keluar ?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">Pilih tombol "Logout" dibawah ini jika anda yakin ingin keluar.</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
       <!-- Bootstrap core JavaScript-->
       <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
       <script src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -261,6 +209,7 @@
       <script src="<?php echo base_url() ?>assets/js/datatables-demo.js"></script>
 
       <script src="<?php echo base_url() ?>assets/plugins/summernote/summernote-bs4.js"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/tinymce/tinymce.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
@@ -270,6 +219,21 @@
           placeholder: 'Hello bootstrap 4',
           tabsize: 2,
           height: 100
+        });
+
+        tinymce.init({
+          selector: "textarea",
+          theme: "modern",
+          image_advtab: true,
+          menubar: false,
+          subfolder: "content",
+          relative_urls: false,
+          plugins: [
+          "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+          "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+          "save table contextmenu directionality emoticons template paste textcolor"
+          ],
+          toolbar: "bold italic | alignleft alignright | bullist numlist outdent indent",
         });
       </script>
       <script type="text/javascript">
