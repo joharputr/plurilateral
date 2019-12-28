@@ -18,12 +18,14 @@ $route['portal/document/edit/(:num)'] = 'pd_portal/document/edit_document/$1';
 
 
 //press
-$route['portal/document/press'] = 'pd_portal/document/press';
-$route['portal/document/tambah_press'] = 'pd_portal/document/tambah_press';
-$route['portal/document/edit_press/(:num)'] = 'pd_portal/document/edit_press/$1';
-$route['portal/document/insert_press'] = 'pd_portal/document/insert_press';
-$route['portal/document/hapus_press/(:num)'] = 'pd_portal/document/hapus_press/$1';
-$route['portal/document/edit_press'] = 'pd_portal/document/update_press';
+$route['portal/press'] = 'pd_portal/document/press';
+$route['portal/press/tambah_press'] = 'pd_portal/document/tambah_press';
+$route['portal/press/edit_press/(:num)'] = 'pd_portal/document/edit_press/$1';
+$route['portal/press/insert_press'] = 'pd_portal/document/insert_press';
+$route['portal/press/hapus_press/(:num)'] = 'pd_portal/document/hapus_press/$1';
+$route['portal/press/edit_press'] = 'pd_portal/document/update_press';
+
+
 
 
 //Event
@@ -36,9 +38,9 @@ $route['portal/event/hapus_kegiatan/(:num)'] = 'pd_portal/Kegiatan/hapus_kegiata
 
 
 //Gambar
-$route['portal/document/tambah_gambar/(:num)'] = 'pd_portal/document/tambah_gambar/$1';
-$route['portal/document/insert_gambar']= 'pd_portal/Document/insert_gambar';
-$route['portal/document/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_gambar/$1/$2';
+$route['portal/press/tambah_gambar/(:num)'] = 'pd_portal/document/tambah_gambar/$1';
+$route['portal/press/insert_gambar']= 'pd_portal/Document/insert_gambar';
+$route['portal/press/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_gambar/$1/$2';
 
 //Resource
 $route['portal/resource']= 'pd_portal/SumberDaya/index';

@@ -111,6 +111,8 @@ class SumberDaya extends MY_Controller
 
     function hapus_resource($id)
     {
+        $data = $this->db->get_where('pl_resource', array('resource_id' => $id))->result();        
+        unlink($data->dokumen);   
         $delete = $this->db->delete('pl_resource', array('resource_id' => $id));
         redirect('portal/resource', 'refresh');
     }
@@ -149,6 +151,7 @@ class SumberDaya extends MY_Controller
         'is_event' => $tipe,
         'event' => $event
     );
+    unlink($this->input->post('old_dokumen'));
    //     $this->kegiatan = $this->_uploadImage3();
     $test = $this->db->update('pl_resource', $object, array('resource_id' => $id));
 
