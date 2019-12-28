@@ -125,10 +125,11 @@
 
                      <div class="form-group">
                     <label for="name" >Upload </label>
-                    <br>
+                    <br>                    
                     <input type="file" name="dokumen"  />
                     <input type="hidden" name="old_dokumen" value="<?php echo $data->dokumen?>"/>
                  </div>   
+                 <span>aaa<?php echo $data->dokumen?></span>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Event</label>
                       <select class="browser-default custom-select custom-select-md mb-3" name="event">

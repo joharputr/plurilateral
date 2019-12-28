@@ -131,15 +131,16 @@
                         </td>
                         <td>
                           <div style="width: 100px;">
-                            <?php echo ucwords($lihat->dokumen) ?>
+                            <a href="<?php echo base_url($lihat->dokumen); ?>"><?php echo ucwords($lihat->dokumen) ?></a>
+                       
                         </td>
                         <td>
                           <?php echo ($lihat->is_event == 0) ? "Non Event" : "Event"?>
                         </td>
                         <td align="center">
                           <div class="btn-group" role="group" style="width: 200px;">
-                            <a href="<?php echo base_url(); ?>portal/event/update_kegiatan/<?php echo $lihat->resource_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
-                            <a href="<?php echo base_url(); ?>portal/event/hapus_kegiatan/<?php echo $lihat->resource_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
+                            <a href="<?php echo base_url(); ?>portal/resource/edit_resource/<?php echo $lihat->resource_id ?>" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-edit"></i> Edit</a>
+                            <a href="<?php echo base_url(); ?>portal/resource/hapus_resource/<?php echo $lihat->resource_id ?>" onclick="javascript: return confirm('Anda yakin akan menghapus data ini ?')" class="btn btn-sm btn-danger btn-flat"><i class="fa fa-trash"></i> Hapus</a>
                         </td>
                       </tr>
                   <?php }

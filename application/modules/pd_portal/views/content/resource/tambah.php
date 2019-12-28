@@ -110,14 +110,14 @@
 									</div>
 									<div class="box-body">
 										<!-- form start -->
-										<?php echo form_open_multipart('pd_portal/Kegiatan/insert_kegiatan'); ?>
+										<?php echo form_open_multipart('pd_portal/SumberDaya/insert_resources'); ?>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Judul</label>
 											<input type="text" class="form-control" name="judul" placeholder="Nama" />
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Deskripsi</label>
-											<textarea class="form-control" rows="3" name="deskripsi_kegiatan" placeholder="Deskripsi"></textarea>
+											<textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"></textarea>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Tempat</label>
@@ -143,7 +143,7 @@
 										</div>
 										<div class="form-group event-choose">
 											<label for="exampleInputEmail1">Event</label>
-											<select class="browser-default custom-select custom-select-md mb-3" name="eventkey">
+											<select class="browser-default custom-select custom-select-md mb-3" name="event">
 												<?php foreach ($kegiatan as $k) { ?>
 													<option value="<?php echo $k->kegiatan_id;?>"><?php echo $k->nama;?></option>
 												<?php } ?>

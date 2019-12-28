@@ -16,7 +16,9 @@
         </div>
     </div>
 <?php } ?>
-
+<nav class="listing__pagination">
+    <?php echo $halaman ?>
+</nav>
 <script type="text/javascript">
     $(".load-data").hide();
 </script>

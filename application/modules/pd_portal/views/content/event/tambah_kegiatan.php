@@ -114,8 +114,8 @@
       						<?php echo form_open_multipart('pd_portal/Kegiatan/insert_kegiatan'); ?>
 
       						<div class="form-group">
-      							<label for="exampleInputEmail1">Nama</label>
-      							<input type="text" class="form-control" name="nama" placeholder="Nama"/>
+      							<label for="exampleInputEmail1">Judul</label>
+      							<input type="text" class="form-control" name="judul" placeholder="judul"/>
       						</div>
 
       						<div class="form-group">

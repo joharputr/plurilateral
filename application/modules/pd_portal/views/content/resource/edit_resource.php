@@ -111,47 +111,57 @@
       					</div>
       					<div class="box-body">
       						<!-- form start -->
-      						<?php echo form_open_multipart('portal/event/edit_kegiatan'); ?>
+      						<?php echo form_open_multipart('portal/resource/update_resource'); ?>
       						<?php  
       						foreach ($editdata as $data):
       							?>
 
 
-      							<input type="hidden"  class="form-control" name="kegiatan_id" placeholder="Judul" value="<?php echo $data->kegiatan_id ?>"/>
+      							<input type="hidden"  class="form-control" name="resource_id" placeholder="Judul" value="<?php echo $data->resource_id ?>"/>
 
 
       							<div class="form-group">
-      								<label for="exampleInputEmail1">Nama</label>
-      								<input type="text" class="form-control" name="nama" placeholder="Nama" value="<?php echo $data->nama ?>"/>
+      								<label for="exampleInputEmail1">Judul</label>
+      								<input type="text" class="form-control" name="judul" placeholder="judul" value="<?php echo $data->judul ?>"/>
       							</div>
 
+      						  <div class="form-group">
+                      <label for="exampleInputEmail1">Deskripsi</label>
+                      <textarea class="form-control" rows="3" name="deskripsi" placeholder="Deskripsi"><?php echo $data->deskripsi ?></textarea>
+                    </div>
+
+                      <div class="form-group">
+                      <label for="exampleInputEmail1">Tempat</label>
+                      <input type="text" class="form-control" name="tempat" placeholder="tempat" value="<?php echo $data->tempat ?>"/>
+                    </div>
       							<div class="form-group">
-      								<label for="exampleInputEmail1">Deskripsi</label>
-      								<input type="text" class="form-control" name="deskripsi_kegiatan" placeholder="deskripsi_kegiatan" value="<?php echo $data->deskripsi_kegiatan ?>"/>
+      								<label for="example-date-input">Tanggal</label>
+      								<input class="form-control" type="date" name="tanggal" id="example-date-input"  value="<?php echo $data->tanggal ?>">
       							</div>
-
-      							<div class="form-group">
-      								<label for="example-date-input">Tanggal Mulai</label>
-      								<input class="form-control" type="date" name="tanggal_mulai" id="example-date-input"  value="<?php echo $data->tanggal_mulai ?>">
+                        <div class="form-group">
+                      <label for="example-date-input">Dokumen</label>
+                      <div class="custom-file">
+                        <input type="file" name="dokumen" class="custom-file-input" id="customFile">
+                        <input type="hidden" name="old_dokumen" value="<?php echo $data->dokumen?>"/>
+                        <label class="custom-file-label" for="customFile"><?php echo empty($data->dokumen) ? "Choose file" : $data->dokumen?></label>
+                      </div>
+                    </div>
       							</div>
-
-
-
-      							<div class="form-group">
-      								<label for="example-date-input">Tanggal Selesai</label>
-      								<input class="form-control" type="date" name="tanggal_selesai" id="example-date-input"  value="<?php echo $data->tanggal_selesai ?>">
-      							</div>
-      							<div class="form-group">
-      								<label for="exampleInputEmail1">Tipe</label>
-      								<select class="browser-default custom-select custom-select-md mb-3" name="tipe">
-      									<option value="national" <?php if ($data->tipe == 'national'): ?>
-      									selected
-      									<?php endif ?>>national</option>
-      									<option value="international" <?php if ($data->tipe == 'international'): ?>
-      									selected
-      									<?php endif ?>>international</option>
-      								</select>
-      							</div>
+      						  <div class="form-group">
+                      <label for="exampleInputEmail1">Tipe</label>
+                      <select class="browser-default custom-select custom-select-md tipe-event" name="tipe">
+                        <option value="0">Non-Event</option>
+                        <option value="1" <?php echo $data->is_event == 1 ? 'selected' : ''?>>Event</option>
+                      </select>
+                    </div>
+                    <div class="form-group event-choose">
+                      <label for="exampleInputEmail1">Event</label>
+                      <select class="browser-default custom-select custom-select-md mb-3" name="event">
+                        <?php foreach ($resource as $k) { ?>
+                          <option value="<?php echo $k->kegiatan_id;?>" <?php echo $data->event == $k->kegiatan_id ? 'selected' : ''?>><?php echo $k->nama;?></option>
+                        <?php } ?>
+                      </select>
+                    </div>
 
       							<button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Simpan</button>
 
@@ -206,7 +216,7 @@
   <!-- Bootstrap core JavaScript-->
   <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
   <script src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-
+  <script src="<?php echo base_url() ?>assets/plugins/tinymce/tinymce.min.js"></script>
   <!-- Core plugin JavaScript-->
   <script src="<?php echo base_url() ?>assets/plugins/jquery-easing/jquery.easing.min.js"></script>
 
@@ -221,4 +231,40 @@
   <script src="<?php echo base_url() ?>assets/js/datatables-demo.js"></script>
 </body>
 
+
+<script type="text/javascript">
+  $(".event-choose").hide();
+
+  if ($(".tipe-event").val() == 1) {
+      $(".event-choose").show();
+    }
+
+  $(".tipe-event").on("change", function() {
+    if ($(".tipe-event").val() == 1) {
+      $(".event-choose").show();
+    } else {
+      $(".event-choose").hide();
+    }
+  });
+
+  tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    image_advtab: true,
+    menubar: false,
+    subfolder: "content",
+    relative_urls: false,
+    plugins: [
+      "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+      "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+      "save table contextmenu directionality emoticons template paste textcolor"
+    ],
+    toolbar: "bold italic | alignleft alignright | bullist numlist outdent indent",
+  });
+
+  $(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+</script>
 </html>

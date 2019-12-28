@@ -43,14 +43,18 @@ $route['portal/document/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_
 //Resource
 $route['portal/resource']= 'pd_portal/SumberDaya/index';
 $route['portal/resource/add']= 'pd_portal/SumberDaya/add';
+$route['portal/resource/hapus_resource/(:num)'] = 'pd_portal/SumberDaya/hapus_resource/$1';
+$route['portal/resource/edit_resource/(:num)']= 'pd_portal/SumberDaya/edit_resource/$1';
+$route['portal/resource/update_resource']= 'pd_portal/SumberDaya/update_resource';
 // $route['portal/event/insert_kegiatan']= 'pd_portal/Kegiatan/insert_kegiatan';
 
 $route['portal/login'] = 'pd_portal/login/index';
 $route['portal/login/do_login'] = 'pd_portal/login/do_login';
 $route['portal/login/logout'] = 'pd_portal/login/logout';
-$route['portal/message'] = 'pd_portal/document/message';
 
 // $route['event/about'] = 'pd_event/event/index/about';
 // $route['event/goal'] = 'pd_event/event/index/goal';
 
 // $route['(:any)/international_event'] = 'pd_intern/intern_event/index';
+
+

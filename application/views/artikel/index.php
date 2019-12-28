@@ -77,6 +77,14 @@
 <script>
     actControl();
 
+    function paging(e) {
+        var s = "paging" + e;
+        var ss = s.split("/");
+        var sss = ss[1];
+        var o = !sss ? 0 : sss;
+        actControl(o);
+    }
+
     function actControl() {
         var year = !$("select[name=sort_year] option:selected").val() ? "" : $("select[name=sort_year] option:selected").val();
         var title = !$("input[name=sort_title]").val() ? "" : $("input[name=sort_title]").val();

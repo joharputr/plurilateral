@@ -9,9 +9,9 @@ class Login extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
-        if ($this->session->userdata()) {
+      /*  if ($this->session->userdata()) {
             redirect(base_url("portal"));
-        }
+        }*/
     }
 
     public function index() {
