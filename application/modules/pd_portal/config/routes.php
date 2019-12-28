@@ -26,8 +26,6 @@ $route['portal/document/hapus_press/(:num)'] = 'pd_portal/document/hapus_press/$
 $route['portal/document/edit_press'] = 'pd_portal/document/update_press';
 
 
-
-
 //Event
 $route['portal/event']= 'pd_portal/Kegiatan/index';
 $route['portal/event/insert_kegiatan']= 'pd_portal/Kegiatan/insert_kegiatan';
@@ -41,7 +39,6 @@ $route['portal/event/hapus_kegiatan/(:num)'] = 'pd_portal/Kegiatan/hapus_kegiata
 $route['portal/document/tambah_gambar/(:num)'] = 'pd_portal/document/tambah_gambar/$1';
 $route['portal/document/insert_gambar']= 'pd_portal/Document/insert_gambar';
 $route['portal/document/hapus_gambar/(:num)/(:num)']= 'pd_portal/Document/hapus_gambar/$1/$2';
-
 
 
 $route['portal/login'] = 'pd_portal/login/index';
