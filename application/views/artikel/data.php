@@ -5,7 +5,7 @@
                 <h3 class="title-head-one"><?php echo $s->judul; ?></h3>
                 <h5 class="title-head-one text-success"><?php echo $s->tempat . ', ' . date_indo($s->tanggal); ?></h5>
                 <hr>
-                <p class="text-justify"><?php echo substr($s->deskripsi, 0, 200) . " . . . "; ?><a href="<?php echo base_url('national') ?>/preview/<?php echo $s->artikel_id; ?>" class="text-primary stretched-link" onclick="actControl('preview', <?php echo $s->artikel_id; ?>);">Baca Selengkapnya</a></p>
+                <p class="text-justify"><?php echo substr($s->deskripsi, 0, 200) . " . . . "; ?><a href="<?php echo base_url($private_url) ?>/preview/<?php echo $s->artikel_id; ?>" class="text-primary stretched-link" onclick="actControl('preview', <?php echo $s->artikel_id; ?>);">Baca Selengkapnya</a></p>
             </div>
         </div>
     <?php }
@@ -16,3 +16,7 @@
         </div>
     </div>
 <?php } ?>
+
+<script type="text/javascript">
+    $(".load-data").hide();
+</script>

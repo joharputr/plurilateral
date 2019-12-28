@@ -11,12 +11,9 @@ class Document extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-
-
-    if($this->session->userdata('status') != "login"){
+        if ($this->session->userdata('status') != "login") {
             redirect(base_url("portal/login"));
         }
-
     }
 
     public function index()
@@ -27,11 +24,12 @@ class Document extends MY_Controller
         $this->load->view('content/dokumen/document', $data);
     }
 
-    function update_dokumen(){
+    function update_dokumen()
+    {
 
         $id = $this->input->post('id');
         $judul = $this->input->post('judul');
-        $event = $this->input->post('event');   
+        $event = $this->input->post('event');
         $tipe = $this->input->post('tipe_dokumen');
 
         if (!empty($_FILES["dokumen"]["name"])) {
@@ -39,10 +37,10 @@ class Document extends MY_Controller
             $dokumen = $this->_uploadImage3();
             $object = array(
                 'judul' => $judul,
-                'dokumen' => 'assets/files/'. $dokumen,
+                'dokumen' => 'assets/files/' . $dokumen,
                 'event' => $event,
                 'tipe_dokumen' => $tipe,
-            );   
+            );
         } else {
             $dokumen = $this->input->post('old_dokumen');
             $object = array(
@@ -50,12 +48,12 @@ class Document extends MY_Controller
                 'dokumen' => $dokumen,
                 'event' => $event,
                 'tipe_dokumen' => $tipe,
-            );   
+            );
         }
-        
-         $test = $this->db->update('dokumen', $object, array('dokumen_id' => $id));
 
-         redirect('portal/document','refresh');
+        $test = $this->db->update('dokumen', $object, array('dokumen_id' => $id));
+
+        redirect('portal/document', 'refresh');
     }
 
 
@@ -170,11 +168,12 @@ class Document extends MY_Controller
         $this->load->view('content/dokumen/edit_press', $data);
     }
 
-    function update_press(){
+    function update_press()
+    {
 
         $id = $this->input->post('id');
         $judul = $this->input->post('judul');
-        $tanggal = $this->input->post('tanggal');   
+        $tanggal = $this->input->post('tanggal');
         $tempat = $this->input->post('tempat');
         $deskripsi = $this->input->post('deskripsi');
         $tipe_artikel = $this->input->post('tipe_artikel');
@@ -185,7 +184,7 @@ class Document extends MY_Controller
             'deskripsi' => $deskripsi,
             'tipe_artikel' => $tipe_artikel,
         );
-   //     $this->dokumen = $this->_uploadImage3();
+        //     $this->dokumen = $this->_uploadImage3();
         $test = $this->db->update('artikel', $object, array('artikel_id' => $id));
 
         redirect('portal/document/press', 'refresh');
@@ -213,14 +212,15 @@ class Document extends MY_Controller
         redirect('portal/document/press', 'refresh');
     }
 
- function hapus_press($id)
+    function hapus_press($id)
     {
         $delete = $this->db->delete('artikel', array('artikel_id' => $id));
         redirect('portal/document/press', 'refresh');
     }
 
-//Gambar
-    function tambah_gambar($id){
+    //Gambar
+    function tambah_gambar($id)
+    {
         $data['title'] = "Add Gallery";
         $data['articleid'] = $id;
         $data['editdata']  = $this->db->get_where('gambar', array('artikel' => $id))->result_object();
@@ -245,29 +245,27 @@ class Document extends MY_Controller
         }
     }
 
-   
+
 
 
     function insert_gambar()
     {
         $artikel_id = $this->input->post('artikel_id');
-   
+
         $object = array(
             'artikel' => $artikel_id,
-            'path' => 'assets/storage/press/image/'.$this->upload_gambar_press()
+            'path' => 'assets/storage/press/image/' . $this->upload_gambar_press()
         );
         //     $this->dokumen = $this->_uploadImage3();
         $test = $this->db->insert('gambar', $object);
 
 
-      redirect('portal/document/tambah_gambar/'.$artikel_id, 'refresh');
+        redirect('portal/document/tambah_gambar/' . $artikel_id, 'refresh');
     }
 
-     function hapus_gambar($id, $artikel)
+    function hapus_gambar($id, $artikel)
     {
         $delete = $this->db->delete('gambar', array('gambar_id' => $id));
-        redirect('portal/document/tambah_gambar/'.$artikel, 'refresh');
+        redirect('portal/document/tambah_gambar/' . $artikel, 'refresh');
     }
-
-
 }
